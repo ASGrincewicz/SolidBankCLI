@@ -3,4 +3,9 @@ project(SolidBankCLI)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(SolidBankCLI main.cpp)
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
+add_executable(SolidBankCLI ${SOURCES}
+        include/UserManager.h
+        src/UserManager.cpp)
