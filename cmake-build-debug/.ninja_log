@@ -1,0 +1,6 @@
+# ninja log v6
+2	688	7796063858558739	CMakeFiles/SolidBankCLI.dir/src/main.cpp.obj	a4045007f5685bc8
+694	1142	7796063865501283	SolidBankCLI.exe	e91463c81a68d972
+9	692	7796083424595169	CMakeFiles/SolidBankCLI.dir/src/UserManager.cpp.obj	9d5d9e4b598e528
+33	697	7796083424832794	CMakeFiles/SolidBankCLI.dir/src/main.cpp.obj	a4045007f5685bc8
+697	1051	7796083431478844	SolidBankCLI.exe	28ba557ec11c901d
