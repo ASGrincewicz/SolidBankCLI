@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.16)
 project(SolidBankCLI VERSION 1.0 LANGUAGES CXX)
 
+# Force console subsystem for MinGW
+if(MINGW)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -mconsole")
+endif()
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -35,3 +40,7 @@ target_link_libraries(SolidBankTests PRIVATE Catch2::Catch2WithMain)
 include(CTest)
 enable_testing()
 add_test(NAME SolidBankTests COMMAND SolidBankTests)
+
+
+target_include_directories(SolidBankCLI PRIVATE include)
+target_include_directories(SolidBankTests PRIVATE include)
