@@ -1,11 +1,37 @@
-cmake_minimum_required(VERSION 3.28)
-project(SolidBankCLI)
+cmake_minimum_required(VERSION 3.16)
+project(SolidBankCLI VERSION 1.0 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 26)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(include)
+# Enable coverage flags (optional, for GCC/Clang)
+option(CODE_COVERAGE "Enable coverage reporting" ON)
+if(CODE_COVERAGE)
+    message(STATUS "Code coverage enabled")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+endif()
 
-file(GLOB SOURCES "src/*.cpp")
-add_executable(SolidBankCLI ${SOURCES}
-        include/UserManager.h
-        src/UserManager.cpp)
+# Source files
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
+
+# Main executable
+add_executable(SolidBankCLI ${SOURCES})
+
+# Catch2 setup
+include(FetchContent)
+FetchContent_Declare(
+        catch2
+        GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+        GIT_TAG v3.4.0 # Use latest stable
+)
+FetchContent_MakeAvailable(catch2)
+
+# Test executable
+file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS tests/*.cpp)
+add_executable(SolidBankTests ${TEST_SOURCES} ${SOURCES})
+target_link_libraries(SolidBankTests PRIVATE Catch2::Catch2WithMain)
+
+# Enable test discovery in CLion
+include(CTest)
+enable_testing()
+add_test(NAME SolidBankTests COMMAND SolidBankTests)
