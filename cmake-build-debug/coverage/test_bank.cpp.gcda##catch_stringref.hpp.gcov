@@ -36,16 +36,16 @@
         -:   32:        size_type m_size = 0;
         -:   33:
         -:   34:    public: // construction
-function _ZN5Catch9StringRefC1Ev called 2 returned 100% blocks executed 100%
-        2:   35:        constexpr StringRef() noexcept = default;
+function _ZN5Catch9StringRefC1Ev called 1 returned 100% blocks executed 100%
+        1:   35:        constexpr StringRef() noexcept = default;
         -:   36:
         -:   37:        StringRef( char const* rawChars ) noexcept;
         -:   38:
-function _ZN5Catch9StringRefC1EPKcy called 47 returned 100% blocks executed 100%
-       47:   39:        constexpr StringRef( char const* rawChars, size_type size ) noexcept
-       47:   40:        :   m_start( rawChars ),
-       47:   41:            m_size( size )
-       47:   42:        {}
+function _ZN5Catch9StringRefC1EPKcy called 16 returned 100% blocks executed 100%
+       16:   39:        constexpr StringRef( char const* rawChars, size_type size ) noexcept
+       16:   40:        :   m_start( rawChars ),
+       16:   41:            m_size( size )
+       16:   42:        {}
         -:   43:
         -:   44:        StringRef( std::string const& stdString ) noexcept
         -:   45:        :   m_start( stdString.c_str() ),
@@ -115,19 +115,16 @@ function _ZN5Catch9StringRefC1EPKcy called 47 returned 100% blocks executed 100%
         -:  109:    };
         -:  110:
         -:  111:
-function _ZN5Catchli3_srEPKcy called 34 returned 100% blocks executed 100%
-       34:  112:    constexpr auto operator ""_sr( char const* rawChars, std::size_t size ) noexcept -> StringRef {
-       34:  113:        return StringRef( rawChars, size );
-       34:  113-block  0
-call    0 returned 34
+        -:  112:    constexpr auto operator ""_sr( char const* rawChars, std::size_t size ) noexcept -> StringRef {
+        -:  113:        return StringRef( rawChars, size );
         -:  114:    }
         -:  115:} // namespace Catch
         -:  116:
-function _Zli9_catch_srPKcy called 2 returned 100% blocks executed 100%
-        2:  117:constexpr auto operator ""_catch_sr( char const* rawChars, std::size_t size ) noexcept -> Catch::StringRef {
-        2:  118:    return Catch::StringRef( rawChars, size );
-        2:  118-block  0
-call    0 returned 2
+function _Zli9_catch_srPKcy called 0 returned 0% blocks executed 0%
+    #####:  117:constexpr auto operator ""_catch_sr( char const* rawChars, std::size_t size ) noexcept -> Catch::StringRef {
+    #####:  118:    return Catch::StringRef( rawChars, size );
+    %%%%%:  118-block  0
+call    0 never executed
         -:  119:}
         -:  120:
         -:  121:#endif // CATCH_STRINGREF_HPP_INCLUDED

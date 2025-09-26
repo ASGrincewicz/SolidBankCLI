@@ -1243,13 +1243,13 @@ call    0 never executed
         -:  951:       */
         -:  952:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  953:      iterator
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 4 returned 100% blocks executed 100%
-        4:  954:      begin() _GLIBCXX_NOEXCEPT
-        4:  955:      { return iterator(_M_data()); }
-        4:  955-block  0
-call    0 returned 4
-call    1 returned 4
-        4:  955-block  1
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  954:      begin() _GLIBCXX_NOEXCEPT
+    #####:  955:      { return iterator(_M_data()); }
+    %%%%%:  955-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  955-block  1
         -:  956:
         -:  957:      /**
         -:  958:       *  Returns a read-only (constant) iterator that points to the first
@@ -1257,13 +1257,13 @@ call    1 returned 4
         -:  960:       */
         -:  961:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  962:      const_iterator
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 6 returned 100% blocks executed 100%
-        6:  963:      begin() const _GLIBCXX_NOEXCEPT
-        6:  964:      { return const_iterator(_M_data()); }
-        6:  964-block  0
-call    0 returned 6
-call    1 returned 6
-        6:  964-block  1
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  963:      begin() const _GLIBCXX_NOEXCEPT
+    #####:  964:      { return const_iterator(_M_data()); }
+    %%%%%:  964-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  964-block  1
         -:  965:
         -:  966:      /**
         -:  967:       *  Returns a read/write iterator that points one past the last
@@ -1271,14 +1271,14 @@ call    1 returned 6
         -:  969:       */
         -:  970:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  971:      iterator
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 4 returned 100% blocks executed 100%
-        4:  972:      end() _GLIBCXX_NOEXCEPT
-        4:  973:      { return iterator(_M_data() + this->size()); }
-        4:  973-block  0
-call    0 returned 4
-call    1 returned 4
-call    2 returned 4
-        4:  973-block  1
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 0 returned 0% blocks executed 0%
+    #####:  972:      end() _GLIBCXX_NOEXCEPT
+    #####:  973:      { return iterator(_M_data() + this->size()); }
+    %%%%%:  973-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    %%%%%:  973-block  1
         -:  974:
         -:  975:      /**
         -:  976:       *  Returns a read-only (constant) iterator that points one past the
@@ -1286,14 +1286,14 @@ call    2 returned 4
         -:  978:       */
         -:  979:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  980:      const_iterator
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 3 returned 100% blocks executed 100%
-        3:  981:      end() const _GLIBCXX_NOEXCEPT
-        3:  982:      { return const_iterator(_M_data() + this->size()); }
-        3:  982-block  0
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-        3:  982-block  1
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 0 returned 0% blocks executed 0%
+    #####:  981:      end() const _GLIBCXX_NOEXCEPT
+    #####:  982:      { return const_iterator(_M_data() + this->size()); }
+    %%%%%:  982-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    %%%%%:  982-block  1
         -:  983:
         -:  984:      /**
         -:  985:       *  Returns a read/write reverse iterator that points to the last
@@ -3473,15 +3473,15 @@ call    2 never executed
         -: 3036:      */
         -: 3037:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 3038:      size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17find_first_not_ofEPKcy called 3 returned 100% blocks executed 100%
-        3: 3039:      find_first_not_of(const _CharT* __s, size_type __pos = 0) const
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17find_first_not_ofEPKcy called 0 returned 0% blocks executed 0%
+    #####: 3039:      find_first_not_of(const _CharT* __s, size_type __pos = 0) const
         -: 3040:      _GLIBCXX_NOEXCEPT
         -: 3041:      {
         -: 3042:	__glibcxx_requires_string(__s);
-        3: 3043:	return this->find_first_not_of(__s, __pos, traits_type::length(__s));
-        3: 3043-block  0
-call    0 returned 3
-call    1 returned 3
+    #####: 3043:	return this->find_first_not_of(__s, __pos, traits_type::length(__s));
+    %%%%%: 3043-block  0
+call    0 never executed
+call    1 never executed
         -: 3044:      }
         -: 3045:
         -: 3046:      /**
@@ -3564,15 +3564,15 @@ call    1 returned 3
         -: 3123:      */
         -: 3124:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 3125:      size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16find_last_not_ofEPKcy called 3 returned 100% blocks executed 100%
-        3: 3126:      find_last_not_of(const _CharT* __s, size_type __pos = npos) const
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16find_last_not_ofEPKcy called 0 returned 0% blocks executed 0%
+    #####: 3126:      find_last_not_of(const _CharT* __s, size_type __pos = npos) const
         -: 3127:      _GLIBCXX_NOEXCEPT
         -: 3128:      {
         -: 3129:	__glibcxx_requires_string(__s);
-        3: 3130:	return this->find_last_not_of(__s, __pos, traits_type::length(__s));
-        3: 3130-block  0
-call    0 returned 3
-call    1 returned 3
+    #####: 3130:	return this->find_last_not_of(__s, __pos, traits_type::length(__s));
+    %%%%%: 3130-block  0
+call    0 never executed
+call    1 never executed
         -: 3131:      }
         -: 3132:
         -: 3133:      /**

@@ -227,8 +227,8 @@ call    1 never executed
         -:  169:    {
         -:  170:      template<typename _ForwardIterator>
         -:  171:        static void
-function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch3TagEEEvT_S5_ called 1 returned 100% blocks executed 100%
-        1:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
+function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch3TagEEEvT_S5_ called 0 returned 0% blocks executed 0%
+    #####:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
         -:  173:    };
         -:  174:
         -:  175:  /**
@@ -238,8 +238,8 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch3TagEEEvT_S5_ called 1 retu
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-function _ZSt8_DestroyIPN5Catch3TagEEvT_S3_ called 1 returned 100% blocks executed 67%
-        1:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch3TagEEvT_S3_ called 0 returned 0% blocks executed 0%
+    #####:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -249,19 +249,19 @@ function _ZSt8_DestroyIPN5Catch3TagEEvT_S3_ called 1 returned 100% blocks execut
         -:  189:		    "value type is destructible");
         -:  190:#endif
         -:  191:#if __cplusplus >= 202002L
-        1:  192:      if (std::__is_constant_evaluated())
-        1:  192-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####:  192:      if (std::__is_constant_evaluated())
+    %%%%%:  192-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
     %%%%%:  193-block  0
 call    0 never executed
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        1:  196:	__destroy(__first, __last);
-        1:  196-block  0
-call    0 returned 1
+    #####:  196:	__destroy(__first, __last);
+    %%%%%:  196-block  0
+call    0 never executed
         -:  197:    }
         -:  198:
         -:  199:  template<bool>

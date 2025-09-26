@@ -287,17 +287,17 @@ call    5 never executed
         -:  202:      constexpr void
         -:  203:      deallocate(_Tp* __p, size_t __n)
         -:  204:      {
-       2*:  205:	if (std::__is_constant_evaluated())
+    #####:  205:	if (std::__is_constant_evaluated())
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed
 call    3 never executed
 branch  4 never executed (fallthrough)
 branch  5 never executed
-        2:  205-block  0
-call    6 returned 2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 2
+    %%%%%:  205-block  0
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
 call    9 never executed
 branch 10 never executed (fallthrough)
 branch 11 never executed
@@ -331,13 +331,13 @@ call    5 never executed
 call    6 never executed
     #####:  208:	    return;
         -:  209:	  }
-       2*:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
+    #####:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
     %%%%%:  210-block  0
 call    0 never executed
     %%%%%:  210-block  1
 call    1 never executed
-        2:  210-block  2
-call    2 returned 2
+    %%%%%:  210-block  2
+call    2 never executed
     %%%%%:  210-block  3
 call    3 never executed
     %%%%%:  210-block  4

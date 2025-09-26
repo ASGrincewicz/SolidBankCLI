@@ -1073,10 +1073,10 @@ function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv called
         -: 1067:      ///  null-termination.
         -: 1068:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 1069:      size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv called 0 returned 0% blocks executed 0%
-    #####: 1070:      size() const _GLIBCXX_NOEXCEPT
-    #####: 1071:      { return _M_string_length; }
-    %%%%%: 1071-block  0
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv called 73 returned 100% blocks executed 100%
+       73: 1070:      size() const _GLIBCXX_NOEXCEPT
+       73: 1071:      { return _M_string_length; }
+       73: 1071-block  0
         -: 1072:
         -: 1073:      ///  Returns the number of characters in the string, not including any
         -: 1074:      ///  null-termination.

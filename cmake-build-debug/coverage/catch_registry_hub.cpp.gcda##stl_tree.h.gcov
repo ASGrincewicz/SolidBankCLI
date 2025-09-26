@@ -147,12 +147,12 @@
         -:  143:    {
         -:  144:      _Key_compare		_M_key_compare;
         -:  145:
-function _ZNSt20_Rb_tree_key_compareISt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  146:      _Rb_tree_key_compare()
+function _ZNSt20_Rb_tree_key_compareISt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  146:      _Rb_tree_key_compare()
         -:  147:      _GLIBCXX_NOEXCEPT_IF(
         -:  148:	is_nothrow_default_constructible<_Key_compare>::value)
         -:  149:      : _M_key_compare()
-    #####:  150:      { }
+        1:  150:      { }
         -:  151:
         -:  152:      _Rb_tree_key_compare(const _Key_compare& __comp)
         -:  153:      : _M_key_compare(__comp)

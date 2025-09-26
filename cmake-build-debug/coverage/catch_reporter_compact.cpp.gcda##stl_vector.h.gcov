@@ -905,12 +905,12 @@ call    0 never executed
         -:  875:       */
         -:  876:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  877:      const_iterator
-function _ZNKSt6vectorIN5Catch11MessageInfoESaIS1_EE5beginEv called 1 returned 100% blocks executed 100%
-        1:  878:      begin() const _GLIBCXX_NOEXCEPT
-        1:  879:      { return const_iterator(this->_M_impl._M_start); }
-        1:  879-block  0
-call    0 returned 1
-        1:  879-block  1
+function _ZNKSt6vectorIN5Catch11MessageInfoESaIS1_EE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  878:      begin() const _GLIBCXX_NOEXCEPT
+    #####:  879:      { return const_iterator(this->_M_impl._M_start); }
+    %%%%%:  879-block  0
+call    0 never executed
+    %%%%%:  879-block  1
         -:  880:
         -:  881:      /**
         -:  882:       *  Returns a read/write iterator that points one past the last
@@ -933,12 +933,12 @@ call    0 never executed
         -:  895:       */
         -:  896:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  897:      const_iterator
-function _ZNKSt6vectorIN5Catch11MessageInfoESaIS1_EE3endEv called 1 returned 100% blocks executed 100%
-        1:  898:      end() const _GLIBCXX_NOEXCEPT
-        1:  899:      { return const_iterator(this->_M_impl._M_finish); }
-        1:  899-block  0
-call    0 returned 1
-        1:  899-block  1
+function _ZNKSt6vectorIN5Catch11MessageInfoESaIS1_EE3endEv called 0 returned 0% blocks executed 0%
+    #####:  898:      end() const _GLIBCXX_NOEXCEPT
+    #####:  899:      { return const_iterator(this->_M_impl._M_finish); }
+    %%%%%:  899-block  0
+call    0 never executed
+    %%%%%:  899-block  1
         -:  900:
         -:  901:      /**
         -:  902:       *  Returns a read/write reverse iterator that points to the

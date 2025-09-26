@@ -1160,7 +1160,7 @@ call    0 never executed
         -: 1083:	    typename _Allocator>
         -: 1084:    _GLIBCXX20_CONSTEXPR
         -: 1085:    inline _ForwardIterator
-       4*: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+    #####: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1087:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1088:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1089:					       std::addressof(*__first),
@@ -1172,16 +1172,16 @@ call    0 never executed
         -: 1095:	_ValueType2;
         -: 1096:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1097:	  "relocation is only possible for values of the same type");
-       4*: 1098:      _ForwardIterator __cur = __result;
-       4*: 1099:      for (; __first != __last; ++__first, (void)++__cur)
+    #####: 1098:      _ForwardIterator __cur = __result;
+    #####: 1099:      for (; __first != __last; ++__first, (void)++__cur)
     #####: 1100:	std::__relocate_object_a(std::__addressof(*__cur),
         -: 1101:				 std::__addressof(*__first), __alloc);
-       4*: 1102:      return __cur;
+    #####: 1102:      return __cur;
         -: 1103:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch8TestSpec6FilterES3_SaIS2_EET0_T_S6_S5_RT1_:
-function _ZSt14__relocate_a_1IPN5Catch8TestSpec6FilterES3_SaIS2_EET0_T_S6_S5_RT1_ called 2 returned 100% blocks executed 50%
-        2: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPN5Catch8TestSpec6FilterES3_SaIS2_EET0_T_S6_S5_RT1_ called 0 returned 0% blocks executed 0%
+    #####: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1087:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1088:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1089:					       std::addressof(*__first),
@@ -1193,20 +1193,20 @@ function _ZSt14__relocate_a_1IPN5Catch8TestSpec6FilterES3_SaIS2_EET0_T_S6_S5_RT1
         -: 1095:	_ValueType2;
         -: 1096:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1097:	  "relocation is only possible for values of the same type");
-        2: 1098:      _ForwardIterator __cur = __result;
-       2*: 1099:      for (; __first != __last; ++__first, (void)++__cur)
-        2: 1099-block  0
-        2: 1099-block  1
-branch  0 taken 0
-branch  1 taken 2 (fallthrough)
+    #####: 1098:      _ForwardIterator __cur = __result;
+    #####: 1099:      for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%: 1099-block  0
+    %%%%%: 1099-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
     #####: 1100:	std::__relocate_object_a(std::__addressof(*__cur),
     %%%%%: 1100-block  0
 call    0 never executed
 call    1 never executed
 call    2 never executed
         -: 1101:				 std::__addressof(*__first), __alloc);
-        2: 1102:      return __cur;
-        2: 1102-block  0
+    #####: 1102:      return __cur;
+    %%%%%: 1102-block  0
         -: 1103:    }
 ------------------
 _ZSt14__relocate_a_1IPyN9__gnu_cxx17__normal_iteratorIS0_vEESaIyEET0_T_S6_S5_RT1_:
@@ -1242,8 +1242,8 @@ call    3 never executed
         -: 1103:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEES6_SaIS5_EET0_T_S9_S8_RT1_:
-function _ZSt14__relocate_a_1IPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 2 returned 100% blocks executed 50%
-        2: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 0 returned 0% blocks executed 0%
+    #####: 1086:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1087:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1088:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1089:					       std::addressof(*__first),
@@ -1255,20 +1255,20 @@ function _ZSt14__relocate_a_1IPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternE
         -: 1095:	_ValueType2;
         -: 1096:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1097:	  "relocation is only possible for values of the same type");
-        2: 1098:      _ForwardIterator __cur = __result;
-       2*: 1099:      for (; __first != __last; ++__first, (void)++__cur)
-        2: 1099-block  0
-        2: 1099-block  1
-branch  0 taken 0
-branch  1 taken 2 (fallthrough)
+    #####: 1098:      _ForwardIterator __cur = __result;
+    #####: 1099:      for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%: 1099-block  0
+    %%%%%: 1099-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
     #####: 1100:	std::__relocate_object_a(std::__addressof(*__cur),
     %%%%%: 1100-block  0
 call    0 never executed
 call    1 never executed
 call    2 never executed
         -: 1101:				 std::__addressof(*__first), __alloc);
-        2: 1102:      return __cur;
-        2: 1102-block  0
+    #####: 1102:      return __cur;
+    %%%%%: 1102-block  0
         -: 1103:    }
 ------------------
 _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_:
@@ -1347,15 +1347,15 @@ call    0 never executed
         -: 1133:	    typename _Allocator>
         -: 1134:    _GLIBCXX20_CONSTEXPR
         -: 1135:    inline _ForwardIterator
-       4*: 1136:    __relocate_a(_InputIterator __first, _InputIterator __last,
+    #####: 1136:    __relocate_a(_InputIterator __first, _InputIterator __last,
         -: 1137:		 _ForwardIterator __result, _Allocator& __alloc)
         -: 1138:    noexcept(noexcept(__relocate_a_1(std::__niter_base(__first),
         -: 1139:				     std::__niter_base(__last),
         -: 1140:				     std::__niter_base(__result), __alloc)))
         -: 1141:    {
-       4*: 1142:      return std::__relocate_a_1(std::__niter_base(__first),
+    #####: 1142:      return std::__relocate_a_1(std::__niter_base(__first),
         -: 1143:				 std::__niter_base(__last),
-       4*: 1144:				 std::__niter_base(__result), __alloc);
+    #####: 1144:				 std::__niter_base(__result), __alloc);
         -: 1145:    }
         -: 1146:
         -: 1147:  /// @endcond

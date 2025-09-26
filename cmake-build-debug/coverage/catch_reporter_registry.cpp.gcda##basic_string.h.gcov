@@ -4778,16 +4778,16 @@ call    2 never executed
         -: 4483:
         -: 4484:    _GLIBCXX_DEFAULT_ABI_TAG _GLIBCXX_STRING_CONSTEXPR
         -: 4485:    inline basic_string<char>
-function _ZNSt8literals15string_literalsli1sB5cxx11EPKcy called 1 returned 100% blocks executed 78%
-        1: 4486:    operator""s(const char* __str, size_t __len)
-        3: 4487:    { return basic_string<char>{__str, __len}; }
-        1: 4487-block  0
-        1: 4487-block  1
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1: 4487-block  2
-        1: 4487-block  3
+function _ZNSt8literals15string_literalsli1sB5cxx11EPKcy called 0 returned 0% blocks executed 0%
+    #####: 4486:    operator""s(const char* __str, size_t __len)
+    #####: 4487:    { return basic_string<char>{__str, __len}; }
+    %%%%%: 4487-block  0
+    %%%%%: 4487-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%: 4487-block  2
+    %%%%%: 4487-block  3
         -: 4488:
         -: 4489:    _GLIBCXX_DEFAULT_ABI_TAG _GLIBCXX_STRING_CONSTEXPR
         -: 4490:    inline basic_string<wchar_t>

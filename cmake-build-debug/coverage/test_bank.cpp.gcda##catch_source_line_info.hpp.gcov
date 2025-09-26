@@ -20,11 +20,11 @@
         -:   16:    struct SourceLineInfo {
         -:   17:
         -:   18:        SourceLineInfo() = delete;
-function _ZN5Catch14SourceLineInfoC1EPKcy called 3 returned 100% blocks executed 100%
-        3:   19:        constexpr SourceLineInfo( char const* _file, std::size_t _line ) noexcept:
-        3:   20:            file( _file ),
-        3:   21:            line( _line )
-        3:   22:        {}
+function _ZN5Catch14SourceLineInfoC1EPKcy called 1 returned 100% blocks executed 100%
+        1:   19:        constexpr SourceLineInfo( char const* _file, std::size_t _line ) noexcept:
+        1:   20:            file( _file ),
+        1:   21:            line( _line )
+        1:   22:        {}
         -:   23:
         -:   24:        bool operator == ( SourceLineInfo const& other ) const noexcept;
         -:   25:        bool operator < ( SourceLineInfo const& other ) const noexcept;

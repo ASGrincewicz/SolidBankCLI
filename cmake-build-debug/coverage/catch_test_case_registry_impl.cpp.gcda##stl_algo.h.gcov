@@ -2068,12 +2068,12 @@ call    1 never executed
         -: 1809:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1810:    _GLIBCXX20_CONSTEXPR
         -: 1811:    void
-       1*: 1812:    __insertion_sort(_RandomAccessIterator __first,
+    #####: 1812:    __insertion_sort(_RandomAccessIterator __first,
         -: 1813:		     _RandomAccessIterator __last, _Compare __comp)
         -: 1814:    {
-       1*: 1815:      if (__first == __last) return;
+    #####: 1815:      if (__first == __last) return;
         -: 1816:
-       1*: 1817:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+    #####: 1817:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
         -: 1818:	{
     #####: 1819:	  if (__comp(__i, __first))
         -: 1820:	    {
@@ -2150,26 +2150,26 @@ branch  5 never executed (throw)
         -: 1830:    }
 ------------------
 _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_:
-function _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 1 returned 100% blocks executed 36%
-        1: 1812:    __insertion_sort(_RandomAccessIterator __first,
+function _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1812:    __insertion_sort(_RandomAccessIterator __first,
         -: 1813:		     _RandomAccessIterator __last, _Compare __comp)
         -: 1814:    {
-       1*: 1815:      if (__first == __last) return;
-        1: 1815-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 1815:      if (__first == __last) return;
+    %%%%%: 1815-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
     %%%%%: 1815-block  1
         -: 1816:
-       1*: 1817:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
-        1: 1817-block  0
-call    0 returned 1
+    #####: 1817:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+    %%%%%: 1817-block  0
+call    0 never executed
     %%%%%: 1817-block  1
 call    1 never executed
-        1: 1817-block  2
-call    2 returned 1
-branch  3 taken 0
-branch  4 taken 1 (fallthrough)
+    %%%%%: 1817-block  2
+call    2 never executed
+branch  3 never executed
+branch  4 never executed (fallthrough)
         -: 1818:	{
     #####: 1819:	  if (__comp(__i, __first))
     %%%%%: 1819-block  0
@@ -2285,18 +2285,18 @@ branch  5 never executed (throw)
         -: 1851:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1852:    _GLIBCXX20_CONSTEXPR
         -: 1853:    void
-       1*: 1854:    __final_insertion_sort(_RandomAccessIterator __first,
+    #####: 1854:    __final_insertion_sort(_RandomAccessIterator __first,
         -: 1855:			   _RandomAccessIterator __last, _Compare __comp)
         -: 1856:    {
-       1*: 1857:      if (__last - __first > int(_S_threshold))
+    #####: 1857:      if (__last - __first > int(_S_threshold))
         -: 1858:	{
     #####: 1859:	  std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
     #####: 1860:	  std::__unguarded_insertion_sort(__first + int(_S_threshold), __last,
         -: 1861:					  __comp);
         -: 1862:	}
         -: 1863:      else
-       1*: 1864:	std::__insertion_sort(__first, __last, __comp);
-       1*: 1865:    }
+    #####: 1864:	std::__insertion_sort(__first, __last, __comp);
+    #####: 1865:    }
 ------------------
 _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEENS0_5__ops15_Iter_comp_iterIZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SL_E_EEEvT_SO_T0_:
 function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEENS0_5__ops15_Iter_comp_iterIZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SL_E_EEEvT_SO_T0_ called 0 returned 0% blocks executed 0%
@@ -2325,15 +2325,15 @@ call    0 never executed
     #####: 1865:    }
 ------------------
 _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_:
-function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 1 returned 100% blocks executed 50%
-        1: 1854:    __final_insertion_sort(_RandomAccessIterator __first,
+function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1854:    __final_insertion_sort(_RandomAccessIterator __first,
         -: 1855:			   _RandomAccessIterator __last, _Compare __comp)
         -: 1856:    {
-        1: 1857:      if (__last - __first > int(_S_threshold))
-        1: 1857-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 1857:      if (__last - __first > int(_S_threshold))
+    %%%%%: 1857-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -: 1858:	{
     #####: 1859:	  std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
     %%%%%: 1859-block  0
@@ -2345,10 +2345,10 @@ call    1 never executed
         -: 1861:					  __comp);
         -: 1862:	}
         -: 1863:      else
-        1: 1864:	std::__insertion_sort(__first, __last, __comp);
-        1: 1864-block  0
-call    0 returned 1
-        1: 1865:    }
+    #####: 1864:	std::__insertion_sort(__first, __last, __comp);
+    %%%%%: 1864-block  0
+call    0 never executed
+    #####: 1865:    }
 ------------------
         -: 1866:
         -: 1867:  /// This is a helper function...
@@ -2575,11 +2575,11 @@ call    0 never executed
         -: 1915:  template<typename _RandomAccessIterator, typename _Size, typename _Compare>
         -: 1916:    _GLIBCXX20_CONSTEXPR
         -: 1917:    void
-       1*: 1918:    __introsort_loop(_RandomAccessIterator __first,
+    #####: 1918:    __introsort_loop(_RandomAccessIterator __first,
         -: 1919:		     _RandomAccessIterator __last,
         -: 1920:		     _Size __depth_limit, _Compare __comp)
         -: 1921:    {
-       1*: 1922:      while (__last - __first > int(_S_threshold))
+    #####: 1922:      while (__last - __first > int(_S_threshold))
         -: 1923:	{
     #####: 1924:	  if (__depth_limit == 0)
         -: 1925:	    {
@@ -2638,17 +2638,17 @@ branch  2 never executed (throw)
         -: 1935:    }
 ------------------
 _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_T1_:
-function _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_T1_ called 1 returned 100% blocks executed 45%
-        1: 1918:    __introsort_loop(_RandomAccessIterator __first,
+function _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_T1_ called 0 returned 0% blocks executed 0%
+    #####: 1918:    __introsort_loop(_RandomAccessIterator __first,
         -: 1919:		     _RandomAccessIterator __last,
         -: 1920:		     _Size __depth_limit, _Compare __comp)
         -: 1921:    {
-        1: 1922:      while (__last - __first > int(_S_threshold))
-        1: 1922-block  0
-        1: 1922-block  1
-call    0 returned 1
-branch  1 taken 0
-branch  2 taken 1 (fallthrough)
+    #####: 1922:      while (__last - __first > int(_S_threshold))
+    %%%%%: 1922-block  0
+    %%%%%: 1922-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
         -: 1923:	{
     #####: 1924:	  if (__depth_limit == 0)
     %%%%%: 1924-block  0
@@ -2686,17 +2686,17 @@ branch  2 never executed (throw)
         -: 1939:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1940:    _GLIBCXX20_CONSTEXPR
         -: 1941:    inline void
-       1*: 1942:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+    #####: 1942:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 1943:	   _Compare __comp)
         -: 1944:    {
-       1*: 1945:      if (__first != __last)
+    #####: 1945:      if (__first != __last)
         -: 1946:	{
-       1*: 1947:	  std::__introsort_loop(__first, __last,
-       1*: 1948:				std::__lg(__last - __first) * 2,
+    #####: 1947:	  std::__introsort_loop(__first, __last,
+    #####: 1948:				std::__lg(__last - __first) * 2,
         -: 1949:				__comp);
-       1*: 1950:	  std::__final_insertion_sort(__first, __last, __comp);
+    #####: 1950:	  std::__final_insertion_sort(__first, __last, __comp);
         -: 1951:	}
-       1*: 1952:    }
+    #####: 1952:    }
 ------------------
 _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEENS0_5__ops15_Iter_comp_iterIZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SL_E_EEEvT_SO_T0_:
 function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEENS0_5__ops15_Iter_comp_iterIZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SL_E_EEEvT_SO_T0_ called 0 returned 0% blocks executed 0%
@@ -2722,27 +2722,27 @@ call    0 never executed
     #####: 1952:    }
 ------------------
 _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_:
-function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 1 returned 100% blocks executed 100%
-        1: 1942:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SH_E_EEEvT_SK_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1942:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 1943:	   _Compare __comp)
         -: 1944:    {
-        1: 1945:      if (__first != __last)
-        1: 1945-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0
+    #####: 1945:      if (__first != __last)
+    %%%%%: 1945-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -: 1946:	{
-        1: 1947:	  std::__introsort_loop(__first, __last,
-call    0 returned 1
-        1: 1948:				std::__lg(__last - __first) * 2,
-        1: 1948-block  0
-call    0 returned 1
-call    1 returned 1
+    #####: 1947:	  std::__introsort_loop(__first, __last,
+call    0 never executed
+    #####: 1948:				std::__lg(__last - __first) * 2,
+    %%%%%: 1948-block  0
+call    0 never executed
+call    1 never executed
         -: 1949:				__comp);
-        1: 1950:	  std::__final_insertion_sort(__first, __last, __comp);
-call    0 returned 1
+    #####: 1950:	  std::__final_insertion_sort(__first, __last, __comp);
+call    0 never executed
         -: 1951:	}
-        1: 1952:    }
+    #####: 1952:    }
 ------------------
         -: 1953:
         -: 1954:  template<typename _RandomAccessIterator, typename _Size, typename _Compare>
@@ -5673,7 +5673,7 @@ call    0 returned 1
         -: 4879:  template<typename _RandomAccessIterator, typename _Compare>
         -: 4880:    _GLIBCXX20_CONSTEXPR
         -: 4881:    inline void
-       1*: 4882:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+    #####: 4882:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 4883:	 _Compare __comp)
         -: 4884:    {
         -: 4885:      // concept requirements
@@ -5685,8 +5685,8 @@ call    0 returned 1
         -: 4891:      __glibcxx_requires_valid_range(__first, __last);
         -: 4892:      __glibcxx_requires_irreflexive_pred(__first, __last, __comp);
         -: 4893:
-       1*: 4894:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
-       1*: 4895:    }
+    #####: 4894:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
+    #####: 4895:    }
 ------------------
 _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEEZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SJ_E_EvT_SL_T0_:
 function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS5_SaIS5_EEEEZNS3_9sortTestsERKNS3_7IConfigERKS7_IS4_SaIS4_EEEUlRKS5_SJ_E_EvT_SL_T0_ called 0 returned 0% blocks executed 0%
@@ -5709,8 +5709,8 @@ call    1 never executed
     #####: 4895:    }
 ------------------
 _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SF_E_EvT_SH_T0_:
-function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SF_E_EvT_SH_T0_ called 1 returned 100% blocks executed 100%
-        1: 4882:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEZNS2_9sortTestsERKNS2_7IConfigERKS7_EUlRKS3_SF_E_EvT_SH_T0_ called 0 returned 0% blocks executed 0%
+    #####: 4882:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 4883:	 _Compare __comp)
         -: 4884:    {
         -: 4885:      // concept requirements
@@ -5722,11 +5722,11 @@ function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6ve
         -: 4891:      __glibcxx_requires_valid_range(__first, __last);
         -: 4892:      __glibcxx_requires_irreflexive_pred(__first, __last, __comp);
         -: 4893:
-        1: 4894:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
-        1: 4894-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 4895:    }
+    #####: 4894:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
+    %%%%%: 4894-block  0
+call    0 never executed
+call    1 never executed
+    #####: 4895:    }
 ------------------
         -: 4896:
         -: 4897:  template<typename _InputIterator1, typename _InputIterator2,

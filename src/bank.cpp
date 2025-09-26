@@ -1,4 +1,15 @@
 #include "bank.h"
 
 Bank::Bank() : balance(0) {}
-int Bank::getBalance() const { return balance; }
+double Bank::getBalance() const { return balance; }
+
+void Bank::deposit(double amount)
+{
+    balance += amount;
+}
+
+bool Bank::withdraw(double amount) {
+    if (amount > balance) return false;
+    balance -= amount;
+    return true;
+}

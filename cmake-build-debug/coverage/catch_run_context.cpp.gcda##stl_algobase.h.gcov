@@ -234,20 +234,20 @@
         -:  230:  template<typename _Tp>
         -:  231:    _GLIBCXX14_CONSTEXPR
         -:  232:    inline const _Tp&
-function _ZSt3minIyERKT_S2_S2_ called 0 returned 0% blocks executed 0%
-    #####:  233:    min(const _Tp& __a, const _Tp& __b)
+function _ZSt3minIyERKT_S2_S2_ called 12 returned 100% blocks executed 75%
+       12:  233:    min(const _Tp& __a, const _Tp& __b)
         -:  234:    {
         -:  235:      // concept requirements
         -:  236:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  237:      //return __b < __a ? __b : __a;
-    #####:  238:      if (__b < __a)
-    %%%%%:  238-block  0
-branch  0 never executed (fallthrough)
-branch  1 never executed
+       12:  238:      if (__b < __a)
+       12:  238-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 12
     #####:  239:	return __b;
     %%%%%:  239-block  0
-    #####:  240:      return __a;
-    %%%%%:  240-block  0
+       12:  240:      return __a;
+       12:  240-block  0
         -:  241:    }
         -:  242:
         -:  243:  /**
@@ -264,18 +264,18 @@ branch  1 never executed
         -:  254:  template<typename _Tp>
         -:  255:    _GLIBCXX14_CONSTEXPR
         -:  256:    inline const _Tp&
-function _ZSt3maxIyERKT_S2_S2_ called 0 returned 0% blocks executed 0%
-    #####:  257:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxIyERKT_S2_S2_ called 6 returned 100% blocks executed 75%
+        6:  257:    max(const _Tp& __a, const _Tp& __b)
         -:  258:    {
         -:  259:      // concept requirements
         -:  260:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  261:      //return  __a < __b ? __b : __a;
-    #####:  262:      if (__a < __b)
-    %%%%%:  262-block  0
-branch  0 never executed (fallthrough)
-branch  1 never executed
-    #####:  263:	return __b;
-    %%%%%:  263-block  0
+        6:  262:      if (__a < __b)
+        6:  262-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:  263:	return __b;
+        6:  263-block  0
     #####:  264:      return __a;
     %%%%%:  264-block  0
         -:  265:    }

@@ -151,32 +151,32 @@
         -:  147:      _Compare _M_comp;
         -:  148:
         -:  149:      explicit _GLIBCXX14_CONSTEXPR
-function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EC2ES6_ called 43 returned 100% blocks executed 100%
-       43:  150:      _Iter_comp_iter(_Compare __comp)
-       43:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
-       43:  151-block  0
-call    0 returned 43
-       43:  152:      { }
+function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EC2ES6_ called 33 returned 100% blocks executed 100%
+       33:  150:      _Iter_comp_iter(_Compare __comp)
+       33:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
+       33:  151-block  0
+call    0 returned 33
+       33:  152:      { }
         -:  153:
         -:  154:      template<typename _Iterator1, typename _Iterator2>
         -:  155:        _GLIBCXX14_CONSTEXPR
         -:  156:        bool
-function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EclIPKcSA_EEbT_T0_ called 88 returned 100% blocks executed 100%
-       88:  157:        operator()(_Iterator1 __it1, _Iterator2 __it2)
-       88:  158:        { return bool(_M_comp(*__it1, *__it2)); }
-       88:  158-block  0
-call    0 returned 88
+function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EclIPKcSA_EEbT_T0_ called 58 returned 100% blocks executed 100%
+       58:  157:        operator()(_Iterator1 __it1, _Iterator2 __it2)
+       58:  158:        { return bool(_M_comp(*__it1, *__it2)); }
+       58:  158-block  0
+call    0 returned 58
         -:  159:    };
         -:  160:
         -:  161:  template<typename _Compare>
         -:  162:    _GLIBCXX14_CONSTEXPR
         -:  163:    inline _Iter_comp_iter<_Compare>
-function _ZN9__gnu_cxx5__ops16__iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EENS0_15_Iter_comp_iterIT_EES8_ called 43 returned 100% blocks executed 100%
-       43:  164:    __iter_comp_iter(_Compare __comp)
-       43:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
-       43:  165-block  0
-call    0 returned 43
-call    1 returned 43
+function _ZN9__gnu_cxx5__ops16__iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EENS0_15_Iter_comp_iterIT_EES8_ called 33 returned 100% blocks executed 100%
+       33:  164:    __iter_comp_iter(_Compare __comp)
+       33:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
+       33:  165-block  0
+call    0 returned 33
+call    1 returned 33
         -:  166:
         -:  167:  template<typename _Compare>
         -:  168:    struct _Iter_comp_val

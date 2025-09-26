@@ -2876,13 +2876,13 @@ call    0 never executed
         -: 1512:  //  Precondition: __n > 0.
         -: 1513:  template<typename _Tp>
         -: 1514:    inline _GLIBCXX_CONSTEXPR _Tp
-function _ZSt4__lgIxET_S0_ called 0 returned 0% blocks executed 0%
-    #####: 1515:    __lg(_Tp __n)
+function _ZSt4__lgIxET_S0_ called 1 returned 100% blocks executed 100%
+        1: 1515:    __lg(_Tp __n)
         -: 1516:    {
         -: 1517:#if __cplusplus >= 201402L
-    #####: 1518:      return std::__bit_width(make_unsigned_t<_Tp>(__n)) - 1;
-    %%%%%: 1518-block  0
-call    0 never executed
+        1: 1518:      return std::__bit_width(make_unsigned_t<_Tp>(__n)) - 1;
+        1: 1518-block  0
+call    0 returned 1
         -: 1519:#else
         -: 1520:      // Use +__n so it promotes to at least int.
         -: 1521:      const int __sz = sizeof(+__n);

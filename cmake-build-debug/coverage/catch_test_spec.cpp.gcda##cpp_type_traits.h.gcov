@@ -608,10 +608,10 @@
         -:  604:  template<typename _Iterator>
         -:  605:    _GLIBCXX20_CONSTEXPR
         -:  606:    inline _Iterator
-function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEET_SC_ called 2 returned 100% blocks executed 100%
-        2:  607:    __miter_base(_Iterator __it)
-        2:  608:    { return __it; }
-        2:  608-block  0
+function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEET_SC_ called 0 returned 0% blocks executed 0%
+    #####:  607:    __miter_base(_Iterator __it)
+    #####:  608:    { return __it; }
+    %%%%%:  608-block  0
         -:  609:
         -:  610:_GLIBCXX_END_NAMESPACE_VERSION
         -:  611:} // namespace

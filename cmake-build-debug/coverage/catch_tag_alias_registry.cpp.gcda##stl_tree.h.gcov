@@ -364,9 +364,9 @@ function _ZSteqRKSt17_Rb_tree_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11c
         -:  344:      : _M_node() { }
         -:  345:
         -:  346:      explicit
-function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEEC1EPKSt18_Rb_tree_node_base called 2 returned 100% blocks executed 100%
-        2:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        2:  348:      : _M_node(__x) { }
+function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEEC1EPKSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
+    #####:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    #####:  348:      : _M_node(__x) { }
         -:  349:
 function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEEC1ERKSt17_Rb_tree_iteratorISA_E called 0 returned 0% blocks executed 0%
     #####:  350:      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
@@ -427,10 +427,10 @@ function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11
         -:  393:      }
         -:  394:
         -:  395:      friend bool
-function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEESD_ called 1 returned 100% blocks executed 100%
-        1:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-        1:  397:      { return __x._M_node == __y._M_node; }
-        1:  397-block  0
+function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEESD_ called 0 returned 0% blocks executed 0%
+    #####:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+    #####:  397:      { return __x._M_node == __y._M_node; }
+    %%%%%:  397-block  0
         -:  398:
         -:  399:#if ! __cpp_lib_three_way_comparison
         -:  400:      friend bool
@@ -801,17 +801,17 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
         -:  733:      { return this->_M_impl._M_header._M_right; }
         -:  734:
         -:  735:      _Link_type
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE9_M_mbeginEv called 1 returned 100% blocks executed 100%
-        1:  736:      _M_mbegin() const _GLIBCXX_NOEXCEPT
-        1:  737:      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
-        1:  737-block  0
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE9_M_mbeginEv called 0 returned 0% blocks executed 0%
+    #####:  736:      _M_mbegin() const _GLIBCXX_NOEXCEPT
+    #####:  737:      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
+    %%%%%:  737-block  0
         -:  738:
         -:  739:      _Link_type
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_beginEv called 1 returned 100% blocks executed 100%
-        1:  740:      _M_begin() _GLIBCXX_NOEXCEPT
-        1:  741:      { return _M_mbegin(); }
-        1:  741-block  0
-call    0 returned 1
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_beginEv called 0 returned 0% blocks executed 0%
+    #####:  740:      _M_begin() _GLIBCXX_NOEXCEPT
+    #####:  741:      { return _M_mbegin(); }
+    %%%%%:  741-block  0
+call    0 never executed
         -:  742:
         -:  743:      _Const_Link_type
 function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_beginEv called 0 returned 0% blocks executed 0%
@@ -1076,13 +1076,13 @@ call    0 never executed
         -:  982:      { }
         -:  983:#endif
         -:  984:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EED1Ev called 1 returned 100% blocks executed 100%
-        1:  985:      ~_Rb_tree() _GLIBCXX_NOEXCEPT
-        1:  986:      { _M_erase(_M_begin()); }
-        1:  986-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EED1Ev called 0 returned 0% blocks executed 0%
+    #####:  985:      ~_Rb_tree() _GLIBCXX_NOEXCEPT
+    #####:  986:      { _M_erase(_M_begin()); }
+    %%%%%:  986-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  987:
         -:  988:      _Rb_tree&
         -:  989:      operator=(const _Rb_tree& __x);
@@ -1103,12 +1103,12 @@ call    0 never executed
     %%%%%:  998-block  1
         -:  999:
         -: 1000:      const_iterator
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE5beginEv called 1 returned 100% blocks executed 100%
-        1: 1001:      begin() const _GLIBCXX_NOEXCEPT
-        1: 1002:      { return const_iterator(this->_M_impl._M_header._M_left); }
-        1: 1002-block  0
-call    0 returned 1
-        1: 1002-block  1
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE5beginEv called 0 returned 0% blocks executed 0%
+    #####: 1001:      begin() const _GLIBCXX_NOEXCEPT
+    #####: 1002:      { return const_iterator(this->_M_impl._M_header._M_left); }
+    %%%%%: 1002-block  0
+call    0 never executed
+    %%%%%: 1002-block  1
         -: 1003:
         -: 1004:      iterator
 function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE3endEv called 0 returned 0% blocks executed 0%
@@ -1119,12 +1119,12 @@ call    0 never executed
     %%%%%: 1006-block  1
         -: 1007:
         -: 1008:      const_iterator
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE3endEv called 1 returned 100% blocks executed 100%
-        1: 1009:      end() const _GLIBCXX_NOEXCEPT
-        1: 1010:      { return const_iterator(&this->_M_impl._M_header); }
-        1: 1010-block  0
-call    0 returned 1
-        1: 1010-block  1
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE3endEv called 0 returned 0% blocks executed 0%
+    #####: 1009:      end() const _GLIBCXX_NOEXCEPT
+    #####: 1010:      { return const_iterator(&this->_M_impl._M_header); }
+    %%%%%: 1010-block  0
+call    0 never executed
+    %%%%%: 1010-block  1
         -: 1011:
         -: 1012:      reverse_iterator
         -: 1013:      rbegin() _GLIBCXX_NOEXCEPT
@@ -2071,16 +2071,16 @@ branch  2 never executed (throw)
         -: 1927:  template<typename _Key, typename _Val, typename _KeyOfValue,
         -: 1928:	   typename _Compare, typename _Alloc>
         -: 1929:    void
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E called 1 returned 100% blocks executed 38%
-        1: 1930:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch8TagAliasEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E called 0 returned 0% blocks executed 0%
+    #####: 1930:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 1931:    _M_erase(_Link_type __x)
         -: 1932:    {
         -: 1933:      // Erase without rebalancing.
-        1: 1934:      while (__x != 0)
-        1: 1934-block  0
-        1: 1934-block  1
-branch  0 taken 0
-branch  1 taken 1 (fallthrough)
+    #####: 1934:      while (__x != 0)
+    %%%%%: 1934-block  0
+    %%%%%: 1934-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
         -: 1935:	{
     #####: 1936:	  _M_erase(_S_right(__x));
     %%%%%: 1936-block  0
@@ -2092,7 +2092,7 @@ call    0 never executed
 call    0 never executed
     #####: 1939:	  __x = __y;
         -: 1940:	}
-        1: 1941:    }
+    #####: 1941:    }
         -: 1942:
         -: 1943:  template<typename _Key, typename _Val, typename _KeyOfValue,
         -: 1944:	   typename _Compare, typename _Alloc>

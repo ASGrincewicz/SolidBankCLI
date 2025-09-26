@@ -147,12 +147,12 @@
         -:  143:    {
         -:  144:      _Key_compare		_M_key_compare;
         -:  145:
-function _ZNSt20_Rb_tree_key_compareISt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2Ev called 2 returned 100% blocks executed 100%
-        2:  146:      _Rb_tree_key_compare()
+function _ZNSt20_Rb_tree_key_compareISt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  146:      _Rb_tree_key_compare()
         -:  147:      _GLIBCXX_NOEXCEPT_IF(
         -:  148:	is_nothrow_default_constructible<_Key_compare>::value)
         -:  149:      : _M_key_compare()
-        2:  150:      { }
+    #####:  150:      { }
         -:  151:
         -:  152:      _Rb_tree_key_compare(const _Key_compare& __comp)
         -:  153:      : _M_key_compare(__comp)
@@ -746,17 +746,17 @@ call    0 never executed
         -:  666:	{
         -:  667:	  typedef _Rb_tree_key_compare<_Key_compare> _Base_key_compare;
         -:  668:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE13_Rb_tree_implISC_Lb1EEC1Ev called 1 returned 100% blocks executed 100%
-        1:  669:	  _Rb_tree_impl()
-        1:  669-block  0
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE13_Rb_tree_implISC_Lb1EEC1Ev called 0 returned 0% blocks executed 0%
+    #####:  669:	  _Rb_tree_impl()
+    %%%%%:  669-block  0
         -:  670:	    _GLIBCXX_NOEXCEPT_IF(
         -:  671:		is_nothrow_default_constructible<_Node_allocator>::value
         -:  672:		&& is_nothrow_default_constructible<_Base_key_compare>::value )
-        1:  673:	  : _Node_allocator()
-        1:  673-block  0
-call    0 returned 1
-call    1 returned 1
-        1:  674:	  { }
+    #####:  673:	  : _Node_allocator()
+    %%%%%:  673-block  0
+call    0 never executed
+call    1 never executed
+    #####:  674:	  { }
         -:  675:
         -:  676:	  _Rb_tree_impl(const _Rb_tree_impl& __x)
         -:  677:	  : _Node_allocator(_Alloc_traits::_S_select_on_copy(__x))
@@ -1039,10 +1039,10 @@ call    0 never executed
         -:  927:#if __cplusplus < 201103L
         -:  928:      _Rb_tree() { }
         -:  929:#else
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EEC1Ev called 1 returned 100% blocks executed 100%
-        1:  930:      _Rb_tree() = default;
-        1:  930-block  0
-call    0 returned 1
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EEC1Ev called 0 returned 0% blocks executed 0%
+    #####:  930:      _Rb_tree() = default;
+    %%%%%:  930-block  0
+call    0 never executed
         -:  931:#endif
         -:  932:
         -:  933:      _Rb_tree(const _Compare& __comp,

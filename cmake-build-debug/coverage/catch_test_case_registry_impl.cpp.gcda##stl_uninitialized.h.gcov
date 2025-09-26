@@ -114,27 +114,27 @@
         -:  110:  template<typename _InputIterator, typename _ForwardIterator>
         -:  111:    _GLIBCXX20_CONSTEXPR
         -:  112:    _ForwardIterator
-function _ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 1 returned 100% blocks executed 100%
-        1:  113:    __do_uninit_copy(_InputIterator __first, _InputIterator __last,
+function _ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
+    #####:  113:    __do_uninit_copy(_InputIterator __first, _InputIterator __last,
         -:  114:		     _ForwardIterator __result)
         -:  115:    {
-        1:  116:      _ForwardIterator __cur = __result;
+    #####:  116:      _ForwardIterator __cur = __result;
         -:  117:      __try
         -:  118:	{
-        2:  119:	  for (; __first != __last; ++__first, (void)++__cur)
-        1:  119-block  0
-call    0 returned 1
-        2:  119-block  1
-call    1 returned 2
-branch  2 taken 1
-branch  3 taken 1 (fallthrough)
-        1:  120:	    std::_Construct(std::__addressof(*__cur), *__first);
-        1:  120-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-        1:  121:	  return __cur;
-        1:  121-block  0
+    #####:  119:	  for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%:  119-block  0
+call    0 never executed
+    %%%%%:  119-block  1
+call    1 never executed
+branch  2 never executed
+branch  3 never executed (fallthrough)
+    #####:  120:	    std::_Construct(std::__addressof(*__cur), *__first);
+    %%%%%:  120-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  121:	  return __cur;
+    %%%%%:  121-block  0
         -:  122:	}
         -:  123:      __catch(...)
         -:  124:	{
@@ -148,12 +148,12 @@ call    2 returned 1
         -:  132:    {
         -:  133:      template<typename _InputIterator, typename _ForwardIterator>
         -:  134:        static _ForwardIterator
-function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_ called 1 returned 100% blocks executed 100%
-        1:  135:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+    #####:  135:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:  136:		      _ForwardIterator __result)
-        1:  137:	{ return std::__do_uninit_copy(__first, __last, __result); }
-        1:  137-block  0
-call    0 returned 1
+    #####:  137:	{ return std::__do_uninit_copy(__first, __last, __result); }
+    %%%%%:  137-block  0
+call    0 never executed
         -:  138:    };
         -:  139:
         -:  140:  template<>
@@ -179,8 +179,8 @@ call    0 returned 1
         -:  160:  */
         -:  161:  template<typename _InputIterator, typename _ForwardIterator>
         -:  162:    inline _ForwardIterator
-function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 1 returned 100% blocks executed 100%
-        1:  163:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
+    #####:  163:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  164:		       _ForwardIterator __result)
         -:  165:    {
         -:  166:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -191,20 +191,20 @@ function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch14Test
         -:  171:      // _ValueType1 must be trivially-copyable to use memmove, so don't
         -:  172:      // bother optimizing to std::copy if it isn't.
         -:  173:      // XXX Unnecessary because std::copy would check it anyway?
-        1:  174:      const bool __can_memmove = __is_trivial(_ValueType1);
+    #####:  174:      const bool __can_memmove = __is_trivial(_ValueType1);
         -:  175:
         -:  176:#if __cplusplus < 201103L
         -:  177:      typedef typename iterator_traits<_InputIterator>::reference _From;
         -:  178:#else
         -:  179:      using _From = decltype(*__first);
         -:  180:#endif
-        1:  181:      const bool __assignable
+    #####:  181:      const bool __assignable
         -:  182:	= _GLIBCXX_USE_ASSIGN_FOR_INIT(_ValueType2, _From);
         -:  183:
         -:  184:      return std::__uninitialized_copy<__can_memmove && __assignable>::
-        1:  185:	__uninit_copy(__first, __last, __result);
-        1:  185-block  0
-call    0 returned 1
+    #####:  185:	__uninit_copy(__first, __last, __result);
+    %%%%%:  185-block  0
+call    0 never executed
         -:  186:    }
         -:  187:
         -:  188:  /// @cond undocumented
@@ -385,23 +385,23 @@ call    0 returned 1
         -:  363:  template<typename _InputIterator, typename _ForwardIterator, typename _Tp>
         -:  364:    _GLIBCXX20_CONSTEXPR
         -:  365:    inline _ForwardIterator
-function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_S3_ET0_T_SC_SB_RSaIT1_E called 1 returned 100% blocks executed 71%
-        1:  366:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS3_SaIS3_EEEEPS3_S3_ET0_T_SC_SB_RSaIT1_E called 0 returned 0% blocks executed 0%
+    #####:  366:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  367:			   _ForwardIterator __result, allocator<_Tp>&)
         -:  368:    {
         -:  369:#ifdef __cpp_lib_is_constant_evaluated
-        1:  370:      if (std::is_constant_evaluated())
-        1:  370-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####:  370:      if (std::is_constant_evaluated())
+    %%%%%:  370-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
     #####:  371:	return std::__do_uninit_copy(__first, __last, __result);
     %%%%%:  371-block  0
 call    0 never executed
         -:  372:#endif
-        1:  373:      return std::uninitialized_copy(__first, __last, __result);
-        1:  373-block  0
-call    0 returned 1
+    #####:  373:      return std::uninitialized_copy(__first, __last, __result);
+    %%%%%:  373-block  0
+call    0 never executed
         -:  374:    }
         -:  375:#endif
         -:  376:

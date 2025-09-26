@@ -1403,16 +1403,16 @@ call    1 never executed
         -: 1314:       */
         -: 1315:      _GLIBCXX20_CONSTEXPR
         -: 1316:      void
-function _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8pop_backEv called 5 returned 100% blocks executed 100%
-        5: 1317:      pop_back() _GLIBCXX_NOEXCEPT
+function _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8pop_backEv called 0 returned 0% blocks executed 0%
+    #####: 1317:      pop_back() _GLIBCXX_NOEXCEPT
         -: 1318:      {
         -: 1319:	__glibcxx_requires_nonempty();
-        5: 1320:	--this->_M_impl._M_finish;
-        5: 1321:	_Alloc_traits::destroy(this->_M_impl, this->_M_impl._M_finish);
-        5: 1321-block  0
-call    0 returned 5
+    #####: 1320:	--this->_M_impl._M_finish;
+    #####: 1321:	_Alloc_traits::destroy(this->_M_impl, this->_M_impl._M_finish);
+    %%%%%: 1321-block  0
+call    0 never executed
         -: 1322:	_GLIBCXX_ASAN_ANNOTATE_SHRINK(1);
-        5: 1323:      }
+    #####: 1323:      }
         -: 1324:
         -: 1325:#if __cplusplus >= 201103L
         -: 1326:      /**

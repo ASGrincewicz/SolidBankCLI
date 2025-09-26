@@ -8,7 +8,10 @@
 class Bank {
 public:
     Bank();
-    int getBalance() const;
+    double getBalance() const;
+    void deposit(double);
+    bool withdraw(double);
+
 private:
-    int balance;
+    double balance;
 };

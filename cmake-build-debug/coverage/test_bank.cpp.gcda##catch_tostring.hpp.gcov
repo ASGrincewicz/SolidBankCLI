@@ -150,7 +150,7 @@
         -:  146:        // This function dispatches all stringification requests inside of Catch.
         -:  147:        // Should be preferably called fully qualified, like ::Catch::Detail::stringify
         -:  148:        template <typename T>
-function _ZN5Catch6Detail9stringifyIiEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 0 returned 0% blocks executed 0%
+function _ZN5Catch6Detail9stringifyIbEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 0 returned 0% blocks executed 0%
     #####:  149:        std::string stringify(const T& e) {
     #####:  150:            return ::Catch::StringMaker<std::remove_cv_t<std::remove_reference_t<T>>>::convert(e);
     %%%%%:  150-block  0
@@ -274,9 +274,18 @@ call    0 never executed
         -:  267:
         -:  268:    template<>
         -:  269:    struct StringMaker<bool> {
-        -:  270:        static std::string convert(bool b) {
+function _ZN5Catch11StringMakerIbvE7convertB5cxx11Eb called 0 returned 0% blocks executed 0%
+    #####:  270:        static std::string convert(bool b) {
         -:  271:            using namespace std::string_literals;
-        -:  272:            return b ? "true"s : "false"s;
+    #####:  272:            return b ? "true"s : "false"s;
+    %%%%%:  272-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  272-block  1
+call    2 never executed
+    %%%%%:  272-block  2
+call    3 never executed
+    %%%%%:  272-block  3
         -:  273:        }
         -:  274:    };
         -:  275:

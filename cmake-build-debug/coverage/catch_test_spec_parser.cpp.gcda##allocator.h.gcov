@@ -164,29 +164,29 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-       5*:  163:      allocator() _GLIBCXX_NOTHROW { }
+    #####:  163:      allocator() _GLIBCXX_NOTHROW { }
     %%%%%:  163-block  0
     %%%%%:  163-block  1
     %%%%%:  163-block  2
     %%%%%:  163-block  3
-        4:  163-block  4
+    %%%%%:  163-block  4
     %%%%%:  163-block  5
     %%%%%:  163-block  6
-        1:  163-block  7
+    %%%%%:  163-block  7
         -:  164:
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
         -:  167:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-       7*:  168:      : __allocator_base<_Tp>(__a) { }
-        2:  168-block  0
-        2:  168-block  1
-        2:  168-block  2
+    #####:  168:      : __allocator_base<_Tp>(__a) { }
+    %%%%%:  168-block  0
+    %%%%%:  168-block  1
+    %%%%%:  168-block  2
     %%%%%:  168-block  3
     %%%%%:  168-block  4
     %%%%%:  168-block  5
     %%%%%:  168-block  6
     %%%%%:  168-block  7
-        1:  168-block  8
+    %%%%%:  168-block  8
         -:  169:
         -:  170:#if __cplusplus >= 201103L
         -:  171:      // Avoid implicit deprecation.
@@ -202,7 +202,7 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-       3*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+    #####:  184:      ~allocator() _GLIBCXX_NOTHROW { }
     $$$$$:  184-block  0
     $$$$$:  184-block  1
     $$$$$:  184-block  2
@@ -212,18 +212,18 @@
         -:  188:      constexpr _Tp*
         -:  189:      allocate(size_t __n)
         -:  190:      {
-       2*:  191:	if (std::__is_constant_evaluated())
+    #####:  191:	if (std::__is_constant_evaluated())
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed
-        1:  191-block  0
-call    3 returned 1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
-        1:  191-block  1
-call    6 returned 1
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
+    %%%%%:  191-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:  191-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
     %%%%%:  191-block  2
 call    9 never executed
 branch 10 never executed (fallthrough)
@@ -297,13 +297,13 @@ branch  8 never executed (throw)
     %%%%%:  195-block  7
         -:  196:	  }
         -:  197:
-       2*:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
+    #####:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
     %%%%%:  198-block  0
 call    0 never executed
-        1:  198-block  1
-call    1 returned 1
-        1:  198-block  2
-call    2 returned 1
+    %%%%%:  198-block  1
+call    1 never executed
+    %%%%%:  198-block  2
+call    2 never executed
     %%%%%:  198-block  3
 call    3 never executed
     %%%%%:  198-block  4

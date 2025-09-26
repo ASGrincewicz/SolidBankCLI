@@ -151,9 +151,9 @@
         -:  147:      _Compare _M_comp;
         -:  148:
         -:  149:      explicit _GLIBCXX14_CONSTEXPR
-       1*:  150:      _Iter_comp_iter(_Compare __comp)
-       1*:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
-       1*:  152:      { }
+    #####:  150:      _Iter_comp_iter(_Compare __comp)
+    #####:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
+    #####:  152:      { }
 ------------------
 _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKSt4pairIyS7_ESF_E_EC2ESG_:
 function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKSt4pairIyS7_ESF_E_EC2ESG_ called 0 returned 0% blocks executed 0%
@@ -164,12 +164,12 @@ call    0 never executed
     #####:  152:      { }
 ------------------
 _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EC2ESE_:
-function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EC2ESE_ called 1 returned 100% blocks executed 100%
-        1:  150:      _Iter_comp_iter(_Compare __comp)
-        1:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
-        1:  151-block  0
-call    0 returned 1
-        1:  152:      { }
+function _ZN9__gnu_cxx5__ops15_Iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EC2ESE_ called 0 returned 0% blocks executed 0%
+    #####:  150:      _Iter_comp_iter(_Compare __comp)
+    #####:  151:	: _M_comp(_GLIBCXX_MOVE(__comp))
+    %%%%%:  151-block  0
+call    0 never executed
+    #####:  152:      { }
 ------------------
         -:  153:
         -:  154:      template<typename _Iterator1, typename _Iterator2>
@@ -201,8 +201,8 @@ call    2 never executed
         -:  161:  template<typename _Compare>
         -:  162:    _GLIBCXX14_CONSTEXPR
         -:  163:    inline _Iter_comp_iter<_Compare>
-       1*:  164:    __iter_comp_iter(_Compare __comp)
-       1*:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
+    #####:  164:    __iter_comp_iter(_Compare __comp)
+    #####:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
 ------------------
 _ZN9__gnu_cxx5__ops16__iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKSt4pairIyS7_ESF_E_EENS0_15_Iter_comp_iterIT_EESI_:
 function _ZN9__gnu_cxx5__ops16__iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKSt4pairIyS7_ESF_E_EENS0_15_Iter_comp_iterIT_EESI_ called 0 returned 0% blocks executed 0%
@@ -213,12 +213,12 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZN9__gnu_cxx5__ops16__iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EENS0_15_Iter_comp_iterIT_EESG_:
-function _ZN9__gnu_cxx5__ops16__iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EENS0_15_Iter_comp_iterIT_EESG_ called 1 returned 100% blocks executed 100%
-        1:  164:    __iter_comp_iter(_Compare __comp)
-        1:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
-        1:  165-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZN9__gnu_cxx5__ops16__iter_comp_iterIZN5Catch9sortTestsERKNS2_7IConfigERKSt6vectorINS2_14TestCaseHandleESaIS7_EEEUlRKS7_SD_E_EENS0_15_Iter_comp_iterIT_EESG_ called 0 returned 0% blocks executed 0%
+    #####:  164:    __iter_comp_iter(_Compare __comp)
+    #####:  165:    { return _Iter_comp_iter<_Compare>(_GLIBCXX_MOVE(__comp)); }
+    %%%%%:  165-block  0
+call    0 never executed
+call    1 never executed
 ------------------
         -:  166:
         -:  167:  template<typename _Compare>

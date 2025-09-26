@@ -483,7 +483,9 @@
         -:  479:      [[__nodiscard__,__gnu__::__always_inline__]]
         -:  480:      static _GLIBCXX20_CONSTEXPR pointer
         -:  481:      allocate(allocator_type& __a, size_type __n)
-        -:  482:      { return __a.allocate(__n); }
+        1:  482:      { return __a.allocate(__n); }
+        1:  482-block  0
+        1:  482-block  1
         -:  483:
         -:  484:      /**
         -:  485:       *  @brief  Allocate memory.
@@ -517,8 +519,8 @@
         -:  513:      [[__gnu__::__always_inline__]]
         -:  514:      static _GLIBCXX20_CONSTEXPR void
         -:  515:      deallocate(allocator_type& __a, pointer __p, size_type __n)
-     1926:  516:      { __a.deallocate(__p, __n); }
-     1926:  516-block  0
+    #####:  516:      { __a.deallocate(__p, __n); }
+    %%%%%:  516-block  0
         -:  517:
         -:  518:      /**
         -:  519:       *  @brief  Construct an object of type `_Up`
@@ -577,7 +579,7 @@
         -:  572:#if __cplusplus <= 201703L
         -:  573:	return __a.max_size();
         -:  574:#else
-        -:  575:	return size_t(-1) / sizeof(value_type);
+        3:  575:	return size_t(-1) / sizeof(value_type);
         -:  576:#endif
         -:  577:      }
         -:  578:

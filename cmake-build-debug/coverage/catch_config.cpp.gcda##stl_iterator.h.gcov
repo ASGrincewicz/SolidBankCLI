@@ -1077,13 +1077,13 @@
         -: 1073:      : _M_current(_Iterator()) { }
         -: 1074:
         -: 1075:      explicit _GLIBCXX20_CONSTEXPR
-       4*: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-       4*: 1077:      : _M_current(__i) { }
+    #####: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+    #####: 1077:      : _M_current(__i) { }
 ------------------
 _ZN9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEC1ERKS3_:
-function _ZN9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEC1ERKS3_ called 4 returned 100% blocks executed 100%
-        4: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-        4: 1077:      : _M_current(__i) { }
+function _ZN9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEC1ERKS3_ called 0 returned 0% blocks executed 0%
+    #####: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+    #####: 1077:      : _M_current(__i) { }
 ------------------
 _ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC1ERKS8_:
 function _ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC1ERKS8_ called 0 returned 0% blocks executed 0%
@@ -1126,14 +1126,14 @@ function _ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_t
         -: 1096:      // Forward iterator requirements
         -: 1097:      _GLIBCXX20_CONSTEXPR
         -: 1098:      reference
-       1*: 1099:      operator*() const _GLIBCXX_NOEXCEPT
-       1*: 1100:      { return *_M_current; }
+    #####: 1099:      operator*() const _GLIBCXX_NOEXCEPT
+    #####: 1100:      { return *_M_current; }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEdeEv:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEdeEv called 1 returned 100% blocks executed 100%
-        1: 1099:      operator*() const _GLIBCXX_NOEXCEPT
-        1: 1100:      { return *_M_current; }
-        1: 1100-block  0
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEdeEv called 0 returned 0% blocks executed 0%
+    #####: 1099:      operator*() const _GLIBCXX_NOEXCEPT
+    #####: 1100:      { return *_M_current; }
+    %%%%%: 1100-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv called 0 returned 0% blocks executed 0%
@@ -1252,8 +1252,8 @@ function _ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_t
         -: 1154:
         -: 1155:      _GLIBCXX20_CONSTEXPR
         -: 1156:      __normal_iterator
-       1*: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
-       1*: 1158:      { return __normal_iterator(_M_current - __n); }
+    #####: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1158:      { return __normal_iterator(_M_current - __n); }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEmiEx:
 function _ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEmiEx called 0 returned 0% blocks executed 0%
@@ -1264,12 +1264,12 @@ call    0 never executed
     %%%%%: 1158-block  1
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEmiEx:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEmiEx called 1 returned 100% blocks executed 100%
-        1: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
-        1: 1158:      { return __normal_iterator(_M_current - __n); }
-        1: 1158-block  0
-call    0 returned 1
-        1: 1158-block  1
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEmiEx called 0 returned 0% blocks executed 0%
+    #####: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1158:      { return __normal_iterator(_M_current - __n); }
+    %%%%%: 1158-block  0
+call    0 never executed
+    %%%%%: 1158-block  1
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch12ReporterSpecESt6vectorIS2_SaIS2_EEEmiEx:
 function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch12ReporterSpecESt6vectorIS2_SaIS2_EEEmiEx called 0 returned 0% blocks executed 0%
@@ -1282,14 +1282,14 @@ call    0 never executed
         -: 1159:
         -: 1160:      _GLIBCXX20_CONSTEXPR
         -: 1161:      const _Iterator&
-       4*: 1162:      base() const _GLIBCXX_NOEXCEPT
-       4*: 1163:      { return _M_current; }
+    #####: 1162:      base() const _GLIBCXX_NOEXCEPT
+    #####: 1163:      { return _M_current; }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEE4baseEv:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEE4baseEv called 4 returned 100% blocks executed 100%
-        4: 1162:      base() const _GLIBCXX_NOEXCEPT
-        4: 1163:      { return _M_current; }
-        4: 1163-block  0
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEE4baseEv called 0 returned 0% blocks executed 0%
+    #####: 1162:      base() const _GLIBCXX_NOEXCEPT
+    #####: 1163:      { return _M_current; }
+    %%%%%: 1163-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv called 0 returned 0% blocks executed 0%
@@ -1538,10 +1538,10 @@ call    1 never executed
         -: 1331:  template<typename _Iterator, typename _Container>
         -: 1332:    _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 1333:    inline typename __normal_iterator<_Iterator, _Container>::difference_type
-       1*: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+    #####: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
         -: 1335:	      const __normal_iterator<_Iterator, _Container>& __rhs)
         -: 1336:    _GLIBCXX_NOEXCEPT
-       1*: 1337:    { return __lhs.base() - __rhs.base(); }
+    #####: 1337:    { return __lhs.base() - __rhs.base(); }
 ------------------
 _ZN9__gnu_cxxmiIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSE_SH_:
 function _ZN9__gnu_cxxmiIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSE_SH_ called 0 returned 0% blocks executed 0%
@@ -1554,14 +1554,14 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZN9__gnu_cxxmiIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_:
-function _ZN9__gnu_cxxmiIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_ called 1 returned 100% blocks executed 100%
-        1: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+function _ZN9__gnu_cxxmiIPN5Catch21ProcessedReporterSpecESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_ called 0 returned 0% blocks executed 0%
+    #####: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
         -: 1335:	      const __normal_iterator<_Iterator, _Container>& __rhs)
         -: 1336:    _GLIBCXX_NOEXCEPT
-        1: 1337:    { return __lhs.base() - __rhs.base(); }
-        1: 1337-block  0
-call    0 returned 1
-call    1 returned 1
+    #####: 1337:    { return __lhs.base() - __rhs.base(); }
+    %%%%%: 1337-block  0
+call    0 never executed
+call    1 never executed
 ------------------
 _ZN9__gnu_cxxmiIPN5Catch12ReporterSpecESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_:
 function _ZN9__gnu_cxxmiIPN5Catch12ReporterSpecESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_ called 0 returned 0% blocks executed 0%

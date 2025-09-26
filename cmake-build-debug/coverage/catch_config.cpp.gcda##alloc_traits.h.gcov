@@ -99,13 +99,13 @@
         -:   95:
         -:   96:    [[__gnu__::__always_inline__]]
         -:   97:    static constexpr _Alloc _S_select_on_copy(const _Alloc& __a)
-       1*:   98:    { return _Base_type::select_on_container_copy_construction(__a); }
+    #####:   98:    { return _Base_type::select_on_container_copy_construction(__a); }
     %%%%%:   98-block  0
     %%%%%:   98-block  1
     %%%%%:   98-block  2
     %%%%%:   98-block  3
-        1:   98-block  4
-        1:   98-block  5
+    %%%%%:   98-block  4
+    %%%%%:   98-block  5
     %%%%%:   98-block  6
     %%%%%:   98-block  7
         -:   99:

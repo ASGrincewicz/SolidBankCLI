@@ -1046,27 +1046,27 @@ branch  2 never executed
         -:  748:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  749:    _GLIBCXX_STRING_CONSTEXPR
         -:  750:    typename basic_string<_CharT, _Traits, _Alloc>::size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17find_first_not_ofEPKcyy called 3 returned 100% blocks executed 80%
-        3:  751:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17find_first_not_ofEPKcyy called 0 returned 0% blocks executed 0%
+    #####:  751:    basic_string<_CharT, _Traits, _Alloc>::
         -:  752:    find_first_not_of(const _CharT* __s, size_type __pos, size_type __n) const
         -:  753:    _GLIBCXX_NOEXCEPT
         -:  754:    {
         -:  755:      __glibcxx_requires_string_len(__s, __n);
-       3*:  756:      for (; __pos < this->size(); ++__pos)
-        3:  756-block  0
+    #####:  756:      for (; __pos < this->size(); ++__pos)
+    %%%%%:  756-block  0
     %%%%%:  756-block  1
-        3:  756-block  2
-call    0 returned 3
-branch  1 taken 3
-branch  2 taken 0 (fallthrough)
-        3:  757:	if (!traits_type::find(__s, __n, _M_data()[__pos]))
-        3:  757-block  0
-call    0 returned 3
-call    1 returned 3
-branch  2 taken 3 (fallthrough)
-branch  3 taken 0
-        3:  758:	  return __pos;
-        3:  758-block  0
+    %%%%%:  756-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+    #####:  757:	if (!traits_type::find(__s, __n, _M_data()[__pos]))
+    %%%%%:  757-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:  758:	  return __pos;
+    %%%%%:  758-block  0
     #####:  759:      return npos;
     %%%%%:  759-block  0
         -:  760:    }
@@ -1086,23 +1086,23 @@ branch  3 taken 0
         -:  774:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  775:    _GLIBCXX_STRING_CONSTEXPR
         -:  776:    typename basic_string<_CharT, _Traits, _Alloc>::size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16find_last_not_ofEPKcyy called 3 returned 100% blocks executed 73%
-        3:  777:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16find_last_not_ofEPKcyy called 0 returned 0% blocks executed 0%
+    #####:  777:    basic_string<_CharT, _Traits, _Alloc>::
         -:  778:    find_last_not_of(const _CharT* __s, size_type __pos, size_type __n) const
         -:  779:    _GLIBCXX_NOEXCEPT
         -:  780:    {
         -:  781:      __glibcxx_requires_string_len(__s, __n);
-        3:  782:      size_type __size = this->size();
-        3:  782-block  0
-call    0 returned 3
-        3:  783:      if (__size)
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
+    #####:  782:      size_type __size = this->size();
+    %%%%%:  782-block  0
+call    0 never executed
+    #####:  783:      if (__size)
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  784:	{
-        3:  785:	  if (--__size > __pos)
-        3:  785-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 3
+    #####:  785:	  if (--__size > __pos)
+    %%%%%:  785-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
     #####:  786:	    __size = __pos;
     %%%%%:  786-block  0
     #####:  787:	  do
@@ -1110,14 +1110,14 @@ branch  1 taken 3
 branch  0 never executed
 branch  1 never executed (fallthrough)
         -:  788:	    {
-        3:  789:	      if (!traits_type::find(__s, __n, _M_data()[__size]))
-        3:  789-block  0
-call    0 returned 3
-call    1 returned 3
-branch  2 taken 3 (fallthrough)
-branch  3 taken 0
-        3:  790:		return __size;
-        3:  790-block  0
+    #####:  789:	      if (!traits_type::find(__s, __n, _M_data()[__size]))
+    %%%%%:  789-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:  790:		return __size;
+    %%%%%:  790-block  0
         -:  791:	    }
         -:  792:	  while (__size--);
         -:  793:	}

@@ -241,7 +241,7 @@
         -:  237:    inline _GLIBCXX_CONSTEXPR
         -:  238:    typename iterator_traits<_Iter>::iterator_category
         -:  239:    __iterator_category(const _Iter&)
-       1*:  240:    { return typename iterator_traits<_Iter>::iterator_category(); }
+    #####:  240:    { return typename iterator_traits<_Iter>::iterator_category(); }
     %%%%%:  240-block  0
     %%%%%:  240-block  1
     %%%%%:  240-block  2
@@ -254,8 +254,8 @@
     %%%%%:  240-block  9
     %%%%%:  240-block 10
     %%%%%:  240-block 11
-        1:  240-block 12
-        1:  240-block 13
+    %%%%%:  240-block 12
+    %%%%%:  240-block 13
     %%%%%:  240-block 14
     %%%%%:  240-block 15
     %%%%%:  240-block 16

@@ -212,9 +212,9 @@ call    0 never executed
 ------------------
         -:  141:
         -:  142:	_GLIBCXX20_CONSTEXPR
-       1*:  143:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
-       1*:  144:	: _Tp_alloc_type(__a)
-       1*:  145:	{ }
+    #####:  143:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+    #####:  144:	: _Tp_alloc_type(__a)
+    #####:  145:	{ }
 ------------------
 _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EE12_Vector_implC1ERKS5_:
 function _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EE12_Vector_implC1ERKS5_ called 0 returned 0% blocks executed 0%
@@ -226,13 +226,13 @@ call    0 never executed
     #####:  145:	{ }
 ------------------
 _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE12_Vector_implC1ERKS2_:
-function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE12_Vector_implC1ERKS2_ called 1 returned 100% blocks executed 100%
-        1:  143:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
-        1:  143-block  0
-        1:  144:	: _Tp_alloc_type(__a)
-        1:  144-block  0
-call    0 returned 1
-        1:  145:	{ }
+function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE12_Vector_implC1ERKS2_ called 0 returned 0% blocks executed 0%
+    #####:  143:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+    %%%%%:  143-block  0
+    #####:  144:	: _Tp_alloc_type(__a)
+    %%%%%:  144-block  0
+call    0 never executed
+    #####:  145:	{ }
 ------------------
         -:  146:
         -:  147:#if __cplusplus >= 201103L
@@ -511,9 +511,9 @@ call    0 never executed
         -:  327:#endif
         -:  328:
         -:  329:      _GLIBCXX20_CONSTEXPR
-       1*:  330:      _Vector_base(size_t __n, const allocator_type& __a)
-       1*:  331:      : _M_impl(__a)
-       1*:  332:      { _M_create_storage(__n); }
+    #####:  330:      _Vector_base(size_t __n, const allocator_type& __a)
+    #####:  331:      : _M_impl(__a)
+    #####:  332:      { _M_create_storage(__n); }
 ------------------
 _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EEC2EyRKS5_:
 function _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EEC2EyRKS5_ called 0 returned 0% blocks executed 0%
@@ -530,16 +530,16 @@ branch  2 never executed (throw)
 call    3 never executed
 ------------------
 _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EEC2EyRKS2_:
-function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EEC2EyRKS2_ called 1 returned 100% blocks executed 80%
-        1:  330:      _Vector_base(size_t __n, const allocator_type& __a)
-        1:  331:      : _M_impl(__a)
-        1:  331-block  0
-call    0 returned 1
-        1:  332:      { _M_create_storage(__n); }
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  332-block  0
+function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EEC2EyRKS2_ called 0 returned 0% blocks executed 0%
+    #####:  330:      _Vector_base(size_t __n, const allocator_type& __a)
+    #####:  331:      : _M_impl(__a)
+    %%%%%:  331-block  0
+call    0 never executed
+    #####:  332:      { _M_create_storage(__n); }
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  332-block  0
     $$$$$:  332-block  1
 call    3 never executed
 ------------------
@@ -852,12 +852,12 @@ call    0 never executed
         -:  390:    protected:
         -:  391:      _GLIBCXX20_CONSTEXPR
         -:  392:      void
-       1*:  393:      _M_create_storage(size_t __n)
+    #####:  393:      _M_create_storage(size_t __n)
         -:  394:      {
-       1*:  395:	this->_M_impl._M_start = this->_M_allocate(__n);
-       1*:  396:	this->_M_impl._M_finish = this->_M_impl._M_start;
-       1*:  397:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
-       1*:  398:      }
+    #####:  395:	this->_M_impl._M_start = this->_M_allocate(__n);
+    #####:  396:	this->_M_impl._M_finish = this->_M_impl._M_start;
+    #####:  397:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    #####:  398:      }
 ------------------
 _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EE17_M_create_storageEy:
 function _ZNSt12_Vector_baseINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EE17_M_create_storageEy called 0 returned 0% blocks executed 0%
@@ -871,15 +871,15 @@ call    0 never executed
     #####:  398:      }
 ------------------
 _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE17_M_create_storageEy:
-function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE17_M_create_storageEy called 1 returned 100% blocks executed 100%
-        1:  393:      _M_create_storage(size_t __n)
+function _ZNSt12_Vector_baseIN5Catch11MessageInfoESaIS1_EE17_M_create_storageEy called 0 returned 0% blocks executed 0%
+    #####:  393:      _M_create_storage(size_t __n)
         -:  394:      {
-        1:  395:	this->_M_impl._M_start = this->_M_allocate(__n);
-        1:  395-block  0
-call    0 returned 1
-        1:  396:	this->_M_impl._M_finish = this->_M_impl._M_start;
-        1:  397:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
-        1:  398:      }
+    #####:  395:	this->_M_impl._M_start = this->_M_allocate(__n);
+    %%%%%:  395-block  0
+call    0 never executed
+    #####:  396:	this->_M_impl._M_finish = this->_M_impl._M_start;
+    #####:  397:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+    #####:  398:      }
 ------------------
         -:  399:    };
         -:  400:
@@ -1146,15 +1146,15 @@ call    0 never executed
         -:  593:       *  by @a __x (unless the allocator traits dictate a different object).
         -:  594:       */
         -:  595:      _GLIBCXX20_CONSTEXPR
-       1*:  596:      vector(const vector& __x)
+    #####:  596:      vector(const vector& __x)
         -:  597:      : _Base(__x.size(),
-       2*:  598:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+    #####:  598:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
         -:  599:      {
-       1*:  600:	this->_M_impl._M_finish =
-       1*:  601:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+    #####:  600:	this->_M_impl._M_finish =
+    #####:  601:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
         -:  602:				      this->_M_impl._M_start,
-       1*:  603:				      _M_get_Tp_allocator());
-       1*:  604:      }
+    #####:  603:				      _M_get_Tp_allocator());
+    #####:  604:      }
 ------------------
 _ZNSt6vectorINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EEC1ERKS6_:
 function _ZNSt6vectorINSt6chrono8durationIdSt5ratioILx1ELx1000000000EEEESaIS4_EEC1ERKS6_ called 0 returned 0% blocks executed 0%
@@ -1188,33 +1188,33 @@ call    0 never executed
 call    0 never executed
 ------------------
 _ZNSt6vectorIN5Catch11MessageInfoESaIS1_EEC1ERKS3_:
-function _ZNSt6vectorIN5Catch11MessageInfoESaIS1_EEC1ERKS3_ called 1 returned 100% blocks executed 80%
-        1:  596:      vector(const vector& __x)
+function _ZNSt6vectorIN5Catch11MessageInfoESaIS1_EEC1ERKS3_ called 0 returned 0% blocks executed 0%
+    #####:  596:      vector(const vector& __x)
         -:  597:      : _Base(__x.size(),
-        2:  598:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
-        1:  598-block  0
-call    0 returned 1
-        1:  598-block  1
-call    1 returned 1
-call    2 returned 1
-branch  3 taken 1 (fallthrough)
-branch  4 taken 0 (throw)
+    #####:  598:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+    %%%%%:  598-block  0
+call    0 never executed
+    %%%%%:  598-block  1
+call    1 never executed
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
     $$$$$:  598-block  2
 call    5 never executed
         -:  599:      {
-        1:  600:	this->_M_impl._M_finish =
-        1:  601:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-branch  3 taken 1 (fallthrough)
-branch  4 taken 0 (throw)
+    #####:  600:	this->_M_impl._M_finish =
+    #####:  601:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
         -:  602:				      this->_M_impl._M_start,
-        1:  603:				      _M_get_Tp_allocator());
-        1:  603-block  0
-call    0 returned 1
-        1:  604:      }
-        1:  604-block  0
+    #####:  603:				      _M_get_Tp_allocator());
+    %%%%%:  603-block  0
+call    0 never executed
+    #####:  604:      }
+    %%%%%:  604-block  0
     $$$$$:  604-block  1
 call    0 never executed
 ------------------

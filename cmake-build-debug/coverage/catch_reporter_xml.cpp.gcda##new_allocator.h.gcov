@@ -89,7 +89,7 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-       5*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    #####:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
     %%%%%:   88-block  0
     %%%%%:   88-block  1
     %%%%%:   88-block  2
@@ -113,9 +113,9 @@
     %%%%%:   88-block 20
     %%%%%:   88-block 21
     %%%%%:   88-block 22
-        1:   88-block 23
-        1:   88-block 24
-        1:   88-block 25
+    %%%%%:   88-block 23
+    %%%%%:   88-block 24
+    %%%%%:   88-block 25
     %%%%%:   88-block 26
     %%%%%:   88-block 27
     %%%%%:   88-block 28
@@ -124,7 +124,7 @@
     %%%%%:   88-block 31
     %%%%%:   88-block 32
     %%%%%:   88-block 33
-        1:   88-block 34
+    %%%%%:   88-block 34
     %%%%%:   88-block 35
     %%%%%:   88-block 36
         -:   89:

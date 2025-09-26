@@ -80,8 +80,8 @@ function _ZSt11__addressofIPN5Catch10ISingletonEEPT_RS3_ called 0 returned 0% bl
         -:   74:  template<typename _Tp>
         -:   75:    _GLIBCXX_NODISCARD
         -:   76:    constexpr _Tp&&
-       6*:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-       6*:   78:    { return static_cast<_Tp&&>(__t); }
+       3*:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+       3*:   78:    { return static_cast<_Tp&&>(__t); }
 ------------------
 _ZSt7forwardIPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS3_E4typeE:
 function _ZSt7forwardIPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS3_E4typeE called 0 returned 0% blocks executed 0%
@@ -90,10 +90,10 @@ function _ZSt7forwardIPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS3_E4typeE
     %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIRKPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS5_E4typeE:
-function _ZSt7forwardIRKPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS5_E4typeE called 6 returned 100% blocks executed 100%
-        6:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-        6:   78:    { return static_cast<_Tp&&>(__t); }
-        6:   78-block  0
+function _ZSt7forwardIRKPN5Catch10ISingletonEEOT_RNSt16remove_referenceIS5_E4typeE called 3 returned 100% blocks executed 100%
+        3:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+        3:   78:    { return static_cast<_Tp&&>(__t); }
+        3:   78-block  0
 ------------------
         -:   79:
         -:   80:  /**

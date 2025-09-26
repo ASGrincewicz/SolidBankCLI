@@ -706,28 +706,28 @@ call    0 never executed
         -:  406:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  407:    _GLIBCXX20_CONSTEXPR
         -:  408:    basic_string<_CharT, _Traits, _Alloc>&
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy called 11 returned 100% blocks executed 83%
-       11:  409:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy called 0 returned 0% blocks executed 0%
+    #####:  409:    basic_string<_CharT, _Traits, _Alloc>::
         -:  410:    _M_append(const _CharT* __s, size_type __n)
         -:  411:    {
-       11:  412:      const size_type __len = __n + this->size();
-       11:  412-block  0
-call    0 returned 11
+    #####:  412:      const size_type __len = __n + this->size();
+    %%%%%:  412-block  0
+call    0 never executed
         -:  413:
-       11:  414:      if (__len <= this->capacity())
-call    0 returned 11
-branch  1 taken 11 (fallthrough)
-branch  2 taken 0
+    #####:  414:      if (__len <= this->capacity())
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  415:	{
-       11:  416:	  if (__n)
-       11:  416-block  0
-branch  0 taken 7 (fallthrough)
-branch  1 taken 4
-        7:  417:	    this->_S_copy(this->_M_data() + this->size(), __s, __n);
-        7:  417-block  0
-call    0 returned 7
-call    1 returned 7
-call    2 returned 7
+    #####:  416:	  if (__n)
+    %%%%%:  416-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  417:	    this->_S_copy(this->_M_data() + this->size(), __s, __n);
+    %%%%%:  417-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  418:	}
         -:  419:      else
     #####:  420:	this->_M_mutate(this->size(), size_type(0), __s, __n);
@@ -735,10 +735,10 @@ call    2 returned 7
 call    0 never executed
 call    1 never executed
         -:  421:
-       11:  422:      this->_M_set_length(__len);
-       11:  422-block  0
-call    0 returned 11
-       11:  423:      return *this;
+    #####:  422:      this->_M_set_length(__len);
+    %%%%%:  422-block  0
+call    0 never executed
+    #####:  423:      return *this;
         -:  424:    }
         -:  425:
         -:  426:  template<typename _CharT, typename _Traits, typename _Alloc>

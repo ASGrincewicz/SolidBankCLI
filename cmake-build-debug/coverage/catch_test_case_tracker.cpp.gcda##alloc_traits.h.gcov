@@ -483,9 +483,9 @@
         -:  479:      [[__nodiscard__,__gnu__::__always_inline__]]
         -:  480:      static _GLIBCXX20_CONSTEXPR pointer
         -:  481:      allocate(allocator_type& __a, size_type __n)
-       1*:  482:      { return __a.allocate(__n); }
-        1:  482-block  0
-        1:  482-block  1
+    #####:  482:      { return __a.allocate(__n); }
+    %%%%%:  482-block  0
+    %%%%%:  482-block  1
     %%%%%:  482-block  2
     %%%%%:  482-block  3
     %%%%%:  482-block  4
@@ -523,10 +523,10 @@
         -:  513:      [[__gnu__::__always_inline__]]
         -:  514:      static _GLIBCXX20_CONSTEXPR void
         -:  515:      deallocate(allocator_type& __a, pointer __p, size_type __n)
-       1*:  516:      { __a.deallocate(__p, __n); }
+    #####:  516:      { __a.deallocate(__p, __n); }
     %%%%%:  516-block  0
     %%%%%:  516-block  1
-        1:  516-block  2
+    %%%%%:  516-block  2
         -:  517:
         -:  518:      /**
         -:  519:       *  @brief  Construct an object of type `_Up`
@@ -549,13 +549,13 @@
         -:  536:#if __cplusplus <= 201703L
         -:  537:	  __a.construct(__p, std::forward<_Args>(__args)...);
         -:  538:#else
-       1*:  539:	  std::construct_at(__p, std::forward<_Args>(__args)...);
+    #####:  539:	  std::construct_at(__p, std::forward<_Args>(__args)...);
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
-call    4 returned 1
-call    5 returned 1
+call    4 never executed
+call    5 never executed
 call    6 never executed
 call    7 never executed
 call    8 never executed
@@ -563,7 +563,7 @@ call    9 never executed
 call   10 never executed
 call   11 never executed
         -:  540:#endif
-       1*:  541:	}
+    #####:  541:	}
         -:  542:
         -:  543:      /**
         -:  544:       *  @brief  Destroy an object of type @a _Up
@@ -599,8 +599,8 @@ call    1 never executed
         -:  572:#if __cplusplus <= 201703L
         -:  573:	return __a.max_size();
         -:  574:#else
-       2*:  575:	return size_t(-1) / sizeof(value_type);
-        2:  575-block  0
+    #####:  575:	return size_t(-1) / sizeof(value_type);
+    %%%%%:  575-block  0
     %%%%%:  575-block  1
         -:  576:#endif
         -:  577:      }
@@ -973,7 +973,7 @@ call    1 never executed
         -:  944:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  945:	     allocator<_Tp>&)
         -:  946:    {
-       2*:  947:      _Destroy(__first, __last);
+    #####:  947:      _Destroy(__first, __last);
 call    0 never executed
 call    1 never executed
 branch  2 never executed (fallthrough)
@@ -983,8 +983,8 @@ call    5 never executed
 branch  6 never executed (fallthrough)
 branch  7 never executed (throw)
 call    8 never executed
-call    9 returned 2
-       2*:  948:    }
+call    9 never executed
+    #####:  948:    }
     $$$$$:  948-block  0
     $$$$$:  948-block  1
         -:  949:#endif

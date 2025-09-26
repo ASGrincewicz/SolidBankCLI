@@ -89,13 +89,13 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-      12*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+      10*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
         1:   88-block  0
         1:   88-block  1
     %%%%%:   88-block  2
     %%%%%:   88-block  3
-        1:   88-block  4
-        1:   88-block  5
+    %%%%%:   88-block  4
+    %%%%%:   88-block  5
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
@@ -283,7 +283,7 @@ call    0 never executed
         -:  149:
         -:  150:      // __p is not permitted to be a null pointer.
         -:  151:      void
-       8*:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -299,13 +299,13 @@ call    0 never executed
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-       8*:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS9_16IReporterFactoryEEEEEE10deallocateEPSF_y:
-function _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS9_16IReporterFactoryEEEEEE10deallocateEPSF_y called 8 returned 100% blocks executed 100%
-        8:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
-        8:  152-block  0
+function _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS9_16IReporterFactoryEEEEEE10deallocateEPSF_y called 0 returned 0% blocks executed 0%
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    %%%%%:  152-block  0
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -321,9 +321,9 @@ function _ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_st
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-        8:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-        8:  168-block  0
-call    0 returned 8
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    %%%%%:  168-block  0
+call    0 never executed
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEEE10deallocateEPS4_y:

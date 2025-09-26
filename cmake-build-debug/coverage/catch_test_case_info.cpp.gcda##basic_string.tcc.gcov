@@ -369,36 +369,36 @@ call    0 never executed
         -:  297:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  298:    _GLIBCXX20_CONSTEXPR
         -:  299:    void
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy called 4 returned 100% blocks executed 100%
-        4:  300:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy called 0 returned 0% blocks executed 0%
+    #####:  300:    basic_string<_CharT, _Traits, _Alloc>::
         -:  301:    reserve(size_type __res)
         -:  302:    {
-        4:  303:      const size_type __capacity = capacity();
-        4:  303-block  0
-call    0 returned 4
+    #####:  303:      const size_type __capacity = capacity();
+    %%%%%:  303-block  0
+call    0 never executed
         -:  304:      // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  305:      // 2968. Inconsistencies between basic_string reserve and
         -:  306:      // vector/unordered_map/unordered_set reserve functions
         -:  307:      // P0966 reserve should not shrink
-        4:  308:      if (__res <= __capacity)
-branch  0 taken 1 (fallthrough)
-branch  1 taken 3
-        1:  309:	return;
-        1:  309-block  0
+    #####:  308:      if (__res <= __capacity)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  309:	return;
+    %%%%%:  309-block  0
         -:  310:
-        3:  311:      pointer __tmp = _M_create(__res, __capacity);
-        3:  311-block  0
-call    0 returned 3
-        3:  312:      this->_S_copy(__tmp, _M_data(), length() + 1);
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-        3:  313:      _M_dispose();
-call    0 returned 3
-        3:  314:      _M_data(__tmp);
-call    0 returned 3
-        3:  315:      _M_capacity(__res);
-call    0 returned 3
+    #####:  311:      pointer __tmp = _M_create(__res, __capacity);
+    %%%%%:  311-block  0
+call    0 never executed
+    #####:  312:      this->_S_copy(__tmp, _M_data(), length() + 1);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  313:      _M_dispose();
+call    0 never executed
+    #####:  314:      _M_data(__tmp);
+call    0 never executed
+    #####:  315:      _M_capacity(__res);
+call    0 never executed
         -:  316:    }
         -:  317:
         -:  318:  template<typename _CharT, typename _Traits, typename _Alloc>

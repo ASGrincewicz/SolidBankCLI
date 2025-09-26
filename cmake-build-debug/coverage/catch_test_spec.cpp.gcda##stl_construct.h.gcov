@@ -124,21 +124,21 @@ function _ZSt10destroy_atIPKN5Catch14TestCaseHandleEEvPT_ called 0 returned 0% b
         -:   91:#if __cplusplus >= 202002L
         -:   92:  template<typename _Tp, typename... _Args>
         -:   93:    constexpr auto
-       1*:   94:    construct_at(_Tp* __location, _Args&&... __args)
+    #####:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
         -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
-       1*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+    #####:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
 ------------------
 _ZSt12construct_atIN5Catch8TestSpec11FilterMatchEJS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS4_DpOS5_:
-function _ZSt12construct_atIN5Catch8TestSpec11FilterMatchEJS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS4_DpOS5_ called 1 returned 100% blocks executed 100%
-        1:   94:    construct_at(_Tp* __location, _Args&&... __args)
+function _ZSt12construct_atIN5Catch8TestSpec11FilterMatchEJS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS4_DpOS5_ called 0 returned 0% blocks executed 0%
+    #####:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
         -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
-        1:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
-        1:   97-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+    #####:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+    %%%%%:   97-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
 ------------------
 _ZSt12construct_atIPKN5Catch14TestCaseHandleEJRKS3_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS7_DpOS8_:
 function _ZSt12construct_atIPKN5Catch14TestCaseHandleEJRKS3_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS7_DpOS8_ called 0 returned 0% blocks executed 0%

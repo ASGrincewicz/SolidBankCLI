@@ -299,10 +299,10 @@
         -:  295:
         -:  296:      _GLIBCXX20_CONSTEXPR
         -:  297:      _Tp_alloc_type&
-function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EE19_M_get_Tp_allocatorEv called 1 returned 100% blocks executed 100%
-        1:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-        1:  299:      { return this->_M_impl; }
-        1:  299-block  0
+function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EE19_M_get_Tp_allocatorEv called 0 returned 0% blocks executed 0%
+    #####:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+    #####:  299:      { return this->_M_impl; }
+    %%%%%:  299-block  0
         -:  300:
         -:  301:      _GLIBCXX20_CONSTEXPR
         -:  302:      const _Tp_alloc_type&
@@ -369,15 +369,15 @@ function _ZNKSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTransl
         -:  361:#endif
         -:  362:
         -:  363:      _GLIBCXX20_CONSTEXPR
-function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EED2Ev called 1 returned 100% blocks executed 100%
-        1:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EED2Ev called 0 returned 0% blocks executed 0%
+    #####:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  365:      {
-        1:  366:	_M_deallocate(_M_impl._M_start,
-        1:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-        1:  367-block  0
-call    0 returned 1
-        1:  368:      }
-call    0 returned 1
+    #####:  366:	_M_deallocate(_M_impl._M_start,
+    #####:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    %%%%%:  367-block  0
+call    0 never executed
+    #####:  368:      }
+call    0 never executed
         -:  369:
         -:  370:    public:
         -:  371:      _Vector_impl _M_impl;
@@ -401,18 +401,18 @@ call    2 never executed
         -:  380:
         -:  381:      _GLIBCXX20_CONSTEXPR
         -:  382:      void
-function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EE13_M_deallocateEPS5_y called 1 returned 100% blocks executed 22%
-        1:  383:      _M_deallocate(pointer __p, size_t __n)
+function _ZNSt12_Vector_baseIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EE13_M_deallocateEPS5_y called 0 returned 0% blocks executed 0%
+    #####:  383:      _M_deallocate(pointer __p, size_t __n)
         -:  384:      {
         -:  385:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-        1:  386:	if (__p)
-        1:  386-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+    #####:  386:	if (__p)
+    %%%%%:  386-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
     #####:  387:	  _Tr::deallocate(_M_impl, __p, __n);
     %%%%%:  387-block  0
 call    0 never executed
-        1:  388:      }
+    #####:  388:      }
         -:  389:
         -:  390:    protected:
         -:  391:      _GLIBCXX20_CONSTEXPR
@@ -755,18 +755,18 @@ call    0 never executed
         -:  725:       *  responsibility.
         -:  726:       */
         -:  727:      _GLIBCXX20_CONSTEXPR
-function _ZNSt6vectorIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EED1Ev called 1 returned 100% blocks executed 100%
-        1:  728:      ~vector() _GLIBCXX_NOEXCEPT
+function _ZNSt6vectorIN5Catch6Detail10unique_ptrIKNS0_20IExceptionTranslatorEEESaIS5_EED1Ev called 0 returned 0% blocks executed 0%
+    #####:  728:      ~vector() _GLIBCXX_NOEXCEPT
         -:  729:      {
-        1:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-call    0 returned 1
-        1:  731:		      _M_get_Tp_allocator());
-        1:  731-block  0
-call    0 returned 1
+    #####:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+call    0 never executed
+    #####:  731:		      _M_get_Tp_allocator());
+    %%%%%:  731-block  0
+call    0 never executed
         -:  732:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-        1:  733:      }
-        1:  733-block  0
-call    0 returned 1
+    #####:  733:      }
+    %%%%%:  733-block  0
+call    0 never executed
         -:  734:
         -:  735:      /**
         -:  736:       *  @brief  %Vector assignment operator.

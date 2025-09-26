@@ -299,8 +299,8 @@
         -:  295:
         -:  296:      _GLIBCXX20_CONSTEXPR
         -:  297:      _Tp_alloc_type&
-      10*:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-      10*:  299:      { return this->_M_impl; }
+    #####:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+    #####:  299:      { return this->_M_impl; }
 ------------------
 _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EE19_M_get_Tp_allocatorEv:
 function _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EE19_M_get_Tp_allocatorEv called 0 returned 0% blocks executed 0%
@@ -321,10 +321,10 @@ function _ZNSt12_Vector_baseIN5Catch7TagInfoESaIS1_EE19_M_get_Tp_allocatorEv cal
     %%%%%:  299-block  0
 ------------------
 _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE19_M_get_Tp_allocatorEv:
-function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE19_M_get_Tp_allocatorEv called 10 returned 100% blocks executed 100%
-       10:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-       10:  299:      { return this->_M_impl; }
-       10:  299-block  0
+function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE19_M_get_Tp_allocatorEv called 0 returned 0% blocks executed 0%
+    #####:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+    #####:  299:      { return this->_M_impl; }
+    %%%%%:  299-block  0
 ------------------
         -:  300:
         -:  301:      _GLIBCXX20_CONSTEXPR
@@ -409,22 +409,22 @@ function _ZNKSt12_Vector_baseIN5Catch7TagInfoESaIS1_EE19_M_get_Tp_allocatorEv ca
         -:  361:#endif
         -:  362:
         -:  363:      _GLIBCXX20_CONSTEXPR
-       5*:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+    #####:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  365:      {
-       5*:  366:	_M_deallocate(_M_impl._M_start,
-       5*:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-       5*:  368:      }
+    #####:  366:	_M_deallocate(_M_impl._M_start,
+    #####:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    #####:  368:      }
 ------------------
 _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EED2Ev:
-function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EED2Ev called 5 returned 100% blocks executed 100%
-        5:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EED2Ev called 0 returned 0% blocks executed 0%
+    #####:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  365:      {
-        5:  366:	_M_deallocate(_M_impl._M_start,
-        5:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-        5:  367-block  0
-call    0 returned 5
-        5:  368:      }
-call    0 returned 5
+    #####:  366:	_M_deallocate(_M_impl._M_start,
+    #####:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+    %%%%%:  367-block  0
+call    0 never executed
+    #####:  368:      }
+call    0 never executed
 ------------------
 _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EED2Ev:
 function _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EED2Ev called 0 returned 0% blocks executed 0%
@@ -522,26 +522,26 @@ call    2 never executed
         -:  380:
         -:  381:      _GLIBCXX20_CONSTEXPR
         -:  382:      void
-       6*:  383:      _M_deallocate(pointer __p, size_t __n)
+    #####:  383:      _M_deallocate(pointer __p, size_t __n)
         -:  384:      {
         -:  385:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-       6*:  386:	if (__p)
-       2*:  387:	  _Tr::deallocate(_M_impl, __p, __n);
-       6*:  388:      }
+    #####:  386:	if (__p)
+    #####:  387:	  _Tr::deallocate(_M_impl, __p, __n);
+    #####:  388:      }
 ------------------
 _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE13_M_deallocateEPS1_y:
-function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE13_M_deallocateEPS1_y called 6 returned 100% blocks executed 78%
-        6:  383:      _M_deallocate(pointer __p, size_t __n)
+function _ZNSt12_Vector_baseIN5Catch14TestCaseHandleESaIS1_EE13_M_deallocateEPS1_y called 0 returned 0% blocks executed 0%
+    #####:  383:      _M_deallocate(pointer __p, size_t __n)
         -:  384:      {
         -:  385:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-        6:  386:	if (__p)
-        6:  386-block  0
-branch  0 taken 2 (fallthrough)
-branch  1 taken 4
-        2:  387:	  _Tr::deallocate(_M_impl, __p, __n);
-        2:  387-block  0
-call    0 returned 2
-        6:  388:      }
+    #####:  386:	if (__p)
+    %%%%%:  386-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  387:	  _Tr::deallocate(_M_impl, __p, __n);
+    %%%%%:  387-block  0
+call    0 never executed
+    #####:  388:      }
 ------------------
 _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EE13_M_deallocateEPS1_y:
 function _ZNSt12_Vector_baseIN5Catch19ListenerDescriptionESaIS1_EE13_M_deallocateEPS1_y called 0 returned 0% blocks executed 0%
@@ -973,12 +973,12 @@ call    0 never executed
         -:  725:       *  responsibility.
         -:  726:       */
         -:  727:      _GLIBCXX20_CONSTEXPR
-       5*:  728:      ~vector() _GLIBCXX_NOEXCEPT
+    #####:  728:      ~vector() _GLIBCXX_NOEXCEPT
         -:  729:      {
-       5*:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-       5*:  731:		      _M_get_Tp_allocator());
+    #####:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+    #####:  731:		      _M_get_Tp_allocator());
         -:  732:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-       5*:  733:      }
+    #####:  733:      }
 ------------------
 _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EED1Ev:
 function _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EED1Ev called 0 returned 0% blocks executed 0%
@@ -1023,18 +1023,18 @@ call    0 never executed
 call    0 never executed
 ------------------
 _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EED1Ev:
-function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EED1Ev called 5 returned 100% blocks executed 100%
-        5:  728:      ~vector() _GLIBCXX_NOEXCEPT
+function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EED1Ev called 0 returned 0% blocks executed 0%
+    #####:  728:      ~vector() _GLIBCXX_NOEXCEPT
         -:  729:      {
-        5:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-call    0 returned 5
-        5:  731:		      _M_get_Tp_allocator());
-        5:  731-block  0
-call    0 returned 5
+    #####:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+call    0 never executed
+    #####:  731:		      _M_get_Tp_allocator());
+    %%%%%:  731-block  0
+call    0 never executed
         -:  732:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-        5:  733:      }
-        5:  733-block  0
-call    0 returned 5
+    #####:  733:      }
+    %%%%%:  733-block  0
+call    0 never executed
 ------------------
         -:  734:
         -:  735:      /**
@@ -1170,8 +1170,8 @@ call    0 returned 5
         -:  865:       */
         -:  866:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  867:      iterator
-       2*:  868:      begin() _GLIBCXX_NOEXCEPT
-       2*:  869:      { return iterator(this->_M_impl._M_start); }
+    #####:  868:      begin() _GLIBCXX_NOEXCEPT
+    #####:  869:      { return iterator(this->_M_impl._M_start); }
 ------------------
 _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EE5beginEv:
 function _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EE5beginEv called 0 returned 0% blocks executed 0%
@@ -1198,12 +1198,12 @@ call    0 never executed
     %%%%%:  869-block  1
 ------------------
 _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE5beginEv:
-function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE5beginEv called 2 returned 100% blocks executed 100%
-        2:  868:      begin() _GLIBCXX_NOEXCEPT
-        2:  869:      { return iterator(this->_M_impl._M_start); }
-        2:  869-block  0
-call    0 returned 2
-        2:  869-block  1
+function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  868:      begin() _GLIBCXX_NOEXCEPT
+    #####:  869:      { return iterator(this->_M_impl._M_start); }
+    %%%%%:  869-block  0
+call    0 never executed
+    %%%%%:  869-block  1
 ------------------
         -:  870:
         -:  871:      /**
@@ -1240,8 +1240,8 @@ call    0 never executed
         -:  885:       */
         -:  886:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  887:      iterator
-       3*:  888:      end() _GLIBCXX_NOEXCEPT
-       3*:  889:      { return iterator(this->_M_impl._M_finish); }
+    #####:  888:      end() _GLIBCXX_NOEXCEPT
+    #####:  889:      { return iterator(this->_M_impl._M_finish); }
 ------------------
 _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EE3endEv:
 function _ZNSt6vectorIN5Catch19ListenerDescriptionESaIS1_EE3endEv called 0 returned 0% blocks executed 0%
@@ -1268,12 +1268,12 @@ call    0 never executed
     %%%%%:  889-block  1
 ------------------
 _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE3endEv:
-function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE3endEv called 3 returned 100% blocks executed 100%
-        3:  888:      end() _GLIBCXX_NOEXCEPT
-        3:  889:      { return iterator(this->_M_impl._M_finish); }
-        3:  889-block  0
-call    0 returned 3
-        3:  889-block  1
+function _ZNSt6vectorIN5Catch14TestCaseHandleESaIS1_EE3endEv called 0 returned 0% blocks executed 0%
+    #####:  888:      end() _GLIBCXX_NOEXCEPT
+    #####:  889:      { return iterator(this->_M_impl._M_finish); }
+    %%%%%:  889-block  0
+call    0 never executed
+    %%%%%:  889-block  1
 ------------------
         -:  890:
         -:  891:      /**

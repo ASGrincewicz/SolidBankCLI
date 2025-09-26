@@ -89,11 +89,11 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-       4*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+       1*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
         1:   88-block  0
     %%%%%:   88-block  1
     %%%%%:   88-block  2
-        3:   88-block  3
+    %%%%%:   88-block  3
     %%%%%:   88-block  4
         -:   89:
         -:   90:      __attribute__((__always_inline__))
@@ -239,7 +239,7 @@ call    0 never executed
         -:  149:
         -:  150:      // __p is not permitted to be a null pointer.
         -:  151:      void
-       1*:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -255,7 +255,7 @@ call    0 never executed
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-       1*:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorIcE10deallocateEPcy:
@@ -283,9 +283,9 @@ call    0 never executed
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch3TagEE10deallocateEPS1_y:
-function _ZNSt15__new_allocatorIN5Catch3TagEE10deallocateEPS1_y called 1 returned 100% blocks executed 100%
-        1:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
-        1:  152-block  0
+function _ZNSt15__new_allocatorIN5Catch3TagEE10deallocateEPS1_y called 0 returned 0% blocks executed 0%
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    %%%%%:  152-block  0
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -301,9 +301,9 @@ function _ZNSt15__new_allocatorIN5Catch3TagEE10deallocateEPS1_y called 1 returne
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-        1:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-        1:  168-block  0
-call    0 returned 1
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    %%%%%:  168-block  0
+call    0 never executed
         -:  169:      }
 ------------------
         -:  170:
