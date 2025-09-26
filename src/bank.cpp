@@ -3,13 +3,14 @@
 Bank::Bank() : balance(0) {}
 double Bank::getBalance() const { return balance; }
 
-void Bank::deposit(double amount)
+bool Bank::deposit(double amount)
 {
     if(amount <= 0.00)
     {
-        return;
+        return false;
     }
     balance += amount;
+    return true;
 }
 
 bool Bank::withdraw(double amount) {

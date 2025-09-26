@@ -9,7 +9,7 @@ class Bank {
 public:
     Bank();
     double getBalance() const;
-    void deposit(double);
+    bool deposit(double);
     bool withdraw(double);
 
 private:
