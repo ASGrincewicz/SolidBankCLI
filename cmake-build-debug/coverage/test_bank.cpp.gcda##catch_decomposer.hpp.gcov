@@ -52,11 +52,11 @@
         -:   48:        auto getResult() const -> bool { return m_result; }
         -:   49:        virtual void streamReconstructedExpression( std::ostream &os ) const = 0;
         -:   50:
-function _ZN5Catch20ITransientExpressionC2Ebb called 1 returned 100% blocks executed 100%
-        1:   51:        ITransientExpression( bool isBinaryExpression, bool result )
-        1:   52:        :   m_isBinaryExpression( isBinaryExpression ),
-        1:   53:            m_result( result )
-        1:   54:        {}
+function _ZN5Catch20ITransientExpressionC2Ebb called 0 returned 0% blocks executed 0%
+    #####:   51:        ITransientExpression( bool isBinaryExpression, bool result )
+    #####:   52:        :   m_isBinaryExpression( isBinaryExpression ),
+    #####:   53:            m_result( result )
+    #####:   54:        {}
         -:   55:
         -:   56:        ITransientExpression() = default;
         -:   57:        ITransientExpression(ITransientExpression const&) = default;
@@ -80,42 +80,18 @@ function _ZN5Catch20ITransientExpressionC2Ebb called 1 returned 100% blocks exec
         -:   75:        StringRef m_op;
         -:   76:        RhsT m_rhs;
         -:   77:
-function _ZNK5Catch10BinaryExprIiiE29streamReconstructedExpressionERSo called 0 returned 0% blocks executed 0%
-    #####:   78:        void streamReconstructedExpression( std::ostream &os ) const override {
+        -:   78:        void streamReconstructedExpression( std::ostream &os ) const override {
         -:   79:            formatReconstructedExpression
-    #####:   80:                    ( os, Catch::Detail::stringify( m_lhs ), m_op, Catch::Detail::stringify( m_rhs ) );
-    %%%%%:   80-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    %%%%%:   80-block  1
-call    3 never executed
-branch  4 never executed (fallthrough)
-branch  5 never executed (throw)
-    %%%%%:   80-block  2
-call    6 never executed
-branch  7 never executed (fallthrough)
-branch  8 never executed (throw)
-    %%%%%:   80-block  3
-call    9 never executed
-call   10 never executed
-    $$$$$:   80-block  4
-call   11 never executed
-    $$$$$:   80-block  5
-    $$$$$:   80-block  6
-call   12 never executed
-    #####:   81:        }
+        -:   80:                    ( os, Catch::Detail::stringify( m_lhs ), m_op, Catch::Detail::stringify( m_rhs ) );
+        -:   81:        }
         -:   82:
         -:   83:    public:
-function _ZN5Catch10BinaryExprIiiEC1EbiNS_9StringRefEi called 1 returned 100% blocks executed 100%
-        1:   84:        BinaryExpr( bool comparisonResult, LhsT lhs, StringRef op, RhsT rhs )
+        -:   84:        BinaryExpr( bool comparisonResult, LhsT lhs, StringRef op, RhsT rhs )
         -:   85:        :   ITransientExpression{ true, comparisonResult },
-        1:   86:            m_lhs( lhs ),
-        1:   87:            m_op( op ),
-        1:   88:            m_rhs( rhs )
-        1:   88-block  0
-call    0 returned 1
-        1:   89:        {}
+        -:   86:            m_lhs( lhs ),
+        -:   87:            m_op( op ),
+        -:   88:            m_rhs( rhs )
+        -:   89:        {}
         -:   90:
         -:   91:        template<typename T>
         -:   92:        auto operator && ( T ) const -> BinaryExpr<LhsT, RhsT const&> const {
@@ -178,15 +154,31 @@ call    0 returned 1
         -:  149:    class UnaryExpr : public ITransientExpression {
         -:  150:        LhsT m_lhs;
         -:  151:
-        -:  152:        void streamReconstructedExpression( std::ostream &os ) const override {
-        -:  153:            os << Catch::Detail::stringify( m_lhs );
-        -:  154:        }
+function _ZNK5Catch9UnaryExprIbE29streamReconstructedExpressionERSo called 0 returned 0% blocks executed 0%
+    #####:  152:        void streamReconstructedExpression( std::ostream &os ) const override {
+    #####:  153:            os << Catch::Detail::stringify( m_lhs );
+    %%%%%:  153-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  153-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  153-block  2
+call    6 never executed
+    $$$$$:  153-block  3
+call    7 never executed
+    #####:  154:        }
         -:  155:
         -:  156:    public:
-        -:  157:        explicit UnaryExpr( LhsT lhs )
+function _ZN5Catch9UnaryExprIbEC1Eb called 0 returned 0% blocks executed 0%
+    #####:  157:        explicit UnaryExpr( LhsT lhs )
         -:  158:        :   ITransientExpression{ false, static_cast<bool>(lhs) },
-        -:  159:            m_lhs( lhs )
-        -:  160:        {}
+    #####:  159:            m_lhs( lhs )
+    %%%%%:  159-block  0
+call    0 never executed
+    #####:  160:        {}
         -:  161:    };
         -:  162:
         -:  163:
@@ -194,8 +186,8 @@ call    0 returned 1
         -:  165:    class ExprLhs {
         -:  166:        LhsT m_lhs;
         -:  167:    public:
-function _ZN5Catch7ExprLhsIiEC1Ei called 1 returned 100% blocks executed 100%
-        1:  168:        explicit ExprLhs( LhsT lhs ) : m_lhs( lhs ) {}
+function _ZN5Catch7ExprLhsIbEC1Eb called 0 returned 0% blocks executed 0%
+    #####:  168:        explicit ExprLhs( LhsT lhs ) : m_lhs( lhs ) {}
         -:  169:
         -:  170:#define CATCH_INTERNAL_DEFINE_EXPRESSION_EQUALITY_OPERATOR( id, op )           \
         -:  171:    template <typename RhsT>                                                   \
@@ -245,11 +237,7 @@ function _ZN5Catch7ExprLhsIiEC1Ei called 1 returned 100% blocks executed 100%
         -:  215:        return { static_cast<bool>( 0 op rhs ), lhs.m_lhs, #op##_sr, rhs };    \
         -:  216:    }
         -:  217:
-function _ZN5CatcheqIiEENSt9enable_ifIXsrSt11conjunctionIJNS_6Detail16is_eq_comparableIiT_vEESt13is_arithmeticIS5_EEE5valueENS_10BinaryExprIiS5_EEE4typeEONS_7ExprLhsIiEES5_ called 1 returned 100% blocks executed 100%
-        1:  218:        CATCH_INTERNAL_DEFINE_EXPRESSION_EQUALITY_OPERATOR( eq, == )
-        1:  218-block  0
-call    0 returned 1
-call    1 returned 1
+        -:  218:        CATCH_INTERNAL_DEFINE_EXPRESSION_EQUALITY_OPERATOR( eq, == )
         -:  219:        CATCH_INTERNAL_DEFINE_EXPRESSION_EQUALITY_OPERATOR( ne, != )
         -:  220:
         -:  221:    #undef CATCH_INTERNAL_DEFINE_EXPRESSION_EQUALITY_OPERATOR
@@ -343,8 +331,11 @@ call    1 returned 1
         -:  309:            "wrap the expression inside parentheses, or decompose it");
         -:  310:        }
         -:  311:
-        -:  312:        auto makeUnaryExpr() const -> UnaryExpr<LhsT> {
-        -:  313:            return UnaryExpr<LhsT>{ m_lhs };
+function _ZNK5Catch7ExprLhsIbE13makeUnaryExprEv called 0 returned 0% blocks executed 0%
+    #####:  312:        auto makeUnaryExpr() const -> UnaryExpr<LhsT> {
+    #####:  313:            return UnaryExpr<LhsT>{ m_lhs };
+    %%%%%:  313-block  0
+call    0 never executed
         -:  314:        }
         -:  315:    };
         -:  316:
@@ -355,12 +346,12 @@ call    1 returned 1
         -:  321:        }
         -:  322:
         -:  323:        template<typename T, std::enable_if_t<std::is_arithmetic<T>::value, int> = 0>
-function _ZN5CatchleIiLi0EEENS_7ExprLhsIT_EEONS_10DecomposerES2_ called 1 returned 100% blocks executed 100%
-        1:  324:        friend auto operator <= ( Decomposer &&, T value ) -> ExprLhs<T> {
-        1:  325:            return ExprLhs<T>{ value };
-        1:  325-block  0
-call    0 returned 1
-        1:  325-block  1
+function _ZN5CatchleIbLi0EEENS_7ExprLhsIT_EEONS_10DecomposerES2_ called 0 returned 0% blocks executed 0%
+    #####:  324:        friend auto operator <= ( Decomposer &&, T value ) -> ExprLhs<T> {
+    #####:  325:            return ExprLhs<T>{ value };
+    %%%%%:  325-block  0
+call    0 never executed
+    %%%%%:  325-block  1
         -:  326:        }
         -:  327:    };
         -:  328:

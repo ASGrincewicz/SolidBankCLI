@@ -329,23 +329,23 @@ branch  1 never executed
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-      12*:  316:    __niter_base(_Iterator __it)
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-      12*:  318:    { return __it; }
+    #####:  318:    { return __it; }
 ------------------
 _ZSt12__niter_baseIPN5Catch8TestSpec6FilterEET_S4_:
-function _ZSt12__niter_baseIPN5Catch8TestSpec6FilterEET_S4_ called 6 returned 100% blocks executed 100%
-        6:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch8TestSpec6FilterEET_S4_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        6:  318:    { return __it; }
-        6:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEET_S7_:
-function _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEET_S7_ called 6 returned 100% blocks executed 100%
-        6:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEET_S7_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        6:  318:    { return __it; }
-        6:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseIPyET_S1_:
 function _ZSt12__niter_baseIPyET_S1_ called 0 returned 0% blocks executed 0%

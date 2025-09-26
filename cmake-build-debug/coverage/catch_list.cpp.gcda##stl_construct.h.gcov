@@ -439,8 +439,8 @@ call    1 never executed
         -:  169:    {
         -:  170:      template<typename _ForwardIterator>
         -:  171:        static void
-function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch14TestCaseHandleEEEvT_S5_ called 5 returned 100% blocks executed 100%
-        5:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
+function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch14TestCaseHandleEEEvT_S5_ called 0 returned 0% blocks executed 0%
+    #####:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
         -:  173:    };
         -:  174:
         -:  175:  /**
@@ -450,7 +450,7 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch14TestCaseHandleEEEvT_S5_ c
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-       5*:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+    #####:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -460,11 +460,11 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch14TestCaseHandleEEEvT_S5_ c
         -:  189:		    "value type is destructible");
         -:  190:#endif
         -:  191:#if __cplusplus >= 202002L
-       5*:  192:      if (std::__is_constant_evaluated())
+    #####:  192:      if (std::__is_constant_evaluated())
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-       5*:  196:	__destroy(__first, __last);
+    #####:  196:	__destroy(__first, __last);
         -:  197:    }
         -:  198:
         -:  199:  template<bool>

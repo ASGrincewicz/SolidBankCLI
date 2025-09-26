@@ -1127,23 +1127,23 @@ call    3 never executed
         -: 1106:  template <typename _Tp, typename _Up>
         -: 1107:    _GLIBCXX20_CONSTEXPR
         -: 1108:    inline __enable_if_t<std::__is_bitwise_relocatable<_Tp>::value, _Tp*>
-function _ZSt14__relocate_a_1IPN5Catch10ISingletonES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 4 returned 100% blocks executed 55%
-        4: 1109:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IPN5Catch10ISingletonES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 2 returned 100% blocks executed 27%
+        2: 1109:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1110:		   _Tp* __result,
         -: 1111:		   [[__maybe_unused__]] allocator<_Up>& __alloc) noexcept
         -: 1112:    {
-        4: 1113:      ptrdiff_t __count = __last - __first;
-        4: 1114:      if (__count > 0)
-        4: 1114-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 3
+        2: 1113:      ptrdiff_t __count = __last - __first;
+        2: 1114:      if (__count > 0)
+        2: 1114-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
         -: 1115:	{
         -: 1116:#ifdef __cpp_lib_is_constant_evaluated
-        1: 1117:	  if (std::is_constant_evaluated())
-        1: 1117-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 1117:	  if (std::is_constant_evaluated())
+    %%%%%: 1117-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -: 1118:	    {
         -: 1119:	      // Can't use memmove. Wrap the pointer so that __relocate_a_1
         -: 1120:	      // resolves to the non-trivial overload above.
@@ -1156,11 +1156,11 @@ call    0 never executed
 call    0 never executed
         -: 1124:	    }
         -: 1125:#endif
-        1: 1126:	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
-        1: 1126-block  0
+    #####: 1126:	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
+    %%%%%: 1126-block  0
         -: 1127:	}
-        4: 1128:      return __result + __count;
-        4: 1128-block  0
+        2: 1128:      return __result + __count;
+        2: 1128-block  0
         -: 1129:    }
         -: 1130:#endif
         -: 1131:
@@ -1168,21 +1168,21 @@ call    0 never executed
         -: 1133:	    typename _Allocator>
         -: 1134:    _GLIBCXX20_CONSTEXPR
         -: 1135:    inline _ForwardIterator
-function _ZSt12__relocate_aIPPN5Catch10ISingletonES3_SaIS2_EET0_T_S6_S5_RT1_ called 4 returned 100% blocks executed 100%
-        4: 1136:    __relocate_a(_InputIterator __first, _InputIterator __last,
+function _ZSt12__relocate_aIPPN5Catch10ISingletonES3_SaIS2_EET0_T_S6_S5_RT1_ called 2 returned 100% blocks executed 100%
+        2: 1136:    __relocate_a(_InputIterator __first, _InputIterator __last,
         -: 1137:		 _ForwardIterator __result, _Allocator& __alloc)
         -: 1138:    noexcept(noexcept(__relocate_a_1(std::__niter_base(__first),
         -: 1139:				     std::__niter_base(__last),
         -: 1140:				     std::__niter_base(__result), __alloc)))
         -: 1141:    {
-        4: 1142:      return std::__relocate_a_1(std::__niter_base(__first),
-        4: 1142-block  0
-call    0 returned 4
-call    1 returned 4
-call    2 returned 4
-call    3 returned 4
+        2: 1142:      return std::__relocate_a_1(std::__niter_base(__first),
+        2: 1142-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
         -: 1143:				 std::__niter_base(__last),
-        4: 1144:				 std::__niter_base(__result), __alloc);
+        2: 1144:				 std::__niter_base(__result), __alloc);
         -: 1145:    }
         -: 1146:
         -: 1147:  /// @endcond

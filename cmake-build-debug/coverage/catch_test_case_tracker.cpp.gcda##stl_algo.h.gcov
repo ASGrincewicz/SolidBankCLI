@@ -3936,8 +3936,8 @@ call    1 never executed
         -: 3911:  template<typename _InputIterator, typename _Predicate>
         -: 3912:    _GLIBCXX20_CONSTEXPR
         -: 3913:    inline _InputIterator
-function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS2_16TestCaseTracking8ITrackerEEESt6vectorIS7_SaIS7_EEEEZNS6_9findChildERKNS5_18NameAndLocationRefEEUlRKS7_E_ET_SJ_SJ_T0_ called 1 returned 100% blocks executed 100%
-        1: 3914:    find_if(_InputIterator __first, _InputIterator __last,
+function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS2_16TestCaseTracking8ITrackerEEESt6vectorIS7_SaIS7_EEEEZNS6_9findChildERKNS5_18NameAndLocationRefEEUlRKS7_E_ET_SJ_SJ_T0_ called 0 returned 0% blocks executed 0%
+    #####: 3914:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3915:	    _Predicate __pred)
         -: 3916:    {
         -: 3917:      // concept requirements
@@ -3946,11 +3946,11 @@ function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptr
         -: 3920:	      typename iterator_traits<_InputIterator>::value_type>)
         -: 3921:      __glibcxx_requires_valid_range(__first, __last);
         -: 3922:
-        1: 3923:      return std::__find_if(__first, __last,
-        1: 3923-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 3924:			    __gnu_cxx::__ops::__pred_iter(__pred));
+    #####: 3923:      return std::__find_if(__first, __last,
+    %%%%%: 3923-block  0
+call    0 never executed
+call    1 never executed
+    #####: 3924:			    __gnu_cxx::__ops::__pred_iter(__pred));
         -: 3925:    }
         -: 3926:
         -: 3927:  /**

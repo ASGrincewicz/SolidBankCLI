@@ -94,18 +94,18 @@
         -:   90:  template<typename _Tp, typename _Up>
         -:   91:    _GLIBCXX14_CONSTEXPR
         -:   92:    inline int
-function _ZSt8__memcmpIccEiPKT_PKT0_y called 3 returned 100% blocks executed 31%
-        3:   93:    __memcmp(const _Tp* __first1, const _Up* __first2, size_t __num)
+function _ZSt8__memcmpIccEiPKT_PKT0_y called 0 returned 0% blocks executed 0%
+    #####:   93:    __memcmp(const _Tp* __first1, const _Up* __first2, size_t __num)
         -:   94:    {
         -:   95:#if __cplusplus >= 201103L
         -:   96:      static_assert(sizeof(_Tp) == sizeof(_Up), "can be compared with memcmp");
         -:   97:#endif
         -:   98:#ifdef __cpp_lib_is_constant_evaluated
-        3:   99:      if (std::is_constant_evaluated())
-        3:   99-block  0
-call    0 returned 3
-branch  1 taken 0 (fallthrough)
-branch  2 taken 3
+    #####:   99:      if (std::is_constant_evaluated())
+    %%%%%:   99-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  100:	{
     #####:  101:	  for(; __num > 0; ++__first1, ++__first2, --__num)
     %%%%%:  101-block  0
@@ -129,8 +129,8 @@ branch  1 never executed
         -:  105:	}
         -:  106:      else
         -:  107:#endif
-        3:  108:	return __builtin_memcmp(__first1, __first2, sizeof(_Tp) * __num);
-        3:  108-block  0
+    #####:  108:	return __builtin_memcmp(__first1, __first2, sizeof(_Tp) * __num);
+    %%%%%:  108-block  0
         -:  109:    }
         -:  110:
         -:  111:#if __cplusplus < 201103L
@@ -1234,16 +1234,16 @@ branch  3 never executed
         -: 1179:      template<typename _Tp>
         -: 1180:	_GLIBCXX20_CONSTEXPR
         -: 1181:	static bool
-function _ZNSt7__equalILb1EE5equalIcEEbPKT_S4_S4_ called 3 returned 100% blocks executed 80%
-        3: 1182:	equal(const _Tp* __first1, const _Tp* __last1, const _Tp* __first2)
+function _ZNSt7__equalILb1EE5equalIcEEbPKT_S4_S4_ called 0 returned 0% blocks executed 0%
+    #####: 1182:	equal(const _Tp* __first1, const _Tp* __last1, const _Tp* __first2)
         -: 1183:	{
-        3: 1184:	  if (const size_t __len = (__last1 - __first1))
-        3: 1184-block  0
-branch  0 taken 3 (fallthrough)
-branch  1 taken 0
-        3: 1185:	    return !std::__memcmp(__first1, __first2, __len);
-        3: 1185-block  0
-call    0 returned 3
+    #####: 1184:	  if (const size_t __len = (__last1 - __first1))
+    %%%%%: 1184-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####: 1185:	    return !std::__memcmp(__first1, __first2, __len);
+    %%%%%: 1185-block  0
+call    0 never executed
     #####: 1186:	  return true;
     %%%%%: 1186-block  0
         -: 1187:	}
@@ -1272,13 +1272,13 @@ call    0 returned 3
         -: 1210:  template<typename _II1, typename _II2>
         -: 1211:    _GLIBCXX20_CONSTEXPR
         -: 1212:    inline bool
-       3*: 1213:    __equal_aux1(_II1 __first1, _II1 __last1, _II2 __first2)
+    #####: 1213:    __equal_aux1(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1214:    {
         -: 1215:      typedef typename iterator_traits<_II1>::value_type _ValueType1;
-       3*: 1216:      const bool __simple = ((__is_integer<_ValueType1>::__value
+    #####: 1216:      const bool __simple = ((__is_integer<_ValueType1>::__value
         -: 1217:			      || __is_pointer<_ValueType1>::__value)
         -: 1218:			     && __memcmpable<_II1, _II2>::__value);
-       3*: 1219:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
+    #####: 1219:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
         -: 1220:    }
 ------------------
 _ZSt12__equal_aux1ISt16reverse_iteratorIPKcES3_EbT_S4_T0_:
@@ -1305,27 +1305,27 @@ branch  5 never executed (throw)
         -: 1220:    }
 ------------------
 _ZSt12__equal_aux1IPKcS1_EbT_S2_T0_:
-function _ZSt12__equal_aux1IPKcS1_EbT_S2_T0_ called 3 returned 100% blocks executed 100%
-        3: 1213:    __equal_aux1(_II1 __first1, _II1 __last1, _II2 __first2)
+function _ZSt12__equal_aux1IPKcS1_EbT_S2_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1213:    __equal_aux1(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1214:    {
         -: 1215:      typedef typename iterator_traits<_II1>::value_type _ValueType1;
-        3: 1216:      const bool __simple = ((__is_integer<_ValueType1>::__value
+    #####: 1216:      const bool __simple = ((__is_integer<_ValueType1>::__value
         -: 1217:			      || __is_pointer<_ValueType1>::__value)
         -: 1218:			     && __memcmpable<_II1, _II2>::__value);
-        3: 1219:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
-        3: 1219-block  0
-call    0 returned 3
+    #####: 1219:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
+    %%%%%: 1219-block  0
+call    0 never executed
         -: 1220:    }
 ------------------
         -: 1221:
         -: 1222:  template<typename _II1, typename _II2>
         -: 1223:    _GLIBCXX20_CONSTEXPR
         -: 1224:    inline bool
-       3*: 1225:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
+    #####: 1225:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1226:    {
-       3*: 1227:      return std::__equal_aux1(std::__niter_base(__first1),
+    #####: 1227:      return std::__equal_aux1(std::__niter_base(__first1),
         -: 1228:			       std::__niter_base(__last1),
-       3*: 1229:			       std::__niter_base(__first2));
+    #####: 1229:			       std::__niter_base(__first2));
         -: 1230:    }
 ------------------
 _ZSt11__equal_auxISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEESC_EbT_SD_T0_:
@@ -1365,17 +1365,17 @@ call    0 never executed
         -: 1230:    }
 ------------------
 _ZSt11__equal_auxIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESA_EbT_SB_T0_:
-function _ZSt11__equal_auxIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESA_EbT_SB_T0_ called 3 returned 100% blocks executed 100%
-        3: 1225:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
+function _ZSt11__equal_auxIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESA_EbT_SB_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1225:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1226:    {
-        3: 1227:      return std::__equal_aux1(std::__niter_base(__first1),
-        3: 1227-block  0
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-call    3 returned 3
+    #####: 1227:      return std::__equal_aux1(std::__niter_base(__first1),
+    %%%%%: 1227-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
         -: 1228:			       std::__niter_base(__last1),
-        3: 1229:			       std::__niter_base(__first2));
+    #####: 1229:			       std::__niter_base(__first2));
         -: 1230:    }
 ------------------
         -: 1231:
@@ -1697,7 +1697,7 @@ call    3 returned 3
         -: 1547:  template<typename _II1, typename _II2>
         -: 1548:    _GLIBCXX20_CONSTEXPR
         -: 1549:    inline bool
-       3*: 1550:    equal(_II1 __first1, _II1 __last1, _II2 __first2)
+    #####: 1550:    equal(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1551:    {
         -: 1552:      // concept requirements
         -: 1553:      __glibcxx_function_requires(_InputIteratorConcept<_II1>)
@@ -1707,7 +1707,7 @@ call    3 returned 3
         -: 1557:	    typename iterator_traits<_II2>::value_type>)
         -: 1558:      __glibcxx_requires_can_increment_range(__first1, __last1, __first2);
         -: 1559:
-       3*: 1560:      return std::__equal_aux(__first1, __last1, __first2);
+    #####: 1560:      return std::__equal_aux(__first1, __last1, __first2);
         -: 1561:    }
         -: 1562:
         -: 1563:  /**

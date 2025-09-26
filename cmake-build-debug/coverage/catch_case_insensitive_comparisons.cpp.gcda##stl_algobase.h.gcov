@@ -1273,36 +1273,36 @@
         -: 1269:      template<typename _RAI1, typename _RAI2>
         -: 1270:	_GLIBCXX20_CONSTEXPR
         -: 1271:	static _RAI1
-function _ZNSt8__lc_raiISt26random_access_iterator_tagS0_E10__newlast1IPKcS4_EET_S5_S5_T0_S6_ called 43 returned 100% blocks executed 100%
-       43: 1272:	__newlast1(_RAI1 __first1, _RAI1 __last1,
+function _ZNSt8__lc_raiISt26random_access_iterator_tagS0_E10__newlast1IPKcS4_EET_S5_S5_T0_S6_ called 33 returned 100% blocks executed 100%
+       33: 1272:	__newlast1(_RAI1 __first1, _RAI1 __last1,
         -: 1273:		   _RAI2 __first2, _RAI2 __last2)
         -: 1274:	{
         -: 1275:	  const typename iterator_traits<_RAI1>::difference_type
-       43: 1276:	    __diff1 = __last1 - __first1;
+       33: 1276:	    __diff1 = __last1 - __first1;
         -: 1277:	  const typename iterator_traits<_RAI2>::difference_type
-       43: 1278:	    __diff2 = __last2 - __first2;
-       43: 1279:	  return __diff2 < __diff1 ? __first1 + __diff2 : __last1;
-       43: 1279-block  0
-branch  0 taken 21 (fallthrough)
-branch  1 taken 22
-       21: 1279-block  1
-       22: 1279-block  2
-       43: 1279-block  3
+       33: 1278:	    __diff2 = __last2 - __first2;
+       33: 1279:	  return __diff2 < __diff1 ? __first1 + __diff2 : __last1;
+       33: 1279-block  0
+branch  0 taken 17 (fallthrough)
+branch  1 taken 16
+       17: 1279-block  1
+       16: 1279-block  2
+       33: 1279-block  3
         -: 1280:	}
         -: 1281:
         -: 1282:      template<typename _RAI>
         -: 1283:	static _GLIBCXX20_CONSTEXPR bool
-function _ZNSt8__lc_raiISt26random_access_iterator_tagS0_E6__cnd2IPKcEEbT_S5_ called 60 returned 100% blocks executed 100%
-       60: 1284:	__cnd2(_RAI, _RAI)
-       60: 1285:	{ return true; }
-       60: 1285-block  0
+function _ZNSt8__lc_raiISt26random_access_iterator_tagS0_E6__cnd2IPKcEEbT_S5_ called 42 returned 100% blocks executed 100%
+       42: 1284:	__cnd2(_RAI, _RAI)
+       42: 1285:	{ return true; }
+       42: 1285-block  0
         -: 1286:    };
         -: 1287:
         -: 1288:  template<typename _II1, typename _II2, typename _Compare>
         -: 1289:    _GLIBCXX20_CONSTEXPR
         -: 1290:    bool
-function _ZSt30__lexicographical_compare_implIPKcS1_N9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS5_9StringRefES8_EUlccE_EEEbT_SB_T0_SC_T1_ called 43 returned 100% blocks executed 95%
-       43: 1291:    __lexicographical_compare_impl(_II1 __first1, _II1 __last1,
+function _ZSt30__lexicographical_compare_implIPKcS1_N9__gnu_cxx5__ops15_Iter_comp_iterIZNK5Catch6Detail19CaseInsensitiveLessclENS5_9StringRefES8_EUlccE_EEEbT_SB_T0_SC_T1_ called 33 returned 100% blocks executed 71%
+       33: 1291:    __lexicographical_compare_impl(_II1 __first1, _II1 __last1,
         -: 1292:				   _II2 __first2, _II2 __last2,
         -: 1293:				   _Compare __comp)
         -: 1294:    {
@@ -1310,50 +1310,50 @@ function _ZSt30__lexicographical_compare_implIPKcS1_N9__gnu_cxx5__ops15_Iter_com
         -: 1296:      typedef typename iterator_traits<_II2>::iterator_category _Category2;
         -: 1297:      typedef std::__lc_rai<_Category1, _Category2> __rai_type;
         -: 1298:
-       43: 1299:      __last1 = __rai_type::__newlast1(__first1, __last1, __first2, __last2);
-       43: 1299-block  0
-call    0 returned 43
-       64: 1300:      for (; __first1 != __last1 && __rai_type::__cnd2(__first2, __last2);
-       64: 1300-block  0
-branch  0 taken 60 (fallthrough)
-branch  1 taken 4
-       60: 1300-block  1
-call    2 returned 60
-branch  3 taken 60 (fallthrough)
+       33: 1299:      __last1 = __rai_type::__newlast1(__first1, __last1, __first2, __last2);
+       33: 1299-block  0
+call    0 returned 33
+      42*: 1300:      for (; __first1 != __last1 && __rai_type::__cnd2(__first2, __last2);
+       42: 1300-block  0
+branch  0 taken 42 (fallthrough)
+branch  1 taken 0
+       42: 1300-block  1
+call    2 returned 42
+branch  3 taken 42 (fallthrough)
 branch  4 taken 0
-       60: 1300-block  2
-        4: 1300-block  3
-       64: 1300-block  4
-branch  5 taken 60
-branch  6 taken 4 (fallthrough)
-       21: 1301:	   ++__first1, (void)++__first2)
-       21: 1301-block  0
+       42: 1300-block  2
+    %%%%%: 1300-block  3
+       42: 1300-block  4
+branch  5 taken 42
+branch  6 taken 0 (fallthrough)
+        9: 1301:	   ++__first1, (void)++__first2)
+        9: 1301-block  0
         -: 1302:	{
-       60: 1303:	  if (__comp(__first1, __first2))
-       60: 1303-block  0
-call    0 returned 60
-branch  1 taken 32 (fallthrough)
-branch  2 taken 28
-       32: 1304:	    return true;
-       32: 1304-block  0
-       28: 1305:	  if (__comp(__first2, __first1))
-       28: 1305-block  0
-call    0 returned 28
+       42: 1303:	  if (__comp(__first1, __first2))
+       42: 1303-block  0
+call    0 returned 42
+branch  1 taken 26 (fallthrough)
+branch  2 taken 16
+       26: 1304:	    return true;
+       26: 1304-block  0
+       16: 1305:	  if (__comp(__first2, __first1))
+       16: 1305-block  0
+call    0 returned 16
 branch  1 taken 7 (fallthrough)
-branch  2 taken 21
+branch  2 taken 9
         7: 1306:	    return false;
         7: 1306-block  0
         -: 1307:	}
-       4*: 1308:      return __first1 == __last1 && __first2 != __last2;
-        4: 1308-block  0
-branch  0 taken 4 (fallthrough)
-branch  1 taken 0
-        4: 1308-block  1
-branch  2 taken 0 (fallthrough)
-branch  3 taken 4
+    #####: 1308:      return __first1 == __last1 && __first2 != __last2;
+    %%%%%: 1308-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%: 1308-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
     %%%%%: 1308-block  2
-        4: 1308-block  3
-        4: 1308-block  4
+    %%%%%: 1308-block  3
+    %%%%%: 1308-block  4
         -: 1309:    }
         -: 1310:
         -: 1311:  template<bool _BoolType>
@@ -1865,8 +1865,8 @@ call    0 never executed
         -: 1768:  template<typename _II1, typename _II2, typename _Compare>
         -: 1769:    _GLIBCXX20_CONSTEXPR
         -: 1770:    inline bool
-function _ZSt23lexicographical_compareIPKcS1_ZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EbT_S7_T0_S8_T1_ called 43 returned 100% blocks executed 100%
-       43: 1771:    lexicographical_compare(_II1 __first1, _II1 __last1,
+function _ZSt23lexicographical_compareIPKcS1_ZNK5Catch6Detail19CaseInsensitiveLessclENS2_9StringRefES5_EUlccE_EbT_S7_T0_S8_T1_ called 33 returned 100% blocks executed 100%
+       33: 1771:    lexicographical_compare(_II1 __first1, _II1 __last1,
         -: 1772:			    _II2 __first2, _II2 __last2, _Compare __comp)
         -: 1773:    {
         -: 1774:      // concept requirements
@@ -1876,11 +1876,11 @@ function _ZSt23lexicographical_compareIPKcS1_ZNK5Catch6Detail19CaseInsensitiveLe
         -: 1778:      __glibcxx_requires_valid_range(__first2, __last2);
         -: 1779:
         -: 1780:      return std::__lexicographical_compare_impl
-       43: 1781:	(__first1, __last1, __first2, __last2,
-       43: 1781-block  0
-call    0 returned 43
-call    1 returned 43
-       43: 1782:	 __gnu_cxx::__ops::__iter_comp_iter(__comp));
+       33: 1781:	(__first1, __last1, __first2, __last2,
+       33: 1781-block  0
+call    0 returned 33
+call    1 returned 33
+       33: 1782:	 __gnu_cxx::__ops::__iter_comp_iter(__comp));
         -: 1783:    }
         -: 1784:
         -: 1785:#if __cpp_lib_three_way_comparison

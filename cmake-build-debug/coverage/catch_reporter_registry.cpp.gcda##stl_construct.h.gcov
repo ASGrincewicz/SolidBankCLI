@@ -81,7 +81,7 @@
         -:   77:#if __cplusplus >= 201703L
         -:   78:  template <typename _Tp>
         -:   79:    _GLIBCXX20_CONSTEXPR inline void
-       8*:   80:    destroy_at(_Tp* __location)
+    #####:   80:    destroy_at(_Tp* __location)
         -:   81:    {
         -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
         -:   83:	{
@@ -89,12 +89,12 @@
         -:   85:	    std::destroy_at(std::__addressof(__x));
         -:   86:	}
         -:   87:      else
-       8*:   88:	__location->~_Tp();
-       8*:   89:    }
+    #####:   88:	__location->~_Tp();
+    #####:   89:    }
 ------------------
 _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEEEvPT_:
-function _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEEEvPT_ called 8 returned 100% blocks executed 100%
-        8:   80:    destroy_at(_Tp* __location)
+function _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEEEvPT_ called 0 returned 0% blocks executed 0%
+    #####:   80:    destroy_at(_Tp* __location)
         -:   81:    {
         -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
         -:   83:	{
@@ -102,10 +102,10 @@ function _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcE
         -:   85:	    std::destroy_at(std::__addressof(__x));
         -:   86:	}
         -:   87:      else
-        8:   88:	__location->~_Tp();
-        8:   88-block  0
-call    0 returned 8
-        8:   89:    }
+    #####:   88:	__location->~_Tp();
+    %%%%%:   88-block  0
+call    0 never executed
+    #####:   89:    }
 ------------------
 _ZSt10destroy_atIN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEEEvPT_:
 function _ZSt10destroy_atIN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEEEvPT_ called 0 returned 0% blocks executed 0%
@@ -273,19 +273,19 @@ call    0 never executed
         -:  157:    {
         -:  158:      template<typename _ForwardIterator>
         -:  159:	static _GLIBCXX20_CONSTEXPR void
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch6Detail10unique_ptrINS2_20EventListenerFactoryEEEEEvT_S8_ called 1 returned 100% blocks executed 50%
-        1:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch6Detail10unique_ptrINS2_20EventListenerFactoryEEEEEvT_S8_ called 0 returned 0% blocks executed 0%
+    #####:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  161:	{
-       1*:  162:	  for (; __first != __last; ++__first)
-        1:  162-block  0
-        1:  162-block  1
-branch  0 taken 0
-branch  1 taken 1 (fallthrough)
+    #####:  162:	  for (; __first != __last; ++__first)
+    %%%%%:  162-block  0
+    %%%%%:  162-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
     #####:  163:	    std::_Destroy(std::__addressof(*__first));
     %%%%%:  163-block  0
 call    0 never executed
 call    1 never executed
-        1:  164:	}
+    #####:  164:	}
         -:  165:    };
         -:  166:
         -:  167:  template<>
@@ -303,8 +303,8 @@ call    1 never executed
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-function _ZSt8_DestroyIPN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEEEvT_S6_ called 1 returned 100% blocks executed 67%
-        1:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEEEvT_S6_ called 0 returned 0% blocks executed 0%
+    #####:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -314,19 +314,19 @@ function _ZSt8_DestroyIPN5Catch6Detail10unique_ptrINS0_20EventListenerFactoryEEE
         -:  189:		    "value type is destructible");
         -:  190:#endif
         -:  191:#if __cplusplus >= 202002L
-        1:  192:      if (std::__is_constant_evaluated())
-        1:  192-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####:  192:      if (std::__is_constant_evaluated())
+    %%%%%:  192-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
     %%%%%:  193-block  0
 call    0 never executed
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        1:  196:	__destroy(__first, __last);
-        1:  196-block  0
-call    0 returned 1
+    #####:  196:	__destroy(__first, __last);
+    %%%%%:  196-block  0
+call    0 never executed
         -:  197:    }
         -:  198:
         -:  199:  template<bool>

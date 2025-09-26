@@ -193,11 +193,11 @@
         -:  188:      constexpr _Tp*
         -:  189:      allocate(size_t __n)
         -:  190:      {
-        2:  191:	if (std::__is_constant_evaluated())
-        2:  191-block  0
-call    0 returned 2
+        1:  191:	if (std::__is_constant_evaluated())
+        1:  191-block  0
+call    0 returned 1
 branch  1 taken 0 (fallthrough)
-branch  2 taken 2
+branch  2 taken 1
         -:  192:	  {
     #####:  193:	    if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
     %%%%%:  193-block  0
@@ -211,29 +211,29 @@ call    0 never executed
 call    0 never executed
         -:  196:	  }
         -:  197:
-        2:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
-        2:  198-block  0
-call    0 returned 2
+        1:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
+        1:  198-block  0
+call    0 returned 1
         -:  199:      }
         -:  200:
         -:  201:      [[__gnu__::__always_inline__]]
         -:  202:      constexpr void
         -:  203:      deallocate(_Tp* __p, size_t __n)
         -:  204:      {
-        2:  205:	if (std::__is_constant_evaluated())
-        2:  205-block  0
-call    0 returned 2
-branch  1 taken 0 (fallthrough)
-branch  2 taken 2
+    #####:  205:	if (std::__is_constant_evaluated())
+    %%%%%:  205-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  206:	  {
     #####:  207:	    ::operator delete(__p);
     %%%%%:  207-block  0
 call    0 never executed
     #####:  208:	    return;
         -:  209:	  }
-        2:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
-        2:  210-block  0
-call    0 returned 2
+    #####:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
+    %%%%%:  210-block  0
+call    0 never executed
         -:  211:      }
         -:  212:#endif // C++20
         -:  213:

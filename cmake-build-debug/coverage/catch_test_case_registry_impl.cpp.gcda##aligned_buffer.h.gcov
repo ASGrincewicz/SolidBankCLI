@@ -65,10 +65,10 @@
         -:   61:      __aligned_membuf(std::nullptr_t) { }
         -:   62:
         -:   63:      void*
-function _ZN9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE7_M_addrEv called 2 returned 100% blocks executed 100%
-        2:   64:      _M_addr() noexcept
-        2:   65:      { return static_cast<void*>(&_M_storage); }
-        2:   65-block  0
+function _ZN9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE7_M_addrEv called 0 returned 0% blocks executed 0%
+    #####:   64:      _M_addr() noexcept
+    #####:   65:      { return static_cast<void*>(&_M_storage); }
+    %%%%%:   65-block  0
         -:   66:
         -:   67:      const void*
 function _ZNK9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE7_M_addrEv called 0 returned 0% blocks executed 0%
@@ -77,11 +77,11 @@ function _ZNK9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE7_M_addrEv ca
     %%%%%:   69-block  0
         -:   70:
         -:   71:      _Tp*
-function _ZN9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE6_M_ptrEv called 2 returned 100% blocks executed 100%
-        2:   72:      _M_ptr() noexcept
-        2:   73:      { return static_cast<_Tp*>(_M_addr()); }
-        2:   73-block  0
-call    0 returned 2
+function _ZN9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE6_M_ptrEv called 0 returned 0% blocks executed 0%
+    #####:   72:      _M_ptr() noexcept
+    #####:   73:      { return static_cast<_Tp*>(_M_addr()); }
+    %%%%%:   73-block  0
+call    0 never executed
         -:   74:
         -:   75:      const _Tp*
 function _ZNK9__gnu_cxx16__aligned_membufIPKN5Catch12TestCaseInfoEE6_M_ptrEv called 0 returned 0% blocks executed 0%

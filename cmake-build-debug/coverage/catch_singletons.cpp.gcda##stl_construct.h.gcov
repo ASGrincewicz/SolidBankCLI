@@ -96,10 +96,10 @@ function _ZSt10destroy_atIPN5Catch10ISingletonEEvPT_ called 0 returned 0% blocks
         -:   91:#if __cplusplus >= 202002L
         -:   92:  template<typename _Tp, typename... _Args>
         -:   93:    constexpr auto
-       2*:   94:    construct_at(_Tp* __location, _Args&&... __args)
+       1*:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
         -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
-       2*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+       1*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
 ------------------
 _ZSt12construct_atIPN5Catch10ISingletonEJS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS4_DpOS5_:
 function _ZSt12construct_atIPN5Catch10ISingletonEJS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS4_DpOS5_ called 0 returned 0% blocks executed 0%
@@ -112,14 +112,14 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZSt12construct_atIPN5Catch10ISingletonEJRKS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_:
-function _ZSt12construct_atIPN5Catch10ISingletonEJRKS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_ called 2 returned 100% blocks executed 100%
-        2:   94:    construct_at(_Tp* __location, _Args&&... __args)
+function _ZSt12construct_atIPN5Catch10ISingletonEJRKS2_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_ called 1 returned 100% blocks executed 100%
+        1:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
         -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
-        2:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
-        2:   97-block  0
-call    0 returned 2
-call    1 returned 2
+        1:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+        1:   97-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
         -:   98:#endif // C++20
         -:   99:#endif// C++17
@@ -206,8 +206,8 @@ call    1 never executed
         -:  169:    {
         -:  170:      template<typename _ForwardIterator>
         -:  171:        static void
-function _ZNSt12_Destroy_auxILb1EE9__destroyIPPN5Catch10ISingletonEEEvT_S6_ called 1 returned 100% blocks executed 100%
-        1:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
+function _ZNSt12_Destroy_auxILb1EE9__destroyIPPN5Catch10ISingletonEEEvT_S6_ called 0 returned 0% blocks executed 0%
+    #####:  172:        __destroy(_ForwardIterator, _ForwardIterator) { }
         -:  173:    };
         -:  174:
         -:  175:  /**
@@ -217,8 +217,8 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPPN5Catch10ISingletonEEEvT_S6_ call
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-function _ZSt8_DestroyIPPN5Catch10ISingletonEEvT_S4_ called 1 returned 100% blocks executed 67%
-        1:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPPN5Catch10ISingletonEEvT_S4_ called 0 returned 0% blocks executed 0%
+    #####:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -228,19 +228,19 @@ function _ZSt8_DestroyIPPN5Catch10ISingletonEEvT_S4_ called 1 returned 100% bloc
         -:  189:		    "value type is destructible");
         -:  190:#endif
         -:  191:#if __cplusplus >= 202002L
-        1:  192:      if (std::__is_constant_evaluated())
-        1:  192-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####:  192:      if (std::__is_constant_evaluated())
+    %%%%%:  192-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
     %%%%%:  193-block  0
 call    0 never executed
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        1:  196:	__destroy(__first, __last);
-        1:  196-block  0
-call    0 returned 1
+    #####:  196:	__destroy(__first, __last);
+    %%%%%:  196-block  0
+call    0 never executed
         -:  197:    }
         -:  198:
         -:  199:  template<bool>

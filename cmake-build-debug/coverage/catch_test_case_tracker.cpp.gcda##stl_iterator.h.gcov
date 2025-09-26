@@ -1267,16 +1267,16 @@ call    0 never executed
         -: 1154:
         -: 1155:      _GLIBCXX20_CONSTEXPR
         -: 1156:      __normal_iterator
-       1*: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
-       1*: 1158:      { return __normal_iterator(_M_current - __n); }
+    #####: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1158:      { return __normal_iterator(_M_current - __n); }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS1_16TestCaseTracking8ITrackerEEESt6vectorIS6_SaIS6_EEEmiEx:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS1_16TestCaseTracking8ITrackerEEESt6vectorIS6_SaIS6_EEEmiEx called 1 returned 100% blocks executed 100%
-        1: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
-        1: 1158:      { return __normal_iterator(_M_current - __n); }
-        1: 1158-block  0
-call    0 returned 1
-        1: 1158-block  1
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS1_16TestCaseTracking8ITrackerEEESt6vectorIS6_SaIS6_EEEmiEx called 0 returned 0% blocks executed 0%
+    #####: 1157:      operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1158:      { return __normal_iterator(_M_current - __n); }
+    %%%%%: 1158-block  0
+call    0 never executed
+    %%%%%: 1158-block  1
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch9StringRefESt6vectorIS2_SaIS2_EEEmiEx:
 function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch9StringRefESt6vectorIS2_SaIS2_EEEmiEx called 0 returned 0% blocks executed 0%

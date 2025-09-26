@@ -274,13 +274,13 @@
         -:  270:    template<typename _ToDur, typename _Rep, typename _Period>
         -:  271:      _GLIBCXX_NODISCARD
         -:  272:      constexpr __enable_if_is_duration<_ToDur>
-function _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEExS3_EENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE called 4 returned 100% blocks executed 100%
-        4:  273:      duration_cast(const duration<_Rep, _Period>& __d)
+function _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEExS3_EENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE called 0 returned 0% blocks executed 0%
+    #####:  273:      duration_cast(const duration<_Rep, _Period>& __d)
         -:  274:      {
         -:  275:#if __cpp_inline_variables && __cpp_if_constexpr
         -:  276:	if constexpr (is_same_v<_ToDur, duration<_Rep, _Period>>)
-        4:  277:	  return __d;
-        4:  277-block  0
+    #####:  277:	  return __d;
+    %%%%%:  277-block  0
         -:  278:	else
         -:  279:#endif
         -:  280:	{
@@ -603,10 +603,10 @@ function _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEE
         -:  597:
         -:  598:	// 20.11.5.2 observer
         -:  599:	constexpr rep
-function _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv called 4 returned 100% blocks executed 100%
-        4:  600:	count() const
-        4:  601:	{ return __r; }
-        4:  601-block  0
+function _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv called 0 returned 0% blocks executed 0%
+    #####:  600:	count() const
+    #####:  601:	{ return __r; }
+    %%%%%:  601-block  0
         -:  602:
         -:  603:	// 20.11.5.3 arithmetic
         -:  604:
@@ -965,10 +965,10 @@ function _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv called 4 r
         -:  957:
         -:  958:	// observer
         -:  959:	constexpr duration
-function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIxSt5ratioILx1ELx1000000000EEEEE16time_since_epochEv called 4 returned 100% blocks executed 100%
-        4:  960:	time_since_epoch() const
-        4:  961:	{ return __d; }
-        4:  961-block  0
+function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIxSt5ratioILx1ELx1000000000EEEEE16time_since_epochEv called 0 returned 0% blocks executed 0%
+    #####:  960:	time_since_epoch() const
+    #####:  961:	{ return __d; }
+    %%%%%:  961-block  0
         -:  962:
         -:  963:#if __cplusplus > 201703L
         -:  964:	constexpr time_point&

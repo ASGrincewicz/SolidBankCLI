@@ -269,20 +269,20 @@ branch  1 never executed
         -:  254:  template<typename _Tp>
         -:  255:    _GLIBCXX14_CONSTEXPR
         -:  256:    inline const _Tp&
-function _ZSt3maxIyERKT_S2_S2_ called 113 returned 100% blocks executed 100%
-      113:  257:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxIyERKT_S2_S2_ called 0 returned 0% blocks executed 0%
+    #####:  257:    max(const _Tp& __a, const _Tp& __b)
         -:  258:    {
         -:  259:      // concept requirements
         -:  260:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  261:      //return  __a < __b ? __b : __a;
-      113:  262:      if (__a < __b)
-      113:  262-block  0
-branch  0 taken 56 (fallthrough)
-branch  1 taken 57
-       56:  263:	return __b;
-       56:  263-block  0
-       57:  264:      return __a;
-       57:  264-block  0
+    #####:  262:      if (__a < __b)
+    %%%%%:  262-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  263:	return __b;
+    %%%%%:  263-block  0
+    #####:  264:      return __a;
+    %%%%%:  264-block  0
         -:  265:    }
         -:  266:
         -:  267:  /**
@@ -1628,13 +1628,13 @@ call    2 never executed
         -: 1512:  //  Precondition: __n > 0.
         -: 1513:  template<typename _Tp>
         -: 1514:    inline _GLIBCXX_CONSTEXPR _Tp
-function _ZSt4__lgIxET_S0_ called 2 returned 100% blocks executed 100%
-        2: 1515:    __lg(_Tp __n)
+function _ZSt4__lgIxET_S0_ called 0 returned 0% blocks executed 0%
+    #####: 1515:    __lg(_Tp __n)
         -: 1516:    {
         -: 1517:#if __cplusplus >= 201402L
-        2: 1518:      return std::__bit_width(make_unsigned_t<_Tp>(__n)) - 1;
-        2: 1518-block  0
-call    0 returned 2
+    #####: 1518:      return std::__bit_width(make_unsigned_t<_Tp>(__n)) - 1;
+    %%%%%: 1518-block  0
+call    0 never executed
         -: 1519:#else
         -: 1520:      // Use +__n so it promotes to at least int.
         -: 1521:      const int __sz = sizeof(+__n);

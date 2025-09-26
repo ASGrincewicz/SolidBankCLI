@@ -313,10 +313,10 @@
         -:  309:       *  themselves are pointers, the pointed-to memory is not touched in any
         -:  310:       *  way.  Managing the pointer is the user's responsibility.
         -:  311:       */
-function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEED1Ev called 1 returned 100% blocks executed 100%
-        1:  312:      ~map() = default;
-        1:  312-block  0
-call    0 returned 1
+function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEED1Ev called 0 returned 0% blocks executed 0%
+    #####:  312:      ~map() = default;
+    %%%%%:  312-block  0
+call    0 never executed
         -:  313:#endif
         -:  314:
         -:  315:      /**
@@ -379,11 +379,11 @@ call    0 returned 1
         -:  372:       *  keys.
         -:  373:       */
         -:  374:      const_iterator
-function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE5beginEv called 1 returned 100% blocks executed 100%
-        1:  375:      begin() const _GLIBCXX_NOEXCEPT
-        1:  376:      { return _M_t.begin(); }
-        1:  376-block  0
-call    0 returned 1
+function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  375:      begin() const _GLIBCXX_NOEXCEPT
+    #####:  376:      { return _M_t.begin(); }
+    %%%%%:  376-block  0
+call    0 never executed
         -:  377:
         -:  378:      /**
         -:  379:       *  Returns a read/write iterator that points one past the last
@@ -403,11 +403,11 @@ call    0 never executed
         -:  390:       *  the keys.
         -:  391:       */
         -:  392:      const_iterator
-function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE3endEv called 1 returned 100% blocks executed 100%
-        1:  393:      end() const _GLIBCXX_NOEXCEPT
-        1:  394:      { return _M_t.end(); }
-        1:  394-block  0
-call    0 returned 1
+function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE3endEv called 0 returned 0% blocks executed 0%
+    #####:  393:      end() const _GLIBCXX_NOEXCEPT
+    #####:  394:      { return _M_t.end(); }
+    %%%%%:  394-block  0
+call    0 never executed
         -:  395:
         -:  396:      /**
         -:  397:       *  Returns a read/write reverse iterator that points to the last pair in

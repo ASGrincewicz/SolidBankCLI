@@ -483,9 +483,9 @@
         -:  479:      [[__nodiscard__,__gnu__::__always_inline__]]
         -:  480:      static _GLIBCXX20_CONSTEXPR pointer
         -:  481:      allocate(allocator_type& __a, size_type __n)
-        2:  482:      { return __a.allocate(__n); }
-        2:  482-block  0
-        2:  482-block  1
+        1:  482:      { return __a.allocate(__n); }
+        1:  482-block  0
+        1:  482-block  1
         -:  483:
         -:  484:      /**
         -:  485:       *  @brief  Allocate memory.
@@ -519,8 +519,8 @@
         -:  513:      [[__gnu__::__always_inline__]]
         -:  514:      static _GLIBCXX20_CONSTEXPR void
         -:  515:      deallocate(allocator_type& __a, pointer __p, size_type __n)
-        2:  516:      { __a.deallocate(__p, __n); }
-        2:  516-block  0
+    #####:  516:      { __a.deallocate(__p, __n); }
+    %%%%%:  516-block  0
         -:  517:
         -:  518:      /**
         -:  519:       *  @brief  Construct an object of type `_Up`
@@ -543,16 +543,16 @@
         -:  536:#if __cplusplus <= 201703L
         -:  537:	  __a.construct(__p, std::forward<_Args>(__args)...);
         -:  538:#else
-       2*:  539:	  std::construct_at(__p, std::forward<_Args>(__args)...);
+       1*:  539:	  std::construct_at(__p, std::forward<_Args>(__args)...);
 call    0 never executed
 call    1 never executed
-call    2 returned 2
-call    3 returned 2
+call    2 returned 1
+call    3 returned 1
     %%%%%:  539-block  0
 call    4 never executed
 call    5 never executed
         -:  540:#endif
-       2*:  541:	}
+       1*:  541:	}
         -:  542:
         -:  543:      /**
         -:  544:       *  @brief  Destroy an object of type @a _Up
@@ -587,8 +587,8 @@ call    0 never executed
         -:  572:#if __cplusplus <= 201703L
         -:  573:	return __a.max_size();
         -:  574:#else
-        4:  575:	return size_t(-1) / sizeof(value_type);
-        4:  575-block  0
+        2:  575:	return size_t(-1) / sizeof(value_type);
+        2:  575-block  0
         -:  576:#endif
         -:  577:      }
         -:  578:
@@ -960,9 +960,9 @@ call    0 never executed
         -:  944:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  945:	     allocator<_Tp>&)
         -:  946:    {
-        1:  947:      _Destroy(__first, __last);
-call    0 returned 1
-        1:  948:    }
+    #####:  947:      _Destroy(__first, __last);
+call    0 never executed
+    #####:  948:    }
         -:  949:#endif
         -:  950:  /// @endcond
         -:  951:

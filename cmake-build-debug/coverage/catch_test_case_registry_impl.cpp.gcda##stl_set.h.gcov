@@ -177,16 +177,16 @@
         -:  173:       *  @param  __a  An allocator object.
         -:  174:       */
         -:  175:      explicit
-function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EEC2ESC_RKSD_ called 1 returned 100% blocks executed 75%
-        1:  176:      set(const _Compare& __comp,
+function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EEC2ESC_RKSD_ called 0 returned 0% blocks executed 0%
+    #####:  176:      set(const _Compare& __comp,
         -:  177:	  const allocator_type& __a = allocator_type())
-        3:  178:      : _M_t(__comp, _Key_alloc_type(__a)) { }
-        1:  178-block  0
-        1:  178-block  1
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  178-block  2
+    #####:  178:      : _M_t(__comp, _Key_alloc_type(__a)) { }
+    %%%%%:  178-block  0
+    %%%%%:  178-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  178-block  2
         -:  179:
         -:  180:      /**
         -:  181:       *  @brief  Builds a %set from a range.
@@ -289,10 +289,10 @@ branch  2 taken 0 (throw)
         -:  278:       *  themselves are pointers, the pointed-to memory is not touched in any
         -:  279:       *  way. Managing the pointer is the user's responsibility.
         -:  280:       */
-function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EED2Ev called 1 returned 100% blocks executed 100%
-        1:  281:      ~set() = default;
-        1:  281-block  0
-call    0 returned 1
+function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EED2Ev called 0 returned 0% blocks executed 0%
+    #####:  281:      ~set() = default;
+    %%%%%:  281-block  0
+call    0 never executed
         -:  282:#endif
         -:  283:
         -:  284:      /**
@@ -520,19 +520,19 @@ call    0 returned 1
         -:  506:       *  Insertion requires logarithmic time.
         -:  507:       */
         -:  508:      std::pair<iterator, bool>
-function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EE6insertERKS3_ called 1 returned 100% blocks executed 100%
-        1:  509:      insert(const value_type& __x)
+function _ZNSt3setIPKN5Catch12TestCaseInfoERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS6_EEEUlS3_S3_E_SaIS3_EE6insertERKS3_ called 0 returned 0% blocks executed 0%
+    #####:  509:      insert(const value_type& __x)
         -:  510:      {
         -:  511:	std::pair<typename _Rep_type::iterator, bool> __p =
-        1:  512:	  _M_t._M_insert_unique(__x);
-        1:  512-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        2:  513:	return std::pair<iterator, bool>(__p.first, __p.second);
-        1:  513-block  0
-call    0 returned 1
-        1:  513-block  1
+    #####:  512:	  _M_t._M_insert_unique(__x);
+    %%%%%:  512-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  513:	return std::pair<iterator, bool>(__p.first, __p.second);
+    %%%%%:  513-block  0
+call    0 never executed
+    %%%%%:  513-block  1
         -:  514:      }
         -:  515:
         -:  516:#if __cplusplus >= 201103L

@@ -316,10 +316,10 @@ call    0 returned 1
         -:  309:       *  themselves are pointers, the pointed-to memory is not touched in any
         -:  310:       *  way.  Managing the pointer is the user's responsibility.
         -:  311:       */
-function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS6_16IReporterFactoryEEENS7_19CaseInsensitiveLessESaISt4pairIKS5_SA_EEED1Ev called 1 returned 100% blocks executed 100%
-        1:  312:      ~map() = default;
-        1:  312-block  0
-call    0 returned 1
+function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS6_16IReporterFactoryEEENS7_19CaseInsensitiveLessESaISt4pairIKS5_SA_EEED1Ev called 0 returned 0% blocks executed 0%
+    #####:  312:      ~map() = default;
+    %%%%%:  312-block  0
+call    0 never executed
         -:  313:#endif
         -:  314:
         -:  315:      /**

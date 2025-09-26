@@ -93,8 +93,8 @@
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
-       3*:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
-        1:   92-block  0
+    #####:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    %%%%%:   92-block  0
         -:   93:
         -:   94:      template<typename _Tp1>
         -:   95:	__attribute__((__always_inline__))
@@ -124,7 +124,7 @@
         -:  119:      // NB: __n is permitted to be 0.  The C++ standard says nothing
         -:  120:      // about what the return value is when __n == 0.
         -:  121:      _GLIBCXX_NODISCARD _Tp*
-       3*:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -132,7 +132,7 @@
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-       3*:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -149,12 +149,12 @@
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-       3*:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIPKN5Catch14TestCaseHandleEE8allocateEyPKv:
-function _ZNSt15__new_allocatorIPKN5Catch14TestCaseHandleEE8allocateEyPKv called 2 returned 100% blocks executed 67%
-        2:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIPKN5Catch14TestCaseHandleEE8allocateEyPKv called 0 returned 0% blocks executed 0%
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -162,10 +162,10 @@ function _ZNSt15__new_allocatorIPKN5Catch14TestCaseHandleEE8allocateEyPKv called
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-        2:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-        2:  130-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 2
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    %%%%%:  130-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -189,9 +189,9 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-        2:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-        2:  147-block  0
-call    0 returned 2
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    %%%%%:  147-block  0
+call    0 never executed
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIcE8allocateEyPKv:
@@ -232,8 +232,8 @@ call    0 never executed
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch8TestSpec11FilterMatchEE8allocateEyPKv:
-function _ZNSt15__new_allocatorIN5Catch8TestSpec11FilterMatchEE8allocateEyPKv called 1 returned 100% blocks executed 67%
-        1:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIN5Catch8TestSpec11FilterMatchEE8allocateEyPKv called 0 returned 0% blocks executed 0%
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -241,10 +241,10 @@ function _ZNSt15__new_allocatorIN5Catch8TestSpec11FilterMatchEE8allocateEyPKv ca
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-        1:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-        1:  130-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    %%%%%:  130-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -268,9 +268,9 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-        1:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-        1:  147-block  0
-call    0 returned 1
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    %%%%%:  147-block  0
+call    0 never executed
         -:  148:      }
 ------------------
         -:  149:
@@ -426,10 +426,10 @@ call    0 never executed
         -:  226:      _M_max_size() const _GLIBCXX_USE_NOEXCEPT
         -:  227:      {
         -:  228:#if __PTRDIFF_MAX__ < __SIZE_MAX__
-       3*:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
-        2:  229-block  0
+    #####:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    %%%%%:  229-block  0
     %%%%%:  229-block  1
-        1:  229-block  2
+    %%%%%:  229-block  2
         -:  230:#else
         -:  231:	return std::size_t(-1) / sizeof(_Tp);
         -:  232:#endif

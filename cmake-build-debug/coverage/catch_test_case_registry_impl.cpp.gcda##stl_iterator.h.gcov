@@ -1077,8 +1077,8 @@
         -: 1073:      : _M_current(_Iterator()) { }
         -: 1074:
         -: 1075:      explicit _GLIBCXX20_CONSTEXPR
-      12*: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-      12*: 1077:      : _M_current(__i) { }
+      16*: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+      16*: 1077:      : _M_current(__i) { }
 ------------------
 _ZN9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvEC1ERKS4_:
 function _ZN9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvEC1ERKS4_ called 0 returned 0% blocks executed 0%
@@ -1106,9 +1106,9 @@ function _ZN9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6
     #####: 1077:      : _M_current(__i) { }
 ------------------
 _ZN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEC1ERKS3_:
-function _ZN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEC1ERKS3_ called 0 returned 0% blocks executed 0%
-    #####: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-    #####: 1077:      : _M_current(__i) { }
+function _ZN9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEC1ERKS3_ called 4 returned 100% blocks executed 100%
+        4: 1076:      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+        4: 1077:      : _M_current(__i) { }
 ------------------
 _ZN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEC1ERKS4_:
 function _ZN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEC1ERKS4_ called 0 returned 0% blocks executed 0%
@@ -1136,8 +1136,8 @@ function _ZN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS2
         -: 1096:      // Forward iterator requirements
         -: 1097:      _GLIBCXX20_CONSTEXPR
         -: 1098:      reference
-       3*: 1099:      operator*() const _GLIBCXX_NOEXCEPT
-       3*: 1100:      { return *_M_current; }
+       4*: 1099:      operator*() const _GLIBCXX_NOEXCEPT
+       4*: 1100:      { return *_M_current; }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvEdeEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvEdeEv called 0 returned 0% blocks executed 0%
@@ -1164,10 +1164,10 @@ function _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoESt6vectorIS3_
         1: 1100-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEdeEv:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEdeEv called 0 returned 0% blocks executed 0%
-    #####: 1099:      operator*() const _GLIBCXX_NOEXCEPT
-    #####: 1100:      { return *_M_current; }
-    %%%%%: 1100-block  0
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEdeEv called 1 returned 100% blocks executed 100%
+        1: 1099:      operator*() const _GLIBCXX_NOEXCEPT
+        1: 1100:      { return *_M_current; }
+        1: 1100-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEEdeEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEEdeEv called 0 returned 0% blocks executed 0%
@@ -1285,8 +1285,8 @@ function _ZN9__gnu_cxx17__normal_iteratorIPKN5Catch14TestCaseHandleESt6vectorIS2
         -: 1144:
         -: 1145:      _GLIBCXX20_CONSTEXPR
         -: 1146:      __normal_iterator
-       1*: 1147:      operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
-       1*: 1148:      { return __normal_iterator(_M_current + __n); }
+    #####: 1147:      operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1148:      { return __normal_iterator(_M_current + __n); }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEEplEx:
 function _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEEplEx called 0 returned 0% blocks executed 0%
@@ -1297,12 +1297,12 @@ call    0 never executed
     %%%%%: 1148-block  1
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEplEx:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEplEx called 1 returned 100% blocks executed 100%
-        1: 1147:      operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
-        1: 1148:      { return __normal_iterator(_M_current + __n); }
-        1: 1148-block  0
-call    0 returned 1
-        1: 1148-block  1
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEplEx called 0 returned 0% blocks executed 0%
+    #####: 1147:      operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
+    #####: 1148:      { return __normal_iterator(_M_current + __n); }
+    %%%%%: 1148-block  0
+call    0 never executed
+    %%%%%: 1148-block  1
 ------------------
         -: 1149:
         -: 1150:      _GLIBCXX20_CONSTEXPR
@@ -1358,8 +1358,8 @@ call    0 never executed
         -: 1159:
         -: 1160:      _GLIBCXX20_CONSTEXPR
         -: 1161:      const _Iterator&
-      12*: 1162:      base() const _GLIBCXX_NOEXCEPT
-      12*: 1163:      { return _M_current; }
+      16*: 1162:      base() const _GLIBCXX_NOEXCEPT
+      16*: 1163:      { return _M_current; }
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvE4baseEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoEvE4baseEv called 0 returned 0% blocks executed 0%
@@ -1386,10 +1386,10 @@ function _ZNK9__gnu_cxx17__normal_iteratorIPPN5Catch12TestCaseInfoESt6vectorIS3_
         4: 1163-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEE4baseEv:
-function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEE4baseEv called 0 returned 0% blocks executed 0%
-    #####: 1162:      base() const _GLIBCXX_NOEXCEPT
-    #####: 1163:      { return _M_current; }
-    %%%%%: 1163-block  0
+function _ZNK9__gnu_cxx17__normal_iteratorIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEE4baseEv called 4 returned 100% blocks executed 100%
+        4: 1162:      base() const _GLIBCXX_NOEXCEPT
+        4: 1163:      { return _M_current; }
+        4: 1163-block  0
 ------------------
 _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEE4baseEv:
 function _ZNK9__gnu_cxx17__normal_iteratorIPSt4pairIyN5Catch14TestCaseHandleEESt6vectorIS4_SaIS4_EEE4baseEv called 0 returned 0% blocks executed 0%
@@ -1636,10 +1636,10 @@ call    2 never executed
         -: 1331:  template<typename _Iterator, typename _Container>
         -: 1332:    _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 1333:    inline typename __normal_iterator<_Iterator, _Container>::difference_type
-       7*: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+       4*: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
         -: 1335:	      const __normal_iterator<_Iterator, _Container>& __rhs)
         -: 1336:    _GLIBCXX_NOEXCEPT
-       7*: 1337:    { return __lhs.base() - __rhs.base(); }
+       4*: 1337:    { return __lhs.base() - __rhs.base(); }
 ------------------
 _ZN9__gnu_cxxmiIPKN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSB_SE_:
 function _ZN9__gnu_cxxmiIPKN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSB_SE_ called 0 returned 0% blocks executed 0%
@@ -1692,14 +1692,14 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZN9__gnu_cxxmiIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_:
-function _ZN9__gnu_cxxmiIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_ called 4 returned 100% blocks executed 100%
-        4: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+function _ZN9__gnu_cxxmiIPN5Catch14TestCaseHandleESt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_ called 1 returned 100% blocks executed 100%
+        1: 1334:    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
         -: 1335:	      const __normal_iterator<_Iterator, _Container>& __rhs)
         -: 1336:    _GLIBCXX_NOEXCEPT
-        4: 1337:    { return __lhs.base() - __rhs.base(); }
-        4: 1337-block  0
-call    0 returned 4
-call    1 returned 4
+        1: 1337:    { return __lhs.base() - __rhs.base(); }
+        1: 1337-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
         -: 1338:
         -: 1339:  template<typename _Iterator, typename _Container>

@@ -1183,10 +1183,10 @@
         -: 1179:      { return __x.first; }
         -: 1180:
         -: 1181:      const typename _Pair::first_type&
-function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEEEclERKSD_ called 0 returned 0% blocks executed 0%
-    #####: 1182:      operator()(const _Pair& __x) const
-    #####: 1183:      { return __x.first; }
-    %%%%%: 1183-block  0
+function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEEEclERKSD_ called 48 returned 100% blocks executed 100%
+       48: 1182:      operator()(const _Pair& __x) const
+       48: 1183:      { return __x.first; }
+       48: 1183-block  0
         -: 1184:
         -: 1185:#if __cplusplus >= 201103L
         -: 1186:      template<typename _Pair2>

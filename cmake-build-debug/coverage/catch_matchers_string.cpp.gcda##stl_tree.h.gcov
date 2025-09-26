@@ -175,14 +175,14 @@ function _ZNSt20_Rb_tree_key_compareISt4lessIlEEC2Ev called 0 returned 0% blocks
         -:  170:    _Rb_tree_node_base	_M_header;
         -:  171:    size_t		_M_node_count; // Keeps track of size of tree.
         -:  172:
-function _ZNSt15_Rb_tree_headerC2Ev called 0 returned 0% blocks executed 0%
-    #####:  173:    _Rb_tree_header() _GLIBCXX_NOEXCEPT
-    #####:  174:    {
-    #####:  175:      _M_header._M_color = _S_red;
-    #####:  176:      _M_reset();
-    %%%%%:  176-block  0
-call    0 never executed
-    #####:  177:    }
+function _ZNSt15_Rb_tree_headerC2Ev called 2 returned 100% blocks executed 100%
+        2:  173:    _Rb_tree_header() _GLIBCXX_NOEXCEPT
+        2:  174:    {
+        2:  175:      _M_header._M_color = _S_red;
+        2:  176:      _M_reset();
+        2:  176-block  0
+call    0 returned 2
+        2:  177:    }
         -:  178:
         -:  179:#if __cplusplus >= 201103L
         -:  180:    _Rb_tree_header(_Rb_tree_header&& __x) noexcept
@@ -211,14 +211,14 @@ call    0 never executed
         -:  203:    }
         -:  204:
         -:  205:    void
-function _ZNSt15_Rb_tree_header8_M_resetEv called 0 returned 0% blocks executed 0%
-    #####:  206:    _M_reset()
+function _ZNSt15_Rb_tree_header8_M_resetEv called 2 returned 100% blocks executed 100%
+        2:  206:    _M_reset()
         -:  207:    {
-    #####:  208:      _M_header._M_parent = 0;
-    #####:  209:      _M_header._M_left = &_M_header;
-    #####:  210:      _M_header._M_right = &_M_header;
-    #####:  211:      _M_node_count = 0;
-    #####:  212:    }
+        2:  208:      _M_header._M_parent = 0;
+        2:  209:      _M_header._M_left = &_M_header;
+        2:  210:      _M_header._M_right = &_M_header;
+        2:  211:      _M_node_count = 0;
+        2:  212:    }
         -:  213:  };
         -:  214:
         -:  215:  template<typename _Val>

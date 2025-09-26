@@ -89,18 +89,18 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-       5*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    #####:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
     %%%%%:   88-block  0
     %%%%%:   88-block  1
     %%%%%:   88-block  2
-        4:   88-block  3
+    %%%%%:   88-block  3
     %%%%%:   88-block  4
     %%%%%:   88-block  5
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
-       7*:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
-        2:   92-block  0
+    #####:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    %%%%%:   92-block  0
     %%%%%:   92-block  1
         -:   93:
         -:   94:      template<typename _Tp1>
@@ -131,7 +131,7 @@
         -:  119:      // NB: __n is permitted to be 0.  The C++ standard says nothing
         -:  120:      // about what the return value is when __n == 0.
         -:  121:      _GLIBCXX_NODISCARD _Tp*
-       2*:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -139,7 +139,7 @@
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-       2*:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -156,12 +156,12 @@
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-       2*:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch8TestSpec6FilterEE8allocateEyPKv:
-function _ZNSt15__new_allocatorIN5Catch8TestSpec6FilterEE8allocateEyPKv called 1 returned 100% blocks executed 67%
-        1:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIN5Catch8TestSpec6FilterEE8allocateEyPKv called 0 returned 0% blocks executed 0%
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -169,10 +169,10 @@ function _ZNSt15__new_allocatorIN5Catch8TestSpec6FilterEE8allocateEyPKv called 1
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-        1:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-        1:  130-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    %%%%%:  130-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -196,14 +196,14 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-        1:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-        1:  147-block  0
-call    0 returned 1
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    %%%%%:  147-block  0
+call    0 never executed
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEE8allocateEyPKv:
-function _ZNSt15__new_allocatorIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEE8allocateEyPKv called 1 returned 100% blocks executed 67%
-        1:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEE8allocateEyPKv called 0 returned 0% blocks executed 0%
+    #####:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -211,10 +211,10 @@ function _ZNSt15__new_allocatorIN5Catch6Detail10unique_ptrINS0_8TestSpec7Pattern
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-        1:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-        1:  130-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+    #####:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+    %%%%%:  130-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -238,9 +238,9 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-        1:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-        1:  147-block  0
-call    0 returned 1
+    #####:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+    %%%%%:  147-block  0
+call    0 never executed
         -:  148:      }
 ------------------
 _ZNSt15__new_allocatorIyE8allocateEyPKv:
@@ -565,9 +565,9 @@ call    0 never executed
         -:  226:      _M_max_size() const _GLIBCXX_USE_NOEXCEPT
         -:  227:      {
         -:  228:#if __PTRDIFF_MAX__ < __SIZE_MAX__
-       2*:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
-        1:  229-block  0
-        1:  229-block  1
+    #####:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    %%%%%:  229-block  0
+    %%%%%:  229-block  1
     %%%%%:  229-block  2
     %%%%%:  229-block  3
     %%%%%:  229-block  4

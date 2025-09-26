@@ -351,12 +351,12 @@ call    1 never executed
         -:  302:
         -:  303:      /// Constructor accepting lvalues of `first_type` and `second_type`
         -:  304:      constexpr explicit(!_S_convertible<const _T1&, const _T2&>())
-function _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC1ERKS1_S4_ called 0 returned 0% blocks executed 0%
-    #####:  305:      pair(const _T1& __x, const _T2& __y)
+function _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC1ERKS1_S4_ called 7 returned 100% blocks executed 100%
+        7:  305:      pair(const _T1& __x, const _T2& __y)
         -:  306:      noexcept(_S_nothrow_constructible<const _T1&, const _T2&>())
         -:  307:      requires (_S_constructible<const _T1&, const _T2&>())
-    #####:  308:      : first(__x), second(__y)
-    #####:  309:      { }
+        7:  308:      : first(__x), second(__y)
+        7:  309:      { }
         -:  310:
         -:  311:      /// Constructor accepting two values of arbitrary types
         -:  312:      template<typename _U1, typename _U2>
@@ -462,10 +462,10 @@ call    1 never executed
         -:  358:      template<typename _U1, typename _U2>
         -:  359:	requires (_S_constructible<_U1&, _U2&>()) && (!_S_dangles<_U1&, _U2&>())
         -:  360:	constexpr explicit(!_S_convertible<_U1&, _U2&>())
-    #####:  361:	pair(pair<_U1, _U2>& __p)
+       8*:  361:	pair(pair<_U1, _U2>& __p)
         -:  362:	noexcept(_S_nothrow_constructible<_U1&, _U2&>())
-    #####:  363:	: first(__p.first), second(__p.second)
-    #####:  364:	{ }
+       8*:  363:	: first(__p.first), second(__p.second)
+       8*:  364:	{ }
 ------------------
 _ZNSt4pairIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEiEC1ISA_iEERS_IT_T0_E:
 function _ZNSt4pairIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEiEC1ISA_iEERS_IT_T0_E called 0 returned 0% blocks executed 0%
@@ -475,11 +475,11 @@ function _ZNSt4pairIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringI
     #####:  364:	{ }
 ------------------
 _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC1IS1_S1_EERS_IT_T0_E:
-function _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC1IS1_S1_EERS_IT_T0_E called 0 returned 0% blocks executed 0%
-    #####:  361:	pair(pair<_U1, _U2>& __p)
+function _ZNSt4pairIPSt18_Rb_tree_node_baseS1_EC1IS1_S1_EERS_IT_T0_E called 8 returned 100% blocks executed 100%
+        8:  361:	pair(pair<_U1, _U2>& __p)
         -:  362:	noexcept(_S_nothrow_constructible<_U1&, _U2&>())
-    #####:  363:	: first(__p.first), second(__p.second)
-    #####:  364:	{ }
+        8:  363:	: first(__p.first), second(__p.second)
+        8:  364:	{ }
 ------------------
 _ZNSt4pairIKllEC1IS0_lEERS_IT_T0_E:
 function _ZNSt4pairIKllEC1IS0_lEERS_IT_T0_E called 0 returned 0% blocks executed 0%

@@ -124,8 +124,8 @@
         -:  119:      // NB: __n is permitted to be 0.  The C++ standard says nothing
         -:  120:      // about what the return value is when __n == 0.
         -:  121:      _GLIBCXX_NODISCARD _Tp*
-function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE8allocateEyPKv called 2 returned 100% blocks executed 67%
-        2:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE8allocateEyPKv called 1 returned 100% blocks executed 67%
+        1:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -133,10 +133,10 @@ function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE8allocateEyPKv called 2 re
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-        2:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-        2:  130-block  0
+        1:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+        1:  130-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 2
+branch  1 taken 1
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -160,16 +160,16 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-        2:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-        2:  147-block  0
-call    0 returned 2
+        1:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+        1:  147-block  0
+call    0 returned 1
         -:  148:      }
         -:  149:
         -:  150:      // __p is not permitted to be a null pointer.
         -:  151:      void
-function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE10deallocateEPS2_y called 2 returned 100% blocks executed 100%
-        2:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
-        2:  152-block  0
+function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE10deallocateEPS2_y called 0 returned 0% blocks executed 0%
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    %%%%%:  152-block  0
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -185,9 +185,9 @@ function _ZNSt15__new_allocatorIPN5Catch10ISingletonEE10deallocateEPS2_y called 
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-        2:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-        2:  168-block  0
-call    0 returned 2
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    %%%%%:  168-block  0
+call    0 never executed
         -:  169:      }
         -:  170:
         -:  171:#undef _GLIBCXX_SIZED_DEALLOC
@@ -248,8 +248,8 @@ call    0 returned 2
         -:  226:      _M_max_size() const _GLIBCXX_USE_NOEXCEPT
         -:  227:      {
         -:  228:#if __PTRDIFF_MAX__ < __SIZE_MAX__
-        2:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
-        2:  229-block  0
+        1:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+        1:  229-block  0
         -:  230:#else
         -:  231:	return std::size_t(-1) / sizeof(_Tp);
         -:  232:#endif

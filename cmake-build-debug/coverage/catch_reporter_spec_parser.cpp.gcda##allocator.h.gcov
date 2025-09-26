@@ -164,8 +164,8 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-       1*:  163:      allocator() _GLIBCXX_NOTHROW { }
-        1:  163-block  0
+    #####:  163:      allocator() _GLIBCXX_NOTHROW { }
+    %%%%%:  163-block  0
     %%%%%:  163-block  1
     %%%%%:  163-block  2
         -:  164:

@@ -89,18 +89,18 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-       4*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-        1:   88-block  0
-        1:   88-block  1
-        1:   88-block  2
-        1:   88-block  3
-    %%%%%:   88-block  4
-    %%%%%:   88-block  5
+       2*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    %%%%%:   88-block  0
+    %%%%%:   88-block  1
+    %%%%%:   88-block  2
+    %%%%%:   88-block  3
+        1:   88-block  4
+        1:   88-block  5
     %%%%%:   88-block  6
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
-    #####:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+       9*:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
     %%%%%:   92-block  0
         -:   93:
         -:   94:      template<typename _Tp1>

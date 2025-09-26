@@ -1,46 +1,53 @@
 cmake_minimum_required(VERSION 3.16)
 project(SolidBankCLI VERSION 1.0 LANGUAGES CXX)
 
-# Force console subsystem for MinGW
-if(MINGW)
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -mconsole")
-endif()
-
+# C++ standard
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Enable coverage flags (optional, for GCC/Clang)
+# Optional: Enable coverage flags for GCC/Clang
 option(CODE_COVERAGE "Enable coverage reporting" ON)
 if(CODE_COVERAGE)
     message(STATUS "Code coverage enabled")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage -g")
 endif()
 
-# Source files
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
+# Include directories
+include_directories(include)
+
+# CLI sources (includes main.cpp)
+set(CLI_SOURCES
+        src/main.cpp
+        src/bank.cpp
+        src/transaction.cpp
+)
+
+# Test sources (excludes main.cpp)
+set(TEST_SOURCES
+        tests/test_bank.cpp
+        src/bank.cpp
+        src/transaction.cpp
+)
 
 # Main executable
-add_executable(SolidBankCLI ${SOURCES})
+add_executable(SolidBankCLI ${CLI_SOURCES})
+target_include_directories(SolidBankCLI PRIVATE include)
 
 # Catch2 setup
 include(FetchContent)
 FetchContent_Declare(
         catch2
         GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-        GIT_TAG v3.4.0 # Use latest stable
+        GIT_TAG v3.4.0
 )
 FetchContent_MakeAvailable(catch2)
 
 # Test executable
-file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS tests/*.cpp)
-add_executable(SolidBankTests ${TEST_SOURCES} ${SOURCES})
+add_executable(SolidBankTests ${TEST_SOURCES})
+target_include_directories(SolidBankTests PRIVATE include)
 target_link_libraries(SolidBankTests PRIVATE Catch2::Catch2WithMain)
 
-# Enable test discovery in CLion
+# Enable test discovery
 include(CTest)
 enable_testing()
 add_test(NAME SolidBankTests COMMAND SolidBankTests)
-
-
-target_include_directories(SolidBankCLI PRIVATE include)
-target_include_directories(SolidBankTests PRIVATE include)

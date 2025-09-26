@@ -329,11 +329,11 @@ branch  1 never executed
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-function _ZSt12__niter_baseIPN5Catch11SectionInfoEET_S3_ called 6 returned 100% blocks executed 100%
-        6:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch11SectionInfoEET_S3_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        6:  318:    { return __it; }
-        6:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
         -:  319:
         -:  320:  template<typename _Ite, typename _Seq>
         -:  321:    _Ite

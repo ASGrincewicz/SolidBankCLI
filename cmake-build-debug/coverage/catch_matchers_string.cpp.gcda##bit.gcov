@@ -196,22 +196,22 @@
         -:  192:
         -:  193:  template<typename _Tp>
         -:  194:    constexpr int
-function _ZSt13__countl_zeroIyEiT_ called 0 returned 0% blocks executed 0%
-    #####:  195:    __countl_zero(_Tp __x) noexcept
+function _ZSt13__countl_zeroIyEiT_ called 1 returned 100% blocks executed 75%
+        1:  195:    __countl_zero(_Tp __x) noexcept
         -:  196:    {
         -:  197:      using __gnu_cxx::__int_traits;
-    #####:  198:      constexpr auto _Nd = __int_traits<_Tp>::__digits;
+        1:  198:      constexpr auto _Nd = __int_traits<_Tp>::__digits;
         -:  199:
-    #####:  200:      if (__x == 0)
-    %%%%%:  200-block  0
-branch  0 never executed (fallthrough)
-branch  1 never executed
+        1:  200:      if (__x == 0)
+        1:  200-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
     #####:  201:        return _Nd;
     %%%%%:  201-block  0
         -:  202:
-    #####:  203:      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
-    #####:  204:      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
-    #####:  205:      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
+        1:  203:      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
+        1:  204:      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
+        1:  205:      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
         -:  206:
         -:  207:      if _GLIBCXX17_CONSTEXPR (_Nd <= _Nd_u)
         -:  208:	{
@@ -225,9 +225,9 @@ branch  1 never executed
         -:  216:	}
         -:  217:      else if _GLIBCXX17_CONSTEXPR (_Nd <= _Nd_ull)
         -:  218:	{
-    #####:  219:	  constexpr int __diff = _Nd_ull - _Nd;
-    #####:  220:	  return __builtin_clzll(__x) - __diff;
-    %%%%%:  220-block  0
+        1:  219:	  constexpr int __diff = _Nd_ull - _Nd;
+        1:  220:	  return __builtin_clzll(__x) - __diff;
+        1:  220-block  0
         -:  221:	}
         -:  222:      else // (_Nd > _Nd_ull)
         -:  223:	{
@@ -372,13 +372,13 @@ branch  1 never executed
         -:  362:
         -:  363:  template<typename _Tp>
         -:  364:    constexpr int
-function _ZSt11__bit_widthIyEiT_ called 0 returned 0% blocks executed 0%
-    #####:  365:    __bit_width(_Tp __x) noexcept
+function _ZSt11__bit_widthIyEiT_ called 1 returned 100% blocks executed 100%
+        1:  365:    __bit_width(_Tp __x) noexcept
         -:  366:    {
-    #####:  367:      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
-    #####:  368:      return _Nd - std::__countl_zero(__x);
-    %%%%%:  368-block  0
-call    0 never executed
+        1:  367:      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
+        1:  368:      return _Nd - std::__countl_zero(__x);
+        1:  368-block  0
+call    0 returned 1
         -:  369:    }
         -:  370:
         -:  371:  /// @endcond

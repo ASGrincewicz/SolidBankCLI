@@ -147,11 +147,11 @@
         -:  143:    {
         -:  144:      _Key_compare		_M_key_compare;
         -:  145:
-       1*:  146:      _Rb_tree_key_compare()
+    #####:  146:      _Rb_tree_key_compare()
         -:  147:      _GLIBCXX_NOEXCEPT_IF(
         -:  148:	is_nothrow_default_constructible<_Key_compare>::value)
         -:  149:      : _M_key_compare()
-       1*:  150:      { }
+    #####:  150:      { }
 ------------------
 _ZNSt20_Rb_tree_key_compareISt4lessIN5Catch9StringRefEEEC2Ev:
 function _ZNSt20_Rb_tree_key_compareISt4lessIN5Catch9StringRefEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -162,12 +162,12 @@ function _ZNSt20_Rb_tree_key_compareISt4lessIN5Catch9StringRefEEEC2Ev called 0 r
     #####:  150:      { }
 ------------------
 _ZNSt20_Rb_tree_key_compareIN5Catch6Detail19CaseInsensitiveLessEEC2Ev:
-function _ZNSt20_Rb_tree_key_compareIN5Catch6Detail19CaseInsensitiveLessEEC2Ev called 1 returned 100% blocks executed 100%
-        1:  146:      _Rb_tree_key_compare()
+function _ZNSt20_Rb_tree_key_compareIN5Catch6Detail19CaseInsensitiveLessEEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  146:      _Rb_tree_key_compare()
         -:  147:      _GLIBCXX_NOEXCEPT_IF(
         -:  148:	is_nothrow_default_constructible<_Key_compare>::value)
         -:  149:      : _M_key_compare()
-        1:  150:      { }
+    #####:  150:      { }
 ------------------
         -:  151:
         -:  152:      _Rb_tree_key_compare(const _Key_compare& __comp)
@@ -1671,8 +1671,8 @@ call    0 never executed
         -: 1030:      { return _M_impl._M_node_count == 0; }
         -: 1031:
         -: 1032:      size_type
-       8*: 1033:      size() const _GLIBCXX_NOEXCEPT
-       8*: 1034:      { return _M_impl._M_node_count; }
+    #####: 1033:      size() const _GLIBCXX_NOEXCEPT
+    #####: 1034:      { return _M_impl._M_node_count; }
 ------------------
 _ZNKSt8_Rb_treeIN5Catch9StringRefES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE4sizeEv:
 function _ZNKSt8_Rb_treeIN5Catch9StringRefES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE4sizeEv called 0 returned 0% blocks executed 0%
@@ -1681,10 +1681,10 @@ function _ZNKSt8_Rb_treeIN5Catch9StringRefES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1
     %%%%%: 1034-block  0
 ------------------
 _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEESt10_Select1stISD_ENS9_19CaseInsensitiveLessESaISD_EE4sizeEv:
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEESt10_Select1stISD_ENS9_19CaseInsensitiveLessESaISD_EE4sizeEv called 8 returned 100% blocks executed 100%
-        8: 1033:      size() const _GLIBCXX_NOEXCEPT
-        8: 1034:      { return _M_impl._M_node_count; }
-        8: 1034-block  0
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch6Detail10unique_ptrINS8_16IReporterFactoryEEEESt10_Select1stISD_ENS9_19CaseInsensitiveLessESaISD_EE4sizeEv called 0 returned 0% blocks executed 0%
+    #####: 1033:      size() const _GLIBCXX_NOEXCEPT
+    #####: 1034:      { return _M_impl._M_node_count; }
+    %%%%%: 1034-block  0
 ------------------
 _ZNKSt8_Rb_treeIN5Catch9StringRefESt4pairIKS1_NS0_7TagInfoEESt10_Select1stIS5_ENS0_6Detail19CaseInsensitiveLessESaIS5_EE4sizeEv:
 function _ZNKSt8_Rb_treeIN5Catch9StringRefESt4pairIKS1_NS0_7TagInfoEESt10_Select1stIS5_ENS0_6Detail19CaseInsensitiveLessESaIS5_EE4sizeEv called 0 returned 0% blocks executed 0%

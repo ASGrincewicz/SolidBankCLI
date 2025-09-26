@@ -329,23 +329,23 @@ branch  1 never executed
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-       10:  316:    __niter_base(_Iterator __it)
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       10:  318:    { return __it; }
+    #####:  318:    { return __it; }
 ------------------
 _ZSt12__niter_baseIPPKN5Catch14TestCaseHandleEET_S5_:
-function _ZSt12__niter_baseIPPKN5Catch14TestCaseHandleEET_S5_ called 7 returned 100% blocks executed 100%
-        7:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPPKN5Catch14TestCaseHandleEET_S5_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        7:  318:    { return __it; }
-        7:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseIPN5Catch8TestSpec11FilterMatchEET_S4_:
-function _ZSt12__niter_baseIPN5Catch8TestSpec11FilterMatchEET_S4_ called 3 returned 100% blocks executed 100%
-        3:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch8TestSpec11FilterMatchEET_S4_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        3:  318:    { return __it; }
-        3:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
         -:  319:
         -:  320:  template<typename _Ite, typename _Seq>
@@ -366,10 +366,10 @@ function _ZSt12__niter_baseIPN5Catch8TestSpec11FilterMatchEET_S4_ called 3 retur
         -:  335:  template<typename _Iterator>
         -:  336:    _GLIBCXX20_CONSTEXPR
         -:  337:    inline _Iterator
-function _ZSt12__niter_wrapIPPKN5Catch14TestCaseHandleEET_RKS5_S5_ called 1 returned 100% blocks executed 100%
-        1:  338:    __niter_wrap(const _Iterator&, _Iterator __res)
-        1:  339:    { return __res; }
-        1:  339-block  0
+function _ZSt12__niter_wrapIPPKN5Catch14TestCaseHandleEET_RKS5_S5_ called 0 returned 0% blocks executed 0%
+    #####:  338:    __niter_wrap(const _Iterator&, _Iterator __res)
+    #####:  339:    { return __res; }
+    %%%%%:  339-block  0
         -:  340:
         -:  341:  // All of these auxiliary structs serve two purposes.  (1) Replace
         -:  342:  // calls to copy with memmove whenever possible.  (Memmove, not memcpy,
@@ -434,9 +434,9 @@ branch  1 never executed (fallthrough)
         -:  394:
         -:  395:      template<typename _Tp, typename _Up>
         -:  396:	static void
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIPKN5Catch14TestCaseHandleEKS6_EEvPT_PT0_ called 1 returned 100% blocks executed 100%
-        1:  397:	__assign_one(_Tp* __to, _Up* __from)
-        1:  398:	{ *__to = *__from; }
+function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIPKN5Catch14TestCaseHandleEKS6_EEvPT_PT0_ called 0 returned 0% blocks executed 0%
+    #####:  397:	__assign_one(_Tp* __to, _Up* __from)
+    #####:  398:	{ *__to = *__from; }
         -:  399:    };
         -:  400:
         -:  401:#if __cplusplus >= 201103L
@@ -471,26 +471,26 @@ function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_on
         -:  430:      template<typename _Tp, typename _Up>
         -:  431:	_GLIBCXX20_CONSTEXPR
         -:  432:	static _Up*
-function _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIKPKN5Catch14TestCaseHandleES6_EEPT0_PT_SB_S9_ called 1 returned 100% blocks executed 83%
-        1:  433:	__copy_m(_Tp* __first, _Tp* __last, _Up* __result)
+function _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIKPKN5Catch14TestCaseHandleES6_EEPT0_PT_SB_S9_ called 0 returned 0% blocks executed 0%
+    #####:  433:	__copy_m(_Tp* __first, _Tp* __last, _Up* __result)
         -:  434:	{
-        1:  435:	  const ptrdiff_t _Num = __last - __first;
-        1:  436:	  if (__builtin_expect(_Num > 1, true))
-        1:  436-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+    #####:  435:	  const ptrdiff_t _Num = __last - __first;
+    #####:  436:	  if (__builtin_expect(_Num > 1, true))
+    %%%%%:  436-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
     #####:  437:	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
     %%%%%:  437-block  0
-        1:  438:	  else if (_Num == 1)
-        1:  438-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 0
+    #####:  438:	  else if (_Num == 1)
+    %%%%%:  438-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  439:	    std::__copy_move<_IsMove, false, random_access_iterator_tag>::
-        1:  440:	      __assign_one(__result, __first);
-        1:  440-block  0
-call    0 returned 1
-        1:  441:	  return __result + _Num;
-        1:  441-block  0
+    #####:  440:	      __assign_one(__result, __first);
+    %%%%%:  440-block  0
+call    0 never executed
+    #####:  441:	  return __result + _Num;
+    %%%%%:  441-block  0
         -:  442:	}
         -:  443:    };
         -:  444:
@@ -546,25 +546,25 @@ call    0 returned 1
         -:  494:  template<bool _IsMove, typename _II, typename _OI>
         -:  495:    _GLIBCXX20_CONSTEXPR
         -:  496:    inline _OI
-function _ZSt14__copy_move_a2ILb0EPKPKN5Catch14TestCaseHandleEPS3_ET1_T0_S8_S7_ called 1 returned 100% blocks executed 83%
-        1:  497:    __copy_move_a2(_II __first, _II __last, _OI __result)
+function _ZSt14__copy_move_a2ILb0EPKPKN5Catch14TestCaseHandleEPS3_ET1_T0_S8_S7_ called 0 returned 0% blocks executed 0%
+    #####:  497:    __copy_move_a2(_II __first, _II __last, _OI __result)
         -:  498:    {
         -:  499:      typedef typename iterator_traits<_II>::iterator_category _Category;
         -:  500:#ifdef __cpp_lib_is_constant_evaluated
-        1:  501:      if (std::is_constant_evaluated())
-        1:  501-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####:  501:      if (std::is_constant_evaluated())
+    %%%%%:  501-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  502:	return std::__copy_move<_IsMove, false, _Category>::
     #####:  503:	  __copy_m(__first, __last, __result);
     %%%%%:  503-block  0
 call    0 never executed
         -:  504:#endif
         -:  505:      return std::__copy_move<_IsMove, __memcpyable<_OI, _II>::__value,
-        1:  506:			      _Category>::__copy_m(__first, __last, __result);
-        1:  506-block  0
-call    0 returned 1
+    #####:  506:			      _Category>::__copy_m(__first, __last, __result);
+    %%%%%:  506-block  0
+call    0 never executed
         -:  507:    }
         -:  508:
         -:  509:  template<bool _IsMove,
@@ -590,28 +590,28 @@ call    0 returned 1
         -:  529:  template<bool _IsMove, typename _II, typename _OI>
         -:  530:    _GLIBCXX20_CONSTEXPR
         -:  531:    inline _OI
-function _ZSt14__copy_move_a1ILb0EPKPKN5Catch14TestCaseHandleEPS3_ET1_T0_S8_S7_ called 1 returned 100% blocks executed 100%
-        1:  532:    __copy_move_a1(_II __first, _II __last, _OI __result)
-        1:  533:    { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
-        1:  533-block  0
-call    0 returned 1
+function _ZSt14__copy_move_a1ILb0EPKPKN5Catch14TestCaseHandleEPS3_ET1_T0_S8_S7_ called 0 returned 0% blocks executed 0%
+    #####:  532:    __copy_move_a1(_II __first, _II __last, _OI __result)
+    #####:  533:    { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
+    %%%%%:  533-block  0
+call    0 never executed
         -:  534:
         -:  535:  template<bool _IsMove, typename _II, typename _OI>
         -:  536:    _GLIBCXX20_CONSTEXPR
         -:  537:    inline _OI
-function _ZSt13__copy_move_aILb0EN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_ET1_T0_SE_SD_ called 1 returned 100% blocks executed 100%
-        1:  538:    __copy_move_a(_II __first, _II __last, _OI __result)
+function _ZSt13__copy_move_aILb0EN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_ET1_T0_SE_SD_ called 0 returned 0% blocks executed 0%
+    #####:  538:    __copy_move_a(_II __first, _II __last, _OI __result)
         -:  539:    {
-        1:  540:      return std::__niter_wrap(__result,
-        1:  540-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-call    3 returned 1
-call    4 returned 1
+    #####:  540:      return std::__niter_wrap(__result,
+    %%%%%:  540-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
         -:  541:		std::__copy_move_a1<_IsMove>(std::__niter_base(__first),
         -:  542:					     std::__niter_base(__last),
-        1:  543:					     std::__niter_base(__result)));
+    #####:  543:					     std::__niter_base(__result)));
         -:  544:    }
         -:  545:
         -:  546:  template<bool _IsMove,
@@ -692,8 +692,8 @@ call    4 returned 1
         -:  621:  template<typename _II, typename _OI>
         -:  622:    _GLIBCXX20_CONSTEXPR
         -:  623:    inline _OI
-function _ZSt4copyIN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_ called 1 returned 100% blocks executed 100%
-        1:  624:    copy(_II __first, _II __last, _OI __result)
+function _ZSt4copyIN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+    #####:  624:    copy(_II __first, _II __last, _OI __result)
         -:  625:    {
         -:  626:      // concept requirements
         -:  627:      __glibcxx_function_requires(_InputIteratorConcept<_II>)
@@ -702,11 +702,11 @@ function _ZSt4copyIN9__gnu_cxx17__normal_iteratorIPKPKN5Catch14TestCaseHandleESt
         -:  630:      __glibcxx_requires_can_increment_range(__first, __last, __result);
         -:  631:
         -:  632:      return std::__copy_move_a<__is_move_iterator<_II>::__value>
-        1:  633:	     (std::__miter_base(__first), std::__miter_base(__last), __result);
-        1:  633-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+    #####:  633:	     (std::__miter_base(__first), std::__miter_base(__last), __result);
+    %%%%%:  633-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  634:    }
         -:  635:
         -:  636:#if __cplusplus >= 201103L

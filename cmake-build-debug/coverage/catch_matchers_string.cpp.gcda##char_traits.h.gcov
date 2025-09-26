@@ -525,21 +525,21 @@ branch  2 never executed
         -:  400:      }
         -:  401:
         -:  402:      static _GLIBCXX17_CONSTEXPR size_t
-function _ZNSt11char_traitsIcE6lengthEPKc called 0 returned 0% blocks executed 0%
-    #####:  403:      length(const char_type* __s)
+function _ZNSt11char_traitsIcE6lengthEPKc called 8 returned 100% blocks executed 67%
+        8:  403:      length(const char_type* __s)
         -:  404:      {
         -:  405:#if __cplusplus >= 201703L
-    #####:  406:	if (std::__is_constant_evaluated())
-    %%%%%:  406-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
+        8:  406:	if (std::__is_constant_evaluated())
+        8:  406-block  0
+call    0 returned 8
+branch  1 taken 0 (fallthrough)
+branch  2 taken 8
     #####:  407:	  return __gnu_cxx::char_traits<char_type>::length(__s);
     %%%%%:  407-block  0
 call    0 never executed
         -:  408:#endif
-    #####:  409:	return __builtin_strlen(__s);
-    %%%%%:  409-block  0
+        8:  409:	return __builtin_strlen(__s);
+        8:  409-block  0
         -:  410:      }
         -:  411:
         -:  412:      static _GLIBCXX17_CONSTEXPR const char_type*

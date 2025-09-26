@@ -1839,13 +1839,13 @@ call    0 never executed
         -: 1382:       */
         -: 1383:      _GLIBCXX20_CONSTEXPR
         -: 1384:      basic_string&
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc called 0 returned 0% blocks executed 0%
-    #####: 1385:      operator+=(_CharT __c)
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc called 2 returned 100% blocks executed 100%
+        2: 1385:      operator+=(_CharT __c)
         -: 1386:      {
-    #####: 1387:	this->push_back(__c);
-    %%%%%: 1387-block  0
-call    0 never executed
-    #####: 1388:	return *this;
+        2: 1387:	this->push_back(__c);
+        2: 1387-block  0
+call    0 returned 2
+        2: 1388:	return *this;
         -: 1389:      }
         -: 1390:
         -: 1391:#if __cplusplus >= 201103L
@@ -2031,26 +2031,26 @@ call    0 never executed
         -: 1557:       */
         -: 1558:      _GLIBCXX20_CONSTEXPR
         -: 1559:      void
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc called 0 returned 0% blocks executed 0%
-    #####: 1560:      push_back(_CharT __c)
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc called 2 returned 100% blocks executed 88%
+        2: 1560:      push_back(_CharT __c)
         -: 1561:      {
-    #####: 1562:	const size_type __size = this->size();
-    %%%%%: 1562-block  0
-call    0 never executed
-    #####: 1563:	if (__size + 1 > this->capacity())
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
+        2: 1562:	const size_type __size = this->size();
+        2: 1562-block  0
+call    0 returned 2
+        2: 1563:	if (__size + 1 > this->capacity())
+call    0 returned 2
+branch  1 taken 0 (fallthrough)
+branch  2 taken 2
     #####: 1564:	  this->_M_mutate(__size, size_type(0), 0, size_type(1));
     %%%%%: 1564-block  0
 call    0 never executed
-    #####: 1565:	traits_type::assign(this->_M_data()[__size], __c);
-    %%%%%: 1565-block  0
-call    0 never executed
-call    1 never executed
-    #####: 1566:	this->_M_set_length(__size + 1);
-call    0 never executed
-    #####: 1567:      }
+        2: 1565:	traits_type::assign(this->_M_data()[__size], __c);
+        2: 1565-block  0
+call    0 returned 2
+call    1 returned 2
+        2: 1566:	this->_M_set_length(__size + 1);
+call    0 returned 2
+        2: 1567:      }
         -: 1568:
         -: 1569:      /**
         -: 1570:       *  @brief  Set value to contents of another string.

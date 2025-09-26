@@ -329,16 +329,16 @@ branch  1 never executed
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-       6*:  316:    __niter_base(_Iterator __it)
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       6*:  318:    { return __it; }
+    #####:  318:    { return __it; }
 ------------------
 _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_16TestCaseTracking8ITrackerEEEET_S7_:
-function _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_16TestCaseTracking8ITrackerEEEET_S7_ called 6 returned 100% blocks executed 100%
-        6:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch6Detail10unique_ptrINS0_16TestCaseTracking8ITrackerEEEET_S7_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        6:  318:    { return __it; }
-        6:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseIPN5Catch9StringRefEET_S3_:
 function _ZSt12__niter_baseIPN5Catch9StringRefEET_S3_ called 0 returned 0% blocks executed 0%
@@ -2328,13 +2328,13 @@ call    2 never executed
         -: 2061:  template<typename _RandomAccessIterator, typename _Predicate>
         -: 2062:    _GLIBCXX20_CONSTEXPR
         -: 2063:    _RandomAccessIterator
-       1*: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+    #####: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 2065:	      _Predicate __pred, random_access_iterator_tag)
         -: 2066:    {
         -: 2067:      typename iterator_traits<_RandomAccessIterator>::difference_type
-       1*: 2068:	__trip_count = (__last - __first) >> 2;
+    #####: 2068:	__trip_count = (__last - __first) >> 2;
         -: 2069:
-       1*: 2070:      for (; __trip_count > 0; --__trip_count)
+    #####: 2070:      for (; __trip_count > 0; --__trip_count)
         -: 2071:	{
     #####: 2072:	  if (__pred(__first))
     #####: 2073:	    return __first;
@@ -2353,7 +2353,7 @@ call    2 never executed
     #####: 2086:	  ++__first;
         -: 2087:	}
         -: 2088:
-       1*: 2089:      switch (__last - __first)
+    #####: 2089:      switch (__last - __first)
         -: 2090:	{
     #####: 2091:	case 3:
     #####: 2092:	  if (__pred(__first))
@@ -2370,9 +2370,9 @@ call    2 never executed
     #####: 2103:	    return __first;
     #####: 2104:	  ++__first;
         -: 2105:	  // FALLTHRU
-       1*: 2106:	case 0:
+    #####: 2106:	case 0:
         -: 2107:	default:
-       1*: 2108:	  return __last;
+    #####: 2108:	  return __last;
         -: 2109:	}
         -: 2110:    }
 ------------------
@@ -2593,19 +2593,19 @@ call    0 never executed
         -: 2110:    }
 ------------------
 _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS2_16TestCaseTracking8ITrackerEEESt6vectorIS7_SaIS7_EEEENS0_5__ops10_Iter_predIZNS6_9findChildERKNS5_18NameAndLocationRefEEUlRKS7_E_EEET_SM_SM_T0_St26random_access_iterator_tag:
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS2_16TestCaseTracking8ITrackerEEESt6vectorIS7_SaIS7_EEEENS0_5__ops10_Iter_predIZNS6_9findChildERKNS5_18NameAndLocationRefEEUlRKS7_E_EEET_SM_SM_T0_St26random_access_iterator_tag called 1 returned 100% blocks executed 19%
-        1: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPN5Catch6Detail10unique_ptrINS2_16TestCaseTracking8ITrackerEEESt6vectorIS7_SaIS7_EEEENS0_5__ops10_Iter_predIZNS6_9findChildERKNS5_18NameAndLocationRefEEUlRKS7_E_EEET_SM_SM_T0_St26random_access_iterator_tag called 0 returned 0% blocks executed 0%
+    #####: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 2065:	      _Predicate __pred, random_access_iterator_tag)
         -: 2066:    {
         -: 2067:      typename iterator_traits<_RandomAccessIterator>::difference_type
-        1: 2068:	__trip_count = (__last - __first) >> 2;
-        1: 2068-block  0
-call    0 returned 1
+    #####: 2068:	__trip_count = (__last - __first) >> 2;
+    %%%%%: 2068-block  0
+call    0 never executed
         -: 2069:
-       1*: 2070:      for (; __trip_count > 0; --__trip_count)
-        1: 2070-block  0
-branch  0 taken 0
-branch  1 taken 1 (fallthrough)
+    #####: 2070:      for (; __trip_count > 0; --__trip_count)
+    %%%%%: 2070-block  0
+branch  0 never executed
+branch  1 never executed (fallthrough)
         -: 2071:	{
     #####: 2072:	  if (__pred(__first))
     %%%%%: 2072-block  0
@@ -2649,13 +2649,13 @@ branch  2 never executed
 call    0 never executed
         -: 2087:	}
         -: 2088:
-        1: 2089:      switch (__last - __first)
-        1: 2089-block  0
-call    0 returned 1
-branch  1 taken 0
-branch  2 taken 0
-branch  3 taken 0
-branch  4 taken 1
+    #####: 2089:      switch (__last - __first)
+    %%%%%: 2089-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
         -: 2090:	{
     #####: 2091:	case 3:
     #####: 2092:	  if (__pred(__first))
@@ -2693,10 +2693,10 @@ branch  2 never executed
     %%%%%: 2104-block  0
 call    0 never executed
         -: 2105:	  // FALLTHRU
-        1: 2106:	case 0:
+    #####: 2106:	case 0:
         -: 2107:	default:
-        1: 2108:	  return __last;
-        1: 2108-block  0
+    #####: 2108:	  return __last;
+    %%%%%: 2108-block  0
         -: 2109:	}
         -: 2110:    }
 ------------------
@@ -2704,10 +2704,10 @@ call    0 never executed
         -: 2112:  template<typename _Iterator, typename _Predicate>
         -: 2113:    _GLIBCXX20_CONSTEXPR
         -: 2114:    inline _Iterator
-       1*: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
+    #####: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
         -: 2116:    {
-       1*: 2117:      return __find_if(__first, __last, __pred,
-       1*: 2118:		       std::__iterator_category(__first));
+    #####: 2117:      return __find_if(__first, __last, __pred,
+    #####: 2118:		       std::__iterator_category(__first));
         -: 2119:    }
         -: 2120:
         -: 2121:  template<typename _InputIterator, typename _Predicate>

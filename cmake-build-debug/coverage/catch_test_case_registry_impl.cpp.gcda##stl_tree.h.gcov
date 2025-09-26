@@ -153,10 +153,10 @@
         -:  149:      : _M_key_compare()
         -:  150:      { }
         -:  151:
-function _ZNSt20_Rb_tree_key_compareIRZN5Catch12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS3_EEEUlPKNS0_12TestCaseInfoESA_E_EC2ESC_ called 1 returned 100% blocks executed 100%
-        1:  152:      _Rb_tree_key_compare(const _Key_compare& __comp)
-        1:  153:      : _M_key_compare(__comp)
-        1:  154:      { }
+function _ZNSt20_Rb_tree_key_compareIRZN5Catch12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS3_EEEUlPKNS0_12TestCaseInfoESA_E_EC2ESC_ called 0 returned 0% blocks executed 0%
+    #####:  152:      _Rb_tree_key_compare(const _Key_compare& __comp)
+    #####:  153:      : _M_key_compare(__comp)
+    #####:  154:      { }
         -:  155:
         -:  156:#if __cplusplus >= 201103L
         -:  157:      // Copy constructor added for consistency with C++98 mode.
@@ -240,11 +240,11 @@ function _ZNSt15_Rb_tree_header8_M_resetEv called 0 returned 0% blocks executed 
         -:  231:      __gnu_cxx::__aligned_membuf<_Val> _M_storage;
         -:  232:
         -:  233:      _Val*
-function _ZNSt13_Rb_tree_nodeIPKN5Catch12TestCaseInfoEE9_M_valptrEv called 2 returned 100% blocks executed 100%
-        2:  234:      _M_valptr()
-        2:  235:      { return _M_storage._M_ptr(); }
-        2:  235-block  0
-call    0 returned 2
+function _ZNSt13_Rb_tree_nodeIPKN5Catch12TestCaseInfoEE9_M_valptrEv called 0 returned 0% blocks executed 0%
+    #####:  234:      _M_valptr()
+    #####:  235:      { return _M_storage._M_ptr(); }
+    %%%%%:  235-block  0
+call    0 never executed
         -:  236:
         -:  237:      const _Val*
 function _ZNKSt13_Rb_tree_nodeIPKN5Catch12TestCaseInfoEE9_M_valptrEv called 0 returned 0% blocks executed 0%
@@ -285,9 +285,9 @@ call    0 never executed
         -:  270:      : _M_node() { }
         -:  271:
         -:  272:      explicit
-function _ZNSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEEC1EPSt18_Rb_tree_node_base called 3 returned 100% blocks executed 100%
-        3:  273:      _Rb_tree_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        3:  274:      : _M_node(__x) { }
+function _ZNSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEEC1EPSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
+    #####:  273:      _Rb_tree_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    #####:  274:      : _M_node(__x) { }
         -:  275:
         -:  276:      reference
         -:  277:      operator*() const _GLIBCXX_NOEXCEPT
@@ -330,10 +330,10 @@ function _ZNSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEEmmEv called 0 returne
         -:  312:      }
         -:  313:
         -:  314:      friend bool
-function _ZSteqRKSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEES6_ called 1 returned 100% blocks executed 100%
-        1:  315:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-        1:  316:      { return __x._M_node == __y._M_node; }
-        1:  316-block  0
+function _ZSteqRKSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEES6_ called 0 returned 0% blocks executed 0%
+    #####:  315:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+    #####:  316:      { return __x._M_node == __y._M_node; }
+    %%%%%:  316-block  0
         -:  317:
         -:  318:#if ! __cpp_lib_three_way_comparison
         -:  319:      friend bool
@@ -367,9 +367,9 @@ function _ZSteqRKSt17_Rb_tree_iteratorIPKN5Catch12TestCaseInfoEES6_ called 1 ret
         -:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
         -:  348:      : _M_node(__x) { }
         -:  349:
-function _ZNSt23_Rb_tree_const_iteratorIPKN5Catch12TestCaseInfoEEC1ERKSt17_Rb_tree_iteratorIS3_E called 1 returned 100% blocks executed 100%
-        1:  350:      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
-        1:  351:      : _M_node(__it._M_node) { }
+function _ZNSt23_Rb_tree_const_iteratorIPKN5Catch12TestCaseInfoEEC1ERKSt17_Rb_tree_iteratorIS3_E called 0 returned 0% blocks executed 0%
+    #####:  350:      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
+    #####:  351:      : _M_node(__it._M_node) { }
         -:  352:
         -:  353:      iterator
         -:  354:      _M_const_cast() const _GLIBCXX_NOEXCEPT
@@ -546,18 +546,18 @@ call    0 never executed
         -:  522:      // recycle.
         -:  523:      struct _Alloc_node
         -:  524:      {
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_Alloc_nodeC2ERSG_ called 1 returned 100% blocks executed 100%
-        1:  525:	_Alloc_node(_Rb_tree& __t)
-        1:  526:	: _M_t(__t) { }
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_Alloc_nodeC2ERSG_ called 0 returned 0% blocks executed 0%
+    #####:  525:	_Alloc_node(_Rb_tree& __t)
+    #####:  526:	: _M_t(__t) { }
         -:  527:
         -:  528:	template<typename _Arg>
         -:  529:	  _Link_type
-function _ZNKSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_Alloc_nodeclIRKS3_EEPSt13_Rb_tree_nodeIS3_EOT_ called 1 returned 100% blocks executed 100%
-        1:  530:	  operator()(_GLIBCXX_FWDREF(_Arg) __arg) const
-        1:  531:	  { return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg)); }
-        1:  531-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNKSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_Alloc_nodeclIRKS3_EEPSt13_Rb_tree_nodeIS3_EOT_ called 0 returned 0% blocks executed 0%
+    #####:  530:	  operator()(_GLIBCXX_FWDREF(_Arg) __arg) const
+    #####:  531:	  { return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg)); }
+    %%%%%:  531-block  0
+call    0 never executed
+call    1 never executed
         -:  532:
         -:  533:      private:
         -:  534:	_Rb_tree& _M_t;
@@ -575,10 +575,10 @@ call    1 returned 1
         -:  546:      typedef _Alloc 				allocator_type;
         -:  547:
         -:  548:      _Node_allocator&
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE21_M_get_Node_allocatorEv called 4 returned 100% blocks executed 100%
-        4:  549:      _M_get_Node_allocator() _GLIBCXX_NOEXCEPT
-        4:  550:      { return this->_M_impl; }
-        4:  550-block  0
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE21_M_get_Node_allocatorEv called 0 returned 0% blocks executed 0%
+    #####:  549:      _M_get_Node_allocator() _GLIBCXX_NOEXCEPT
+    #####:  550:      { return this->_M_impl; }
+    %%%%%:  550-block  0
         -:  551:
         -:  552:      const _Node_allocator&
         -:  553:      _M_get_Node_allocator() const _GLIBCXX_NOEXCEPT
@@ -590,19 +590,19 @@ function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLO
         -:  559:
         -:  560:    protected:
         -:  561:      _Link_type
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_M_get_nodeEv called 1 returned 100% blocks executed 69%
-        1:  562:      _M_get_node()
-        2:  563:      { return _Alloc_traits::allocate(_M_get_Node_allocator(), 1); }
-        1:  563-block  0
-call    0 returned 1
-        1:  563-block  1
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_M_get_nodeEv called 0 returned 0% blocks executed 0%
+    #####:  562:      _M_get_node()
+    #####:  563:      { return _Alloc_traits::allocate(_M_get_Node_allocator(), 1); }
+    %%%%%:  563-block  0
+call    0 never executed
+    %%%%%:  563-block  1
         -:  564:
         -:  565:      void
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_M_put_nodeEPSt13_Rb_tree_nodeIS3_E called 1 returned 100% blocks executed 75%
-        1:  566:      _M_put_node(_Link_type __p) _GLIBCXX_NOEXCEPT
-        1:  567:      { _Alloc_traits::deallocate(_M_get_Node_allocator(), __p, 1); }
-        1:  567-block  0
-call    0 returned 1
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE11_M_put_nodeEPSt13_Rb_tree_nodeIS3_E called 0 returned 0% blocks executed 0%
+    #####:  566:      _M_put_node(_Link_type __p) _GLIBCXX_NOEXCEPT
+    #####:  567:      { _Alloc_traits::deallocate(_M_get_Node_allocator(), __p, 1); }
+    %%%%%:  567-block  0
+call    0 never executed
         -:  568:
         -:  569:#if __cplusplus < 201103L
         -:  570:      void
@@ -627,18 +627,18 @@ call    0 returned 1
         -:  589:#else
         -:  590:      template<typename... _Args>
         -:  591:	void
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE17_M_construct_nodeIJRKS3_EEEvPSt13_Rb_tree_nodeIS3_EDpOT_ called 1 returned 100% blocks executed 100%
-        1:  592:	_M_construct_node(_Link_type __node, _Args&&... __args)
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE17_M_construct_nodeIJRKS3_EEEvPSt13_Rb_tree_nodeIS3_EDpOT_ called 0 returned 0% blocks executed 0%
+    #####:  592:	_M_construct_node(_Link_type __node, _Args&&... __args)
         -:  593:	{
         -:  594:	  __try
         -:  595:	    {
-        1:  596:	      ::new(__node) _Rb_tree_node<_Val>;
-        1:  596-block  0
-call    0 returned 1
-        1:  597:	      _Alloc_traits::construct(_M_get_Node_allocator(),
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+    #####:  596:	      ::new(__node) _Rb_tree_node<_Val>;
+    %%%%%:  596-block  0
+call    0 never executed
+    #####:  597:	      _Alloc_traits::construct(_M_get_Node_allocator(),
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  598:				       __node->_M_valptr(),
         -:  599:				       std::forward<_Args>(__args)...);
         -:  600:	    }
@@ -648,48 +648,48 @@ call    2 returned 1
         -:  604:	      _M_put_node(__node);
         -:  605:	      __throw_exception_again;
         -:  606:	    }
-        1:  607:	}
+    #####:  607:	}
         -:  608:
         -:  609:      template<typename... _Args>
         -:  610:	_Link_type
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE14_M_create_nodeIJRKS3_EEEPSt13_Rb_tree_nodeIS3_EDpOT_ called 1 returned 100% blocks executed 100%
-        1:  611:	_M_create_node(_Args&&... __args)
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE14_M_create_nodeIJRKS3_EEEPSt13_Rb_tree_nodeIS3_EDpOT_ called 0 returned 0% blocks executed 0%
+    #####:  611:	_M_create_node(_Args&&... __args)
         -:  612:	{
-        1:  613:	  _Link_type __tmp = _M_get_node();
-        1:  613-block  0
-call    0 returned 1
-        1:  614:	  _M_construct_node(__tmp, std::forward<_Args>(__args)...);
-call    0 returned 1
-call    1 returned 1
-        1:  615:	  return __tmp;
+    #####:  613:	  _Link_type __tmp = _M_get_node();
+    %%%%%:  613-block  0
+call    0 never executed
+    #####:  614:	  _M_construct_node(__tmp, std::forward<_Args>(__args)...);
+call    0 never executed
+call    1 never executed
+    #####:  615:	  return __tmp;
         -:  616:	}
         -:  617:#endif
         -:  618:
         -:  619:      void
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE15_M_destroy_nodeEPSt13_Rb_tree_nodeIS3_E called 1 returned 100% blocks executed 100%
-        1:  620:      _M_destroy_node(_Link_type __p) _GLIBCXX_NOEXCEPT
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE15_M_destroy_nodeEPSt13_Rb_tree_nodeIS3_E called 0 returned 0% blocks executed 0%
+    #####:  620:      _M_destroy_node(_Link_type __p) _GLIBCXX_NOEXCEPT
         -:  621:      {
         -:  622:#if __cplusplus < 201103L
         -:  623:	get_allocator().destroy(__p->_M_valptr());
         -:  624:#else
-        1:  625:	_Alloc_traits::destroy(_M_get_Node_allocator(), __p->_M_valptr());
-        1:  625-block  0
-call    0 returned 1
-call    1 returned 1
-        1:  626:	__p->~_Rb_tree_node<_Val>();
+    #####:  625:	_Alloc_traits::destroy(_M_get_Node_allocator(), __p->_M_valptr());
+    %%%%%:  625-block  0
+call    0 never executed
+call    1 never executed
+    #####:  626:	__p->~_Rb_tree_node<_Val>();
         -:  627:#endif
-        1:  628:      }
+    #####:  628:      }
         -:  629:
         -:  630:      void
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS3_E called 1 returned 100% blocks executed 100%
-        1:  631:      _M_drop_node(_Link_type __p) _GLIBCXX_NOEXCEPT
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS3_E called 0 returned 0% blocks executed 0%
+    #####:  631:      _M_drop_node(_Link_type __p) _GLIBCXX_NOEXCEPT
         -:  632:      {
-        1:  633:	_M_destroy_node(__p);
-        1:  633-block  0
-call    0 returned 1
-        1:  634:	_M_put_node(__p);
-call    0 returned 1
-        1:  635:      }
+    #####:  633:	_M_destroy_node(__p);
+    %%%%%:  633-block  0
+call    0 never executed
+    #####:  634:	_M_put_node(__p);
+call    0 never executed
+    #####:  635:      }
         -:  636:
         -:  637:      template<bool _MoveValue, typename _NodeGen>
         -:  638:	_Link_type
@@ -756,15 +756,15 @@ call    0 returned 1
         -:  699:	    _Rb_tree_header(std::move(__x))
         -:  700:	  { }
         -:  701:
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE13_Rb_tree_implISE_Lb0EEC2ESE_OSaISt13_Rb_tree_nodeIS3_EE called 1 returned 100% blocks executed 100%
-        1:  702:	  _Rb_tree_impl(const _Key_compare& __comp, _Node_allocator&& __a)
-        2:  703:	  : _Node_allocator(std::move(__a)), _Base_key_compare(__comp)
-        1:  703-block  0
-call    0 returned 1
-        1:  703-block  1
-call    1 returned 1
-call    2 returned 1
-        1:  704:	  { }
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE13_Rb_tree_implISE_Lb0EEC2ESE_OSaISt13_Rb_tree_nodeIS3_EE called 0 returned 0% blocks executed 0%
+    #####:  702:	  _Rb_tree_impl(const _Key_compare& __comp, _Node_allocator&& __a)
+    #####:  703:	  : _Node_allocator(std::move(__a)), _Base_key_compare(__comp)
+    %%%%%:  703-block  0
+call    0 never executed
+    %%%%%:  703-block  1
+call    1 never executed
+call    2 never executed
+    #####:  704:	  { }
         -:  705:#endif
         -:  706:	};
         -:  707:
@@ -796,17 +796,17 @@ call    2 returned 1
         -:  733:      { return this->_M_impl._M_header._M_right; }
         -:  734:
         -:  735:      _Link_type
-function _ZNKSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE9_M_mbeginEv called 2 returned 100% blocks executed 100%
-        2:  736:      _M_mbegin() const _GLIBCXX_NOEXCEPT
-        2:  737:      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
-        2:  737-block  0
+function _ZNKSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE9_M_mbeginEv called 0 returned 0% blocks executed 0%
+    #####:  736:      _M_mbegin() const _GLIBCXX_NOEXCEPT
+    #####:  737:      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
+    %%%%%:  737-block  0
         -:  738:
         -:  739:      _Link_type
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_M_beginEv called 2 returned 100% blocks executed 100%
-        2:  740:      _M_begin() _GLIBCXX_NOEXCEPT
-        2:  741:      { return _M_mbegin(); }
-        2:  741-block  0
-call    0 returned 2
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_M_beginEv called 0 returned 0% blocks executed 0%
+    #####:  740:      _M_begin() _GLIBCXX_NOEXCEPT
+    #####:  741:      { return _M_mbegin(); }
+    %%%%%:  741-block  0
+call    0 never executed
         -:  742:
         -:  743:      _Const_Link_type
         -:  744:      _M_begin() const _GLIBCXX_NOEXCEPT
@@ -816,10 +816,10 @@ call    0 returned 2
         -:  748:      }
         -:  749:
         -:  750:      _Base_ptr
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE6_M_endEv called 2 returned 100% blocks executed 100%
-        2:  751:      _M_end() _GLIBCXX_NOEXCEPT
-        2:  752:      { return &this->_M_impl._M_header; }
-        2:  752-block  0
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE6_M_endEv called 0 returned 0% blocks executed 0%
+    #####:  751:      _M_end() _GLIBCXX_NOEXCEPT
+    #####:  752:      { return &this->_M_impl._M_header; }
+    %%%%%:  752-block  0
         -:  753:
         -:  754:      _Const_Base_ptr
         -:  755:      _M_end() const _GLIBCXX_NOEXCEPT
@@ -852,20 +852,20 @@ call    1 never executed
         -:  778:      }
         -:  779:
         -:  780:      static _Link_type
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE7_S_leftEPSt18_Rb_tree_node_base called 1 returned 100% blocks executed 100%
-        1:  781:      _S_left(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        1:  782:      { return static_cast<_Link_type>(__x->_M_left); }
-        1:  782-block  0
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE7_S_leftEPSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
+    #####:  781:      _S_left(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    #####:  782:      { return static_cast<_Link_type>(__x->_M_left); }
+    %%%%%:  782-block  0
         -:  783:
         -:  784:      static _Const_Link_type
         -:  785:      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
         -:  786:      { return static_cast<_Const_Link_type>(__x->_M_left); }
         -:  787:
         -:  788:      static _Link_type
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_S_rightEPSt18_Rb_tree_node_base called 1 returned 100% blocks executed 100%
-        1:  789:      _S_right(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        1:  790:      { return static_cast<_Link_type>(__x->_M_right); }
-        1:  790-block  0
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_S_rightEPSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
+    #####:  789:      _S_right(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    #####:  790:      { return static_cast<_Link_type>(__x->_M_right); }
+    %%%%%:  790-block  0
         -:  791:
         -:  792:      static _Const_Link_type
         -:  793:      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
@@ -1011,16 +1011,16 @@ call    0 never executed
         -:  930:      _Rb_tree() = default;
         -:  931:#endif
         -:  932:
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EEC2ESE_RKSF_ called 1 returned 100% blocks executed 75%
-        1:  933:      _Rb_tree(const _Compare& __comp,
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EEC2ESE_RKSF_ called 0 returned 0% blocks executed 0%
+    #####:  933:      _Rb_tree(const _Compare& __comp,
         -:  934:	       const allocator_type& __a = allocator_type())
-        3:  935:      : _M_impl(__comp, _Node_allocator(__a)) { }
-        1:  935-block  0
-        1:  935-block  1
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  935-block  2
+    #####:  935:      : _M_impl(__comp, _Node_allocator(__a)) { }
+    %%%%%:  935-block  0
+    %%%%%:  935-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  935-block  2
         -:  936:
         -:  937:      _Rb_tree(const _Rb_tree& __x)
         -:  938:      : _M_impl(__x._M_impl)
@@ -1070,13 +1070,13 @@ branch  2 taken 0 (throw)
         -:  982:      { }
         -:  983:#endif
         -:  984:
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EED2Ev called 1 returned 100% blocks executed 100%
-        1:  985:      ~_Rb_tree() _GLIBCXX_NOEXCEPT
-        1:  986:      { _M_erase(_M_begin()); }
-        1:  986-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EED2Ev called 0 returned 0% blocks executed 0%
+    #####:  985:      ~_Rb_tree() _GLIBCXX_NOEXCEPT
+    #####:  986:      { _M_erase(_M_begin()); }
+    %%%%%:  986-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  987:
         -:  988:      _Rb_tree&
         -:  989:      operator=(const _Rb_tree& __x);
@@ -1087,12 +1087,12 @@ call    2 returned 1
         -:  994:      { return _M_impl._M_key_compare; }
         -:  995:
         -:  996:      iterator
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE5beginEv called 1 returned 100% blocks executed 100%
-        1:  997:      begin() _GLIBCXX_NOEXCEPT
-        1:  998:      { return iterator(this->_M_impl._M_header._M_left); }
-        1:  998-block  0
-call    0 returned 1
-        1:  998-block  1
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE5beginEv called 0 returned 0% blocks executed 0%
+    #####:  997:      begin() _GLIBCXX_NOEXCEPT
+    #####:  998:      { return iterator(this->_M_impl._M_header._M_left); }
+    %%%%%:  998-block  0
+call    0 never executed
+    %%%%%:  998-block  1
         -:  999:
         -: 1000:      const_iterator
         -: 1001:      begin() const _GLIBCXX_NOEXCEPT
@@ -1912,8 +1912,8 @@ call    0 returned 1
         -: 1815:    template<typename _NodeGen>
         -: 1816:#endif
         -: 1817:      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE10_M_insert_IRKS3_NSG_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS3_EPSt18_Rb_tree_node_baseSO_OT_RT0_ called 1 returned 100% blocks executed 71%
-        1: 1818:      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE10_M_insert_IRKS3_NSG_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS3_EPSt18_Rb_tree_node_baseSO_OT_RT0_ called 0 returned 0% blocks executed 0%
+    #####: 1818:      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 1819:      _M_insert_(_Base_ptr __x, _Base_ptr __p,
         -: 1820:#if __cplusplus >= 201103L
         -: 1821:		 _Arg&& __v,
@@ -1922,15 +1922,15 @@ function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLO
         -: 1824:#endif
         -: 1825:		 _NodeGen& __node_gen)
         -: 1826:      {
-        1: 1827:	bool __insert_left = (__x != 0 || __p == _M_end()
-        1: 1827-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
-       2*: 1828:			      || _M_impl._M_key_compare(_KeyOfValue()(__v),
-        1: 1828-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 0
+    #####: 1827:	bool __insert_left = (__x != 0 || __p == _M_end()
+    %%%%%: 1827-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####: 1828:			      || _M_impl._M_key_compare(_KeyOfValue()(__v),
+    %%%%%: 1828-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
 call    2 never executed
 call    3 never executed
 branch  4 never executed (fallthrough)
@@ -1938,25 +1938,25 @@ branch  5 never executed (throw)
     %%%%%: 1828-block  1
 branch  6 never executed (fallthrough)
 branch  7 never executed
-        1: 1828-block  2
+    %%%%%: 1828-block  2
     %%%%%: 1828-block  3
     #####: 1829:							_S_key(__p)));
     %%%%%: 1829-block  0
 call    0 never executed
         -: 1830:
-        1: 1831:	_Link_type __z = __node_gen(_GLIBCXX_FORWARD(_Arg, __v));
-        1: 1831-block  0
-call    0 returned 1
-call    1 returned 1
+    #####: 1831:	_Link_type __z = __node_gen(_GLIBCXX_FORWARD(_Arg, __v));
+    %%%%%: 1831-block  0
+call    0 never executed
+call    1 never executed
         -: 1832:
-        1: 1833:	_Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
-        1: 1834:				      this->_M_impl._M_header);
-call    0 returned 1
-        1: 1835:	++_M_impl._M_node_count;
-        1: 1836:	return iterator(__z);
-call    0 returned 1
-        1: 1836-block  0
-        1: 1836-block  1
+    #####: 1833:	_Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+    #####: 1834:				      this->_M_impl._M_header);
+call    0 never executed
+    #####: 1835:	++_M_impl._M_node_count;
+    #####: 1836:	return iterator(__z);
+call    0 never executed
+    %%%%%: 1836-block  0
+    %%%%%: 1836-block  1
         -: 1837:      }
         -: 1838:
         -: 1839:  template<typename _Key, typename _Val, typename _KeyOfValue,
@@ -2050,28 +2050,28 @@ call    0 returned 1
         -: 1927:  template<typename _Key, typename _Val, typename _KeyOfValue,
         -: 1928:	   typename _Compare, typename _Alloc>
         -: 1929:    void
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E called 2 returned 100% blocks executed 100%
-        2: 1930:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E called 0 returned 0% blocks executed 0%
+    #####: 1930:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 1931:    _M_erase(_Link_type __x)
         -: 1932:    {
         -: 1933:      // Erase without rebalancing.
-        3: 1934:      while (__x != 0)
-        2: 1934-block  0
-        3: 1934-block  1
-branch  0 taken 1
-branch  1 taken 2 (fallthrough)
+    #####: 1934:      while (__x != 0)
+    %%%%%: 1934-block  0
+    %%%%%: 1934-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
         -: 1935:	{
-        1: 1936:	  _M_erase(_S_right(__x));
-        1: 1936-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 1937:	  _Link_type __y = _S_left(__x);
-call    0 returned 1
-        1: 1938:	  _M_drop_node(__x);
-call    0 returned 1
-        1: 1939:	  __x = __y;
+    #####: 1936:	  _M_erase(_S_right(__x));
+    %%%%%: 1936-block  0
+call    0 never executed
+call    1 never executed
+    #####: 1937:	  _Link_type __y = _S_left(__x);
+call    0 never executed
+    #####: 1938:	  _M_drop_node(__x);
+call    0 never executed
+    #####: 1939:	  __x = __y;
         -: 1940:	}
-        2: 1941:    }
+    #####: 1941:    }
         -: 1942:
         -: 1943:  template<typename _Key, typename _Val, typename _KeyOfValue,
         -: 1944:	   typename _Compare, typename _Alloc>
@@ -2238,21 +2238,21 @@ call    0 returned 1
         -: 2105:			   _Compare, _Alloc>::_Base_ptr,
         -: 2106:	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
         -: 2107:			   _Compare, _Alloc>::_Base_ptr>
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE24_M_get_insert_unique_posERKS3_ called 1 returned 100% blocks executed 50%
-        1: 2108:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE24_M_get_insert_unique_posERKS3_ called 0 returned 0% blocks executed 0%
+    #####: 2108:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 2109:    _M_get_insert_unique_pos(const key_type& __k)
         -: 2110:    {
         -: 2111:      typedef pair<_Base_ptr, _Base_ptr> _Res;
-        1: 2112:      _Link_type __x = _M_begin();
-        1: 2112-block  0
-call    0 returned 1
-        1: 2113:      _Base_ptr __y = _M_end();
-call    0 returned 1
-        1: 2114:      bool __comp = true;
-        1: 2115:      while (__x != 0)
-        1: 2115-block  0
-branch  0 taken 0
-branch  1 taken 1 (fallthrough)
+    #####: 2112:      _Link_type __x = _M_begin();
+    %%%%%: 2112-block  0
+call    0 never executed
+    #####: 2113:      _Base_ptr __y = _M_end();
+call    0 never executed
+    #####: 2114:      bool __comp = true;
+    #####: 2115:      while (__x != 0)
+    %%%%%: 2115-block  0
+branch  0 never executed
+branch  1 never executed (fallthrough)
         -: 2116:	{
     #####: 2117:	  __y = __x;
     #####: 2118:	  __comp = _M_impl._M_key_compare(__k, _S_key(__x));
@@ -2271,22 +2271,22 @@ call    2 never executed
 call    3 never executed
     %%%%%: 2119-block  3
         -: 2120:	}
-        1: 2121:      iterator __j = iterator(__y);
-        1: 2121-block  0
-call    0 returned 1
-        1: 2122:      if (__comp)
-branch  0 taken 1 (fallthrough)
-branch  1 taken 0
+    #####: 2121:      iterator __j = iterator(__y);
+    %%%%%: 2121-block  0
+call    0 never executed
+    #####: 2122:      if (__comp)
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -: 2123:	{
-        1: 2124:	  if (__j == begin())
-        1: 2124-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0
-        1: 2125:	    return _Res(__x, __y);
-        1: 2125-block  0
-call    0 returned 1
+    #####: 2124:	  if (__j == begin())
+    %%%%%: 2124-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####: 2125:	    return _Res(__x, __y);
+    %%%%%: 2125-block  0
+call    0 never executed
         -: 2126:	  else
     #####: 2127:	    --__j;
     %%%%%: 2127-block  0
@@ -2337,8 +2337,8 @@ call    0 never executed
         -: 2159:#endif
         -: 2160:    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
         -: 2161:			   _Compare, _Alloc>::iterator, bool>
-function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE16_M_insert_uniqueIRKS3_EESt4pairISt17_Rb_tree_iteratorIS3_EbEOT_ called 1 returned 100% blocks executed 61%
-        1: 2162:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLOBAL__N_1L27enforceNoDuplicateTestCasesERKSt6vectorINS0_14TestCaseHandleESaIS8_EEEUlS3_S3_E_SaIS3_EE16_M_insert_uniqueIRKS3_EESt4pairISt17_Rb_tree_iteratorIS3_EbEOT_ called 0 returned 0% blocks executed 0%
+    #####: 2162:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 2163:#if __cplusplus >= 201103L
         -: 2164:    _M_insert_unique(_Arg&& __v)
         -: 2165:#else
@@ -2347,32 +2347,32 @@ function _ZNSt8_Rb_treeIPKN5Catch12TestCaseInfoES3_St9_IdentityIS3_ERZNS0_12_GLO
         -: 2168:    {
         -: 2169:      typedef pair<iterator, bool> _Res;
         -: 2170:      pair<_Base_ptr, _Base_ptr> __res
-        1: 2171:	= _M_get_insert_unique_pos(_KeyOfValue()(__v));
-        1: 2171-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+    #####: 2171:	= _M_get_insert_unique_pos(_KeyOfValue()(__v));
+    %%%%%: 2171-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
     $$$$$: 2171-block  1
         -: 2172:
-        1: 2173:      if (__res.second)
-        1: 2173-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 0
+    #####: 2173:      if (__res.second)
+    %%%%%: 2173-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -: 2174:	{
-        1: 2175:	  _Alloc_node __an(*this);
-        1: 2175-block  0
-call    0 returned 1
-        1: 2176:	  return _Res(_M_insert_(__res.first, __res.second,
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+    #####: 2175:	  _Alloc_node __an(*this);
+    %%%%%: 2175-block  0
+call    0 never executed
+    #####: 2176:	  return _Res(_M_insert_(__res.first, __res.second,
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
     $$$$$: 2176-block  0
         -: 2177:				 _GLIBCXX_FORWARD(_Arg, __v), __an),
-        2: 2178:		      true);
-call    0 returned 1
-        1: 2178-block  0
-call    1 returned 1
+    #####: 2178:		      true);
+call    0 never executed
+    %%%%%: 2178-block  0
+call    1 never executed
     $$$$$: 2178-block  1
         -: 2179:	}
         -: 2180:

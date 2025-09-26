@@ -1659,11 +1659,11 @@ call    0 never executed
         -: 1372:       */
         -: 1373:      _GLIBCXX20_CONSTEXPR
         -: 1374:      basic_string&
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEPKc called 5 returned 100% blocks executed 100%
-        5: 1375:      operator+=(const _CharT* __s)
-        5: 1376:      { return this->append(__s); }
-        5: 1376-block  0
-call    0 returned 5
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEPKc called 0 returned 0% blocks executed 0%
+    #####: 1375:      operator+=(const _CharT* __s)
+    #####: 1376:      { return this->append(__s); }
+    %%%%%: 1376-block  0
+call    0 never executed
         -: 1377:
         -: 1378:      /**
         -: 1379:       *  @brief  Append a character.

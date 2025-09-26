@@ -196,10 +196,10 @@
         -:  192:#if __cplusplus < 201103L
         -:  193:      map() : _M_t() { }
         -:  194:#else
-function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St4lessIS5_ESaISt4pairIKS5_S5_EEEC1Ev called 1 returned 100% blocks executed 100%
-        1:  195:      map() = default;
-        1:  195-block  0
-call    0 returned 1
+function _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St4lessIS5_ESaISt4pairIKS5_S5_EEEC1Ev called 0 returned 0% blocks executed 0%
+    #####:  195:      map() = default;
+    %%%%%:  195-block  0
+call    0 never executed
         -:  196:#endif
         -:  197:
         -:  198:      /**

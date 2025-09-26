@@ -105,10 +105,10 @@
         -:  101:  template<typename _Tp>
         -:  102:    _GLIBCXX_NODISCARD
         -:  103:    constexpr typename std::remove_reference<_Tp>::type&&
-function _ZSt4moveIRZNK5Catch6Detail19CaseInsensitiveLessclENS0_9StringRefES3_EUlccE_EONSt16remove_referenceIT_E4typeEOS7_ called 86 returned 100% blocks executed 100%
-       86:  104:    move(_Tp&& __t) noexcept
-       86:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-       86:  105-block  0
+function _ZSt4moveIRZNK5Catch6Detail19CaseInsensitiveLessclENS0_9StringRefES3_EUlccE_EONSt16remove_referenceIT_E4typeEOS7_ called 66 returned 100% blocks executed 100%
+       66:  104:    move(_Tp&& __t) noexcept
+       66:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+       66:  105-block  0
         -:  106:
         -:  107:
         -:  108:  template<typename _Tp>

@@ -121,8 +121,8 @@ function _ZSt11__addressofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE
         -:   74:  template<typename _Tp>
         -:   75:    _GLIBCXX_NODISCARD
         -:   76:    constexpr _Tp&&
-       8*:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-       8*:   78:    { return static_cast<_Tp&&>(__t); }
+    #####:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+    #####:   78:    { return static_cast<_Tp&&>(__t); }
 ------------------
 _ZSt7forwardIyEOT_RNSt16remove_referenceIS0_E4typeE:
 function _ZSt7forwardIyEOT_RNSt16remove_referenceIS0_E4typeE called 0 returned 0% blocks executed 0%
@@ -143,10 +143,10 @@ function _ZSt7forwardINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_RN
     %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIN5Catch8TestSpec6FilterEEOT_RNSt16remove_referenceIS3_E4typeE:
-function _ZSt7forwardIN5Catch8TestSpec6FilterEEOT_RNSt16remove_referenceIS3_E4typeE called 4 returned 100% blocks executed 100%
-        4:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-        4:   78:    { return static_cast<_Tp&&>(__t); }
-        4:   78-block  0
+function _ZSt7forwardIN5Catch8TestSpec6FilterEEOT_RNSt16remove_referenceIS3_E4typeE called 0 returned 0% blocks executed 0%
+    #####:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+    #####:   78:    { return static_cast<_Tp&&>(__t); }
+    %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIRKyEOT_RNSt16remove_referenceIS2_E4typeE:
 function _ZSt7forwardIRKyEOT_RNSt16remove_referenceIS2_E4typeE called 0 returned 0% blocks executed 0%
@@ -167,10 +167,10 @@ function _ZSt7forwardIN5Catch6Detail10unique_ptrINS0_8TestSpec10TagPatternEEEEOT
     %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIN5Catch6Detail10unique_ptrINS0_8TestSpec11NamePatternEEEEOT_RNSt16remove_referenceIS6_E4typeE:
-function _ZSt7forwardIN5Catch6Detail10unique_ptrINS0_8TestSpec11NamePatternEEEEOT_RNSt16remove_referenceIS6_E4typeE called 4 returned 100% blocks executed 100%
-        4:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-        4:   78:    { return static_cast<_Tp&&>(__t); }
-        4:   78-block  0
+function _ZSt7forwardIN5Catch6Detail10unique_ptrINS0_8TestSpec11NamePatternEEEEOT_RNSt16remove_referenceIS6_E4typeE called 0 returned 0% blocks executed 0%
+    #####:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+    #####:   78:    { return static_cast<_Tp&&>(__t); }
+    %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIRKcEOT_RNSt16remove_referenceIS2_E4typeE:
 function _ZSt7forwardIRKcEOT_RNSt16remove_referenceIS2_E4typeE called 0 returned 0% blocks executed 0%
@@ -203,8 +203,8 @@ function _ZSt7forwardIRKcEOT_RNSt16remove_referenceIS2_E4typeE called 0 returned
         -:  101:  template<typename _Tp>
         -:  102:    _GLIBCXX_NODISCARD
         -:  103:    constexpr typename std::remove_reference<_Tp>::type&&
-      11*:  104:    move(_Tp&& __t) noexcept
-      11*:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
 ------------------
 _ZSt4moveIRyEONSt16remove_referenceIT_E4typeEOS2_:
 function _ZSt4moveIRyEONSt16remove_referenceIT_E4typeEOS2_ called 0 returned 0% blocks executed 0%
@@ -219,16 +219,16 @@ function _ZSt4moveIRN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEEONSt16re
     %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRNSt12_Vector_baseIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOSC_:
-function _ZSt4moveIRNSt12_Vector_baseIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOSC_ called 4 returned 100% blocks executed 100%
-        4:  104:    move(_Tp&& __t) noexcept
-        4:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-        4:  105-block  0
+function _ZSt4moveIRNSt12_Vector_baseIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOSC_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRSaIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEEEONSt16remove_referenceIT_E4typeEOS9_:
-function _ZSt4moveIRSaIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEEEONSt16remove_referenceIT_E4typeEOS9_ called 2 returned 100% blocks executed 100%
-        2:  104:    move(_Tp&& __t) noexcept
-        2:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-        2:  105-block  0
+function _ZSt4moveIRSaIN5Catch6Detail10unique_ptrINS0_8TestSpec7PatternEEEEEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16remove_referenceIT_E4typeEOS8_:
 function _ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16remove_referenceIT_E4typeEOS8_ called 0 returned 0% blocks executed 0%
@@ -237,16 +237,16 @@ function _ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16r
     %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRSt6vectorIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EEEONSt16remove_referenceIT_E4typeEOSB_:
-function _ZSt4moveIRSt6vectorIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EEEONSt16remove_referenceIT_E4typeEOSB_ called 2 returned 100% blocks executed 100%
-        2:  104:    move(_Tp&& __t) noexcept
-        2:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-        2:  105-block  0
+function _ZSt4moveIRSt6vectorIN5Catch6Detail10unique_ptrINS1_8TestSpec7PatternEEESaIS6_EEEONSt16remove_referenceIT_E4typeEOSB_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRN5Catch8TestSpec6FilterEEONSt16remove_referenceIT_E4typeEOS5_:
-function _ZSt4moveIRN5Catch8TestSpec6FilterEEONSt16remove_referenceIT_E4typeEOS5_ called 1 returned 100% blocks executed 100%
-        1:  104:    move(_Tp&& __t) noexcept
-        1:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-        1:  105-block  0
+function _ZSt4moveIRN5Catch8TestSpec6FilterEEONSt16remove_referenceIT_E4typeEOS5_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOSC_:
 function _ZSt4moveIRNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOSC_ called 0 returned 0% blocks executed 0%
@@ -255,10 +255,10 @@ function _ZSt4moveIRNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traits
     %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRNSt12_Vector_baseIN5Catch8TestSpec6FilterESaIS3_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOS9_:
-function _ZSt4moveIRNSt12_Vector_baseIN5Catch8TestSpec6FilterESaIS3_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOS9_ called 2 returned 100% blocks executed 100%
-        2:  104:    move(_Tp&& __t) noexcept
-        2:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-        2:  105-block  0
+function _ZSt4moveIRNSt12_Vector_baseIN5Catch8TestSpec6FilterESaIS3_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
 ------------------
 _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_:
 function _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned 0% blocks executed 0%

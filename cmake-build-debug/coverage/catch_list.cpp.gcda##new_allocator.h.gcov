@@ -405,7 +405,7 @@ call    0 never executed
         -:  149:
         -:  150:      // __p is not permitted to be a null pointer.
         -:  151:      void
-       2*:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -421,7 +421,7 @@ call    0 never executed
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-       2*:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorISt13_Rb_tree_nodeIN5Catch9StringRefEEE10deallocateEPS3_y:
@@ -473,9 +473,9 @@ call    0 never executed
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorIN5Catch14TestCaseHandleEE10deallocateEPS1_y:
-function _ZNSt15__new_allocatorIN5Catch14TestCaseHandleEE10deallocateEPS1_y called 2 returned 100% blocks executed 100%
-        2:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
-        2:  152-block  0
+function _ZNSt15__new_allocatorIN5Catch14TestCaseHandleEE10deallocateEPS1_y called 0 returned 0% blocks executed 0%
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    %%%%%:  152-block  0
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -491,9 +491,9 @@ function _ZNSt15__new_allocatorIN5Catch14TestCaseHandleEE10deallocateEPS1_y call
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-        2:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-        2:  168-block  0
-call    0 returned 2
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    %%%%%:  168-block  0
+call    0 never executed
         -:  169:      }
 ------------------
 _ZNSt15__new_allocatorIcE10deallocateEPcy:

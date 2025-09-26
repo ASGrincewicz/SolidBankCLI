@@ -329,9 +329,9 @@ branch  1 never executed
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-       6*:  316:    __niter_base(_Iterator __it)
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-       6*:  318:    { return __it; }
+    #####:  318:    { return __it; }
 ------------------
 _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_:
 function _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_ called 0 returned 0% blocks executed 0%
@@ -341,11 +341,11 @@ function _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE
     %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseIPN5Catch21ProcessedReporterSpecEET_S3_:
-function _ZSt12__niter_baseIPN5Catch21ProcessedReporterSpecEET_S3_ called 6 returned 100% blocks executed 100%
-        6:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPN5Catch21ProcessedReporterSpecEET_S3_ called 0 returned 0% blocks executed 0%
+    #####:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        6:  318:    { return __it; }
-        6:  318-block  0
+    #####:  318:    { return __it; }
+    %%%%%:  318-block  0
 ------------------
 _ZSt12__niter_baseISt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_EEET_SB_:
 function _ZSt12__niter_baseISt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_EEET_SB_ called 0 returned 0% blocks executed 0%

@@ -38,23 +38,36 @@
         -:   34:                SourceLineInfo const& lineInfo,
         -:   35:                StringRef capturedExpression,
         -:   36:                ResultDisposition::Flags resultDisposition );
-function _ZN5Catch16AssertionHandlerD1Ev called 1 returned 100% blocks executed 67%
-        1:   37:        ~AssertionHandler() {
-        1:   38:            if ( !m_completed ) {
-        1:   38-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
+function _ZN5Catch16AssertionHandlerD1Ev called 0 returned 0% blocks executed 0%
+    #####:   37:        ~AssertionHandler() {
+    #####:   38:            if ( !m_completed ) {
+    %%%%%:   38-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
     #####:   39:                m_resultCapture.handleIncomplete( m_assertionInfo );
     %%%%%:   39-block  0
 call    0 never executed
         -:   40:            }
-        1:   41:        }
+    #####:   41:        }
         -:   42:
         -:   43:
         -:   44:        template<typename T>
-        -:   45:        void handleExpr( ExprLhs<T> const& expr ) {
-        -:   46:            handleExpr( expr.makeUnaryExpr() );
-        -:   47:        }
+function _ZN5Catch16AssertionHandler10handleExprIbEEvRKNS_7ExprLhsIT_EE called 0 returned 0% blocks executed 0%
+    #####:   45:        void handleExpr( ExprLhs<T> const& expr ) {
+    #####:   46:            handleExpr( expr.makeUnaryExpr() );
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   46-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   46-block  2
+call    6 never executed
+    $$$$$:   46-block  3
+call    7 never executed
+    #####:   47:        }
         -:   48:        void handleExpr( ITransientExpression const& expr );
         -:   49:
         -:   50:        void handleMessage(ResultWas::OfType resultType, StringRef message);

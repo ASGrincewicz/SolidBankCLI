@@ -5,10 +5,18 @@
 //  /
 
 #pragma once
+#include <vector>
+#include "transaction.h"
+
 class Bank {
 public:
     Bank();
-    int getBalance() const;
+    double getBalance() const;
+    bool deposit(double);
+    bool withdraw(double);
+    const std::vector<Transaction>& getTransactions() const;
+
 private:
-    int balance;
+    double balance;
+    std::vector<Transaction> transactions;
 };
