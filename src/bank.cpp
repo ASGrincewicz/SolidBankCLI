@@ -5,11 +5,15 @@ double Bank::getBalance() const { return balance; }
 
 void Bank::deposit(double amount)
 {
+    if(amount <= 0.00)
+    {
+        return;
+    }
     balance += amount;
 }
 
 bool Bank::withdraw(double amount) {
-    if (amount > balance) return false;
+    if (amount <= 0.0 || amount > balance) return false;
     balance -= amount;
     return true;
 }

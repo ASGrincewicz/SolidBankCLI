@@ -49,3 +49,19 @@ TEST_CASE("Withdraw exact balance succeeds", "[bank]")
     REQUIRE(success);
     REQUIRE(b.getBalance() == Catch::Approx(0.00));
 }
+
+TEST_CASE("Deposit rejects negative amount", "[bank]")
+{
+    Bank b;
+    b.deposit(-20.00);
+    REQUIRE(b.getBalance() == Catch::Approx(0.00));
+}
+
+TEST_CASE("Withdraw rejects negative amount", "[bank]")
+{
+    Bank b;
+    b.deposit(100.00);
+    bool success = b.withdraw(-50.00);
+    REQUIRE_FALSE(success);
+    REQUIRE(b.getBalance() == Catch::Approx(100.00));
+}
