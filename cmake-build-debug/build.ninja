@@ -63,6 +63,13 @@ build CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj: CXX_COMPILER__SolidBankCLI_u
   OBJECT_DIR = CMakeFiles\SolidBankCLI.dir
   OBJECT_FILE_DIR = CMakeFiles\SolidBankCLI.dir\src
 
+build CMakeFiles/SolidBankCLI.dir/src/transaction.cpp.obj: CXX_COMPILER__SolidBankCLI_unscanned_Debug C$:/Users/Aaron/CLionProjects/SolidBankCLI/src/transaction.cpp || cmake_object_order_depends_target_SolidBankCLI
+  DEP_FILE = CMakeFiles\SolidBankCLI.dir\src\transaction.cpp.obj.d
+  FLAGS = -fprofile-arcs -ftest-coverage -g -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Aaron/CLionProjects/SolidBankCLI/include
+  OBJECT_DIR = CMakeFiles\SolidBankCLI.dir
+  OBJECT_FILE_DIR = CMakeFiles\SolidBankCLI.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SolidBankCLI
@@ -71,7 +78,7 @@ build CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj: CXX_COMPILER__SolidBankCLI_u
 #############################################
 # Link the executable SolidBankCLI.exe
 
-build SolidBankCLI.exe: CXX_EXECUTABLE_LINKER__SolidBankCLI_Debug CMakeFiles/SolidBankCLI.dir/src/main.cpp.obj CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj
+build SolidBankCLI.exe: CXX_EXECUTABLE_LINKER__SolidBankCLI_Debug CMakeFiles/SolidBankCLI.dir/src/main.cpp.obj CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj CMakeFiles/SolidBankCLI.dir/src/transaction.cpp.obj
   FLAGS = -fprofile-arcs -ftest-coverage -g -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SolidBankCLI.dir
@@ -104,6 +111,13 @@ build CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj: CXX_COMPILER__SolidBankTes
   OBJECT_DIR = CMakeFiles\SolidBankTests.dir
   OBJECT_FILE_DIR = CMakeFiles\SolidBankTests.dir\src
 
+build CMakeFiles/SolidBankTests.dir/src/transaction.cpp.obj: CXX_COMPILER__SolidBankTests_unscanned_Debug C$:/Users/Aaron/CLionProjects/SolidBankCLI/src/transaction.cpp || cmake_object_order_depends_target_SolidBankTests
+  DEP_FILE = CMakeFiles\SolidBankTests.dir\src\transaction.cpp.obj.d
+  FLAGS = -fprofile-arcs -ftest-coverage -g -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Aaron/CLionProjects/SolidBankCLI/include -IC:/Users/Aaron/CLionProjects/SolidBankCLI/cmake-build-debug/_deps/catch2-src/src/catch2/.. -IC:/Users/Aaron/CLionProjects/SolidBankCLI/cmake-build-debug/_deps/catch2-build/generated-includes
+  OBJECT_DIR = CMakeFiles\SolidBankTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\SolidBankTests.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SolidBankTests
@@ -112,7 +126,7 @@ build CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj: CXX_COMPILER__SolidBankTes
 #############################################
 # Link the executable SolidBankTests.exe
 
-build SolidBankTests.exe: CXX_EXECUTABLE_LINKER__SolidBankTests_Debug CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.obj CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj | _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a
+build SolidBankTests.exe: CXX_EXECUTABLE_LINKER__SolidBankTests_Debug CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.obj CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj CMakeFiles/SolidBankTests.dir/src/transaction.cpp.obj | _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a
   FLAGS = -fprofile-arcs -ftest-coverage -g -g
   LINK_LIBRARIES = _deps/catch2-build/src/libCatch2Maind.a  _deps/catch2-build/src/libCatch2d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SolidBankTests.dir

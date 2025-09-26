@@ -67,3 +67,14 @@ TEST_CASE("Withdraw rejects negative amount", "[bank]")
     REQUIRE_FALSE(success);
     REQUIRE(b.getBalance() == Catch::Approx(100.00));
 }
+
+TEST_CASE("Bank logs transactions", "[bank]"){
+    Bank b;
+    b.deposit(100.00);
+    b.withdraw(60.00);
+
+    const auto& log = b.getTransactions();
+    REQUIRE(log.size() == 2);
+    REQUIRE(log[0].type == TransactionType::Deposit);
+    REQUIRE(log[1].type == TransactionType::Withdrawal);
+}

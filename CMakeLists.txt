@@ -19,12 +19,14 @@ include_directories(include)
 set(CLI_SOURCES
         src/main.cpp
         src/bank.cpp
+        src/transaction.cpp
 )
 
 # Test sources (excludes main.cpp)
 set(TEST_SOURCES
         tests/test_bank.cpp
         src/bank.cpp
+        src/transaction.cpp
 )
 
 # Main executable
