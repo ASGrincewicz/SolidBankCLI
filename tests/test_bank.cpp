@@ -9,6 +9,7 @@
 #include <catch2/catch_approx.hpp>
 
 #include "bank.h"
+#include "utils.h"
 
 TEST_CASE("Bank initializes with zero balance", "[bank]") {
     Bank b;
@@ -77,4 +78,9 @@ TEST_CASE("Bank logs transactions", "[bank]"){
     REQUIRE(log.size() == 2);
     REQUIRE(log[0].type == TransactionType::Deposit);
     REQUIRE(log[1].type == TransactionType::Withdrawal);
+}
+
+TEST_CASE("Timestamp format is ISO-like", "[utils]") {
+    std::string ts = getCurrentTimestamp();
+    REQUIRE(ts.find("T") != std::string::npos);  // e.g. 2025-09-28T11:59:00
 }
