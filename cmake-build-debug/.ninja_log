@@ -101,7 +101,7 @@
 8001	11123	7805465939737614	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.obj	b0951c44141bb681
 9444	11174	7805465954166093	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.obj	a699f6de12272c57
 9875	11297	7805465958475596	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.obj	50ef58c6c8e707be
-109	238	7805505698732984	CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj	959d3e1019479bcd
+35	1427	7807786509827156	CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj	959d3e1019479bcd
 56	156	7805463468845675	CMakeFiles/SolidBankTests.dir/src/main.cpp.obj	27ec2eb39272936b
 61	173	7805457761856618	clean	faa67aad3a02cba2
 10204	12096	7805465961765152	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.obj	bfda76865a3d42f
@@ -112,10 +112,13 @@
 11123	12802	7805465970958425	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.obj	7f355633484c0b10
 11116	12822	7805465970888422	_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.obj	7f19e958ae337b30
 18739	18849	7805466047118046	_deps/catch2-build/src/libCatch2Maind.a	3d0586f84e0c26c
-100	1521	7805505698632780	CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.obj	86f43306ce9d6c62
-1522	5044	7805505712853436	SolidBankTests.exe	929eb20573499365
-43	272	7804704426265089	CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj	1f726b57d67b443b
-49	676	7805566595930561	CMakeFiles/SolidBankTests.dir/src/transaction.cpp.obj	c984411c1c22d57c
-42	884	7805566595851602	CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj	959d3e1019479bcd
 33	1754	7805566595761411	CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.obj	86f43306ce9d6c62
 1754	5561	7805566612977804	SolidBankTests.exe	6cf0b5ae26b08ed4
+43	272	7804704426265089	CMakeFiles/SolidBankCLI.dir/src/bank.cpp.obj	1f726b57d67b443b
+42	503	7807786509897564	CMakeFiles/SolidBankTests.dir/src/transaction.cpp.obj	c984411c1c22d57c
+49	1352	7807786509976742	CMakeFiles/SolidBankTests.dir/src/utils.cpp.obj	124edbd62ce2f5b6
+84	636	7807787218662964	CMakeFiles/SolidBankTests.dir/src/transaction.cpp.obj	c984411c1c22d57c
+91	1537	7807787218722914	CMakeFiles/SolidBankTests.dir/src/utils.cpp.obj	124edbd62ce2f5b6
+71	1764	7807787218523620	CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.obj	86f43306ce9d6c62
+27	1245	7807787623876222	CMakeFiles/SolidBankTests.dir/src/bank.cpp.obj	959d3e1019479bcd
+1246	5329	7807787636068633	SolidBankTests.exe	9b57173a86c76f19

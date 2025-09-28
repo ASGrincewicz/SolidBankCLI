@@ -5,6 +5,7 @@
 //  /
 #pragma once
 #include <string>
+#include "utils.h"
 
 enum class TransactionType {Deposit, Withdrawal};
 

@@ -15,14 +15,14 @@ bool Bank::deposit(double amount)
         return false;
     }
     balance += amount;
-    transactions.push_back({TransactionType::Deposit, amount, "2025-09-25T20:45:00"});
+    transactions.push_back({TransactionType::Deposit, amount, getCurrentTimestamp()});
     return true;
 }
 
 bool Bank::withdraw(double amount) {
     if (amount <= 0.0 || amount > balance) return false;
     balance -= amount;
-    transactions.push_back({TransactionType::Withdrawal, amount,"2025-09-25T20:45:00"});
+    transactions.push_back({TransactionType::Withdrawal, amount,getCurrentTimestamp()});
     return true;
 }
 
