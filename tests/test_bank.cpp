@@ -84,3 +84,14 @@ TEST_CASE("Timestamp format is ISO-like", "[utils]") {
     std::string ts = getCurrentTimestamp();
     REQUIRE(ts.find("T") != std::string::npos);  // e.g. 2025-09-28T11:59:00
 }
+
+TEST_CASE("Formatted ledger includes transactions", "[bank]") {
+    Bank b;
+    b.deposit(100.0);
+    b.withdraw(40.0);
+    std::string ledger = b.getFormattedLedger();
+
+    REQUIRE(ledger.find("Deposit") != std::string::npos);
+    REQUIRE(ledger.find("Withdrawal") != std::string::npos);
+    REQUIRE(ledger.find("Current Balance") != std::string::npos);
+}

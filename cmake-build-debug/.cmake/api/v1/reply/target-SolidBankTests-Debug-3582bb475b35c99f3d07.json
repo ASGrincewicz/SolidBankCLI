@@ -121,11 +121,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Catch2::@fa92aa50e9bf5e1a7206"
+			"id" : "Catch2WithMain::@fa92aa50e9bf5e1a7206"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Catch2WithMain::@fa92aa50e9bf5e1a7206"
+			"id" : "Catch2::@fa92aa50e9bf5e1a7206"
 		}
 	],
 	"id" : "SolidBankTests::@6890427a1f51a3e7e1df",

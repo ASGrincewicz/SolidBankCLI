@@ -19,6 +19,7 @@ public:
     bool deposit(double);
     bool withdraw(double);
     const std::vector<Transaction>& getTransactions() const;
+    std::string getFormattedLedger() const;
 
 private:
     double balance;

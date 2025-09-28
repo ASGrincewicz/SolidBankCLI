@@ -30,3 +30,24 @@ const std::vector<Transaction>& Bank::getTransactions() const
 {
     return transactions;
 }
+
+std::string Bank::getFormattedLedger() const {
+    std::stringstream ss;
+    ss << "=== Transaction Ledger ===\n";
+    ss << std::left << std::setw(12) << "Type"
+       << std::right << std::setw(10) << "Amount"
+       << "    Timestamp\n";
+    ss << "------------------------------\n";
+
+    for (const auto& tx : transactions) {
+        std::string typeStr = (tx.type == TransactionType::Deposit) ? "Deposit" : "Withdrawal";
+        ss << std::left << std::setw(12) << typeStr
+           << std::right << std::setw(10) << std::fixed << std::setprecision(2) << tx.amount
+           << "    " << tx.timestamp << "\n";
+    }
+
+    ss << "------------------------------\n";
+    ss << "Current Balance: $" << std::fixed << std::setprecision(2) << balance << "\n";
+    return ss.str();
+}
+

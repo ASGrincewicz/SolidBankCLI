@@ -9,7 +9,11 @@
 
 int main() {
     Bank bank;
+    bank.deposit(40.13);
+    bank.deposit(1243.98);
+    bank.withdraw(650.99);
     std::cout << "Welcome to SolidBankCLI\n";
     std::cout << "Current balance: $" << bank.getBalance() << "\n";
+    std::cout << bank.getFormattedLedger();
     return 0;
 }
