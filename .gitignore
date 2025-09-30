@@ -1,0 +1,11 @@
+# CLion and CMake
+cmake-build-*/
+.idea/
+*.iml
+CMakePresets.json.user
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
