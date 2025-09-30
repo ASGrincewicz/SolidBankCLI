@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "macos-debug",
+      "hidden": false,
+      "generator": "Ninja",
+      "description": "Debug build on macOS",
+      "binaryDir": "${sourceDir}/cmake-build-mac",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      }
+    },
+    {
+      "name": "windows-debug",
+      "hidden": false,
+      "generator": "Ninja",
+      "description": "Debug build on Windows",
+      "binaryDir": "${sourceDir}/cmake-build-win",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    }
+  ]
+}
