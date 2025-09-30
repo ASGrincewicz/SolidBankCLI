@@ -1,4 +1,4 @@
-//
+// SPDX-License-Identifier: LicenseRef-Proprietary
 //  // Copyright © 2025 Aaron Steven Grincewicz
 //  // All rights reserved.
 //  // Unauthorized use, modification, or redistribution is prohibited.
@@ -9,6 +9,7 @@
 #include <catch2/catch_approx.hpp>
 
 #include "bank.h"
+#include "TransactionLog.h"
 #include "utils.h"
 
 TEST_CASE("Bank initializes with zero balance", "[bank]") {
@@ -82,6 +83,7 @@ TEST_CASE("Bank logs transactions", "[bank]"){
 
 TEST_CASE("Timestamp format is ISO-like", "[utils]") {
     std::string ts = getCurrentTimestamp();
+    REQUIRE(!ts.empty());
     REQUIRE(ts.find("T") != std::string::npos);  // e.g. 2025-09-28T11:59:00
 }
 
@@ -94,4 +96,38 @@ TEST_CASE("Formatted ledger includes transactions", "[bank]") {
     REQUIRE(ledger.find("Deposit") != std::string::npos);
     REQUIRE(ledger.find("Withdrawal") != std::string::npos);
     REQUIRE(ledger.find("Current Balance") != std::string::npos);
+}
+
+TEST_CASE("Transaction constructor sets fields correctly", "[Transaction]") {
+    Transaction t(TransactionType::Deposit, 100.0, "2025-09-28T11:59:00");
+    REQUIRE(t.type == TransactionType::Deposit);
+    REQUIRE(t.amount == Catch::Approx(100.0));
+    REQUIRE(t.timestamp == "2025-09-28T11:59:00");
+}
+
+TEST_CASE("Transaction toString formats output correctly", "[Transaction]") {
+    Transaction tx(TransactionType::Withdrawal, 75.25, "2025-09-30T18:30:00");
+    std::string expected = "[2025-09-30T18:30:00] Withdrawal: $75.25";
+
+    REQUIRE(tx.toString() == expected);
+}
+
+TEST_CASE("TransactionLog stores and formats transactions", "[TransactionLog]") {
+    TransactionLog log;
+    Transaction tx1(TransactionType::Deposit, 100.0, "2025-09-30T18:00:00");
+    Transaction tx2(TransactionType::Withdrawal, 50.0, "2025-09-30T18:05:00");
+
+    log.addTransaction(tx1);
+    log.addTransaction(tx2);
+
+    auto allTx = log.getAllTransactions();
+    REQUIRE(allTx.size() == 2);
+    REQUIRE(allTx[0].amount == Catch::Approx(100.0));
+    REQUIRE(allTx[1].type == TransactionType::Withdrawal);
+
+    std::string expected =
+        "[2025-09-30T18:00:00] Deposit: $100.00\n"
+        "[2025-09-30T18:05:00] Withdrawal: $50.00\n";
+
+    REQUIRE(log.toString() == expected);
 }

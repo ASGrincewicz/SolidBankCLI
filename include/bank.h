@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <sstream>
 #include "transaction.h"
+#include "TransactionLog.h"
 #include "utils.h"
 
 class Bank {
@@ -18,10 +19,10 @@ public:
     double getBalance() const;
     bool deposit(double);
     bool withdraw(double);
-    const std::vector<Transaction>& getTransactions() const;
+    std::vector<Transaction> getTransactions();
     std::string getFormattedLedger() const;
 
 private:
     double balance;
-    std::vector<Transaction> transactions;
+    TransactionLog transactionLog;
 };

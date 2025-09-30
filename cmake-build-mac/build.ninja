@@ -81,6 +81,14 @@ build CMakeFiles/SolidBankCLI.dir/src/utils.cpp.o: CXX_COMPILER__SolidBankCLI_un
   OBJECT_DIR = CMakeFiles/SolidBankCLI.dir
   OBJECT_FILE_DIR = CMakeFiles/SolidBankCLI.dir/src
 
+build CMakeFiles/SolidBankCLI.dir/src/TransactionLog.cpp.o: CXX_COMPILER__SolidBankCLI_unscanned_Debug /Users/aaron/CLionProjects/SolidBankCLI/src/TransactionLog.cpp || cmake_object_order_depends_target_SolidBankCLI
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/SolidBankCLI.dir/src/TransactionLog.cpp.o.d
+  FLAGS = -fprofile-arcs -ftest-coverage -g -g -std=gnu++2b -arch arm64 -fcolor-diagnostics
+  INCLUDES = -I/Users/aaron/CLionProjects/SolidBankCLI/include
+  OBJECT_DIR = CMakeFiles/SolidBankCLI.dir
+  OBJECT_FILE_DIR = CMakeFiles/SolidBankCLI.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SolidBankCLI
@@ -89,7 +97,7 @@ build CMakeFiles/SolidBankCLI.dir/src/utils.cpp.o: CXX_COMPILER__SolidBankCLI_un
 #############################################
 # Link the executable SolidBankCLI
 
-build SolidBankCLI: CXX_EXECUTABLE_LINKER__SolidBankCLI_Debug CMakeFiles/SolidBankCLI.dir/src/main.cpp.o CMakeFiles/SolidBankCLI.dir/src/bank.cpp.o CMakeFiles/SolidBankCLI.dir/src/transaction.cpp.o CMakeFiles/SolidBankCLI.dir/src/utils.cpp.o
+build SolidBankCLI: CXX_EXECUTABLE_LINKER__SolidBankCLI_Debug CMakeFiles/SolidBankCLI.dir/src/main.cpp.o CMakeFiles/SolidBankCLI.dir/src/bank.cpp.o CMakeFiles/SolidBankCLI.dir/src/transaction.cpp.o CMakeFiles/SolidBankCLI.dir/src/utils.cpp.o CMakeFiles/SolidBankCLI.dir/src/TransactionLog.cpp.o
   CONFIG = Debug
   FLAGS = -fprofile-arcs -ftest-coverage -g -g -arch arm64
   OBJECT_DIR = CMakeFiles/SolidBankCLI.dir
@@ -131,6 +139,14 @@ build CMakeFiles/SolidBankTests.dir/src/transaction.cpp.o: CXX_COMPILER__SolidBa
   OBJECT_DIR = CMakeFiles/SolidBankTests.dir
   OBJECT_FILE_DIR = CMakeFiles/SolidBankTests.dir/src
 
+build CMakeFiles/SolidBankTests.dir/src/TransactionLog.cpp.o: CXX_COMPILER__SolidBankTests_unscanned_Debug /Users/aaron/CLionProjects/SolidBankCLI/src/TransactionLog.cpp || cmake_object_order_depends_target_SolidBankTests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/SolidBankTests.dir/src/TransactionLog.cpp.o.d
+  FLAGS = -fprofile-arcs -ftest-coverage -g -g -std=gnu++2b -arch arm64 -fcolor-diagnostics
+  INCLUDES = -I/Users/aaron/CLionProjects/SolidBankCLI/include -I/Users/aaron/CLionProjects/SolidBankCLI/cmake-build-mac/_deps/catch2-src/src/catch2/.. -I/Users/aaron/CLionProjects/SolidBankCLI/cmake-build-mac/_deps/catch2-build/generated-includes
+  OBJECT_DIR = CMakeFiles/SolidBankTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/SolidBankTests.dir/src
+
 build CMakeFiles/SolidBankTests.dir/src/utils.cpp.o: CXX_COMPILER__SolidBankTests_unscanned_Debug /Users/aaron/CLionProjects/SolidBankCLI/src/utils.cpp || cmake_object_order_depends_target_SolidBankTests
   CONFIG = Debug
   DEP_FILE = CMakeFiles/SolidBankTests.dir/src/utils.cpp.o.d
@@ -147,7 +163,7 @@ build CMakeFiles/SolidBankTests.dir/src/utils.cpp.o: CXX_COMPILER__SolidBankTest
 #############################################
 # Link the executable SolidBankTests
 
-build SolidBankTests: CXX_EXECUTABLE_LINKER__SolidBankTests_Debug CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.o CMakeFiles/SolidBankTests.dir/src/bank.cpp.o CMakeFiles/SolidBankTests.dir/src/transaction.cpp.o CMakeFiles/SolidBankTests.dir/src/utils.cpp.o | _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a
+build SolidBankTests: CXX_EXECUTABLE_LINKER__SolidBankTests_Debug CMakeFiles/SolidBankTests.dir/tests/test_bank.cpp.o CMakeFiles/SolidBankTests.dir/src/bank.cpp.o CMakeFiles/SolidBankTests.dir/src/transaction.cpp.o CMakeFiles/SolidBankTests.dir/src/TransactionLog.cpp.o CMakeFiles/SolidBankTests.dir/src/utils.cpp.o | _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a
   CONFIG = Debug
   FLAGS = -fprofile-arcs -ftest-coverage -g -g -arch arm64
   LINK_LIBRARIES = _deps/catch2-build/src/libCatch2Maind.a  _deps/catch2-build/src/libCatch2d.a
