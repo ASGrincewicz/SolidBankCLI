@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/aaron/CLionProjects/SolidBankCLI/cmake-build-mac/_deps/catch2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

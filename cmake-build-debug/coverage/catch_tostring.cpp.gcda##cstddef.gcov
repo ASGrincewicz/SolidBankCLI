@@ -1,0 +1,196 @@
+        -:    0:Source:C:/Users/Aaron/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef
+        -:    0:Graph:C:\Users\Aaron\CLionProjects\SolidBankCLI\cmake-build-debug\_deps\catch2-build\src\CMakeFiles\Catch2.dir\catch2\catch_tostring.cpp.gcno
+        -:    0:Data:C:\Users\Aaron\CLionProjects\SolidBankCLI\cmake-build-debug\_deps\catch2-build\src\CMakeFiles\Catch2.dir\catch2\catch_tostring.cpp.gcda
+        -:    0:Runs:1
+        -:    1:// -*- C++ -*- forwarding header.
+        -:    2:
+        -:    3:// Copyright (C) 1997-2023 Free Software Foundation, Inc.
+        -:    4://
+        -:    5:// This file is part of the GNU ISO C++ Library.  This library is free
+        -:    6:// software; you can redistribute it and/or modify it under the
+        -:    7:// terms of the GNU General Public License as published by the
+        -:    8:// Free Software Foundation; either version 3, or (at your option)
+        -:    9:// any later version.
+        -:   10:
+        -:   11:// This library is distributed in the hope that it will be useful,
+        -:   12:// but WITHOUT ANY WARRANTY; without even the implied warranty of
+        -:   13:// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        -:   14:// GNU General Public License for more details.
+        -:   15:
+        -:   16:// Under Section 7 of GPL version 3, you are granted additional
+        -:   17:// permissions described in the GCC Runtime Library Exception, version
+        -:   18:// 3.1, as published by the Free Software Foundation.
+        -:   19:
+        -:   20:// You should have received a copy of the GNU General Public License and
+        -:   21:// a copy of the GCC Runtime Library Exception along with this program;
+        -:   22:// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+        -:   23:// <http://www.gnu.org/licenses/>.
+        -:   24:
+        -:   25:/** @file cstddef
+        -:   26: *  This is a Standard C++ Library file.  You should @c \#include this file
+        -:   27: *  in your programs, rather than any of the @a *.h implementation files.
+        -:   28: *
+        -:   29: *  This is the C++ version of the Standard C Library header @c stddef.h,
+        -:   30: *  and its contents are (mostly) the same as that header, but are all
+        -:   31: *  contained in the namespace @c std (except for names which are defined
+        -:   32: *  as macros in C).
+        -:   33: */
+        -:   34:
+        -:   35://
+        -:   36:// ISO C++ 14882: 18.1  Types
+        -:   37://
+        -:   38:
+        -:   39:#ifndef _GLIBCXX_CSTDDEF
+        -:   40:#define _GLIBCXX_CSTDDEF 1
+        -:   41:
+        -:   42:#pragma GCC system_header
+        -:   43:
+        -:   44:#undef __need_wchar_t
+        -:   45:#undef __need_ptrdiff_t
+        -:   46:#undef __need_size_t
+        -:   47:#undef __need_NULL
+        -:   48:#undef __need_wint_t
+        -:   49:#include <bits/c++config.h>
+        -:   50:#include <stddef.h>
+        -:   51:
+        -:   52:extern "C++"
+        -:   53:{
+        -:   54:#if __cplusplus >= 201103L
+        -:   55:namespace std
+        -:   56:{
+        -:   57:  // We handle size_t, ptrdiff_t, and nullptr_t in c++config.h.
+        -:   58:  using ::max_align_t;
+        -:   59:}
+        -:   60:#endif // C++11
+        -:   61:
+        -:   62:#if __cplusplus >= 201703L
+        -:   63:namespace std
+        -:   64:{
+        -:   65:_GLIBCXX_BEGIN_NAMESPACE_VERSION
+        -:   66:#define __cpp_lib_byte 201603L
+        -:   67:
+        -:   68:  /// std::byte
+        -:   69:  enum class byte : unsigned char {};
+        -:   70:
+        -:   71:  template<typename _IntegerType> struct __byte_operand { };
+        -:   72:  template<> struct __byte_operand<bool> { using __type = byte; };
+        -:   73:  template<> struct __byte_operand<char> { using __type = byte; };
+        -:   74:  template<> struct __byte_operand<signed char> { using __type = byte; };
+        -:   75:  template<> struct __byte_operand<unsigned char> { using __type = byte; };
+        -:   76:  template<> struct __byte_operand<wchar_t> { using __type = byte; };
+        -:   77:#ifdef _GLIBCXX_USE_CHAR8_T
+        -:   78:  template<> struct __byte_operand<char8_t> { using __type = byte; };
+        -:   79:#endif
+        -:   80:  template<> struct __byte_operand<char16_t> { using __type = byte; };
+        -:   81:  template<> struct __byte_operand<char32_t> { using __type = byte; };
+        -:   82:  template<> struct __byte_operand<short> { using __type = byte; };
+        -:   83:  template<> struct __byte_operand<unsigned short> { using __type = byte; };
+        -:   84:  template<> struct __byte_operand<int> { using __type = byte; };
+        -:   85:  template<> struct __byte_operand<unsigned int> { using __type = byte; };
+        -:   86:  template<> struct __byte_operand<long> { using __type = byte; };
+        -:   87:  template<> struct __byte_operand<unsigned long> { using __type = byte; };
+        -:   88:  template<> struct __byte_operand<long long> { using __type = byte; };
+        -:   89:  template<> struct __byte_operand<unsigned long long> { using __type = byte; };
+        -:   90:#if defined(__GLIBCXX_TYPE_INT_N_0)
+        -:   91:  template<> struct __byte_operand<__GLIBCXX_TYPE_INT_N_0>
+        -:   92:  { using __type = byte; };
+        -:   93:  template<> struct __byte_operand<unsigned __GLIBCXX_TYPE_INT_N_0>
+        -:   94:  { using __type = byte; };
+        -:   95:#endif
+        -:   96:#if defined(__GLIBCXX_TYPE_INT_N_1)
+        -:   97:  template<> struct __byte_operand<__GLIBCXX_TYPE_INT_N_1>
+        -:   98:  { using __type = byte; };
+        -:   99:  template<> struct __byte_operand<unsigned __GLIBCXX_TYPE_INT_N_1>
+        -:  100:  { using __type = byte; };
+        -:  101:#endif
+        -:  102:#if defined(__GLIBCXX_TYPE_INT_N_2)
+        -:  103:  template<> struct __byte_operand<__GLIBCXX_TYPE_INT_N_2>
+        -:  104:  { using __type = byte; };
+        -:  105:  template<> struct __byte_operand<unsigned __GLIBCXX_TYPE_INT_N_2>
+        -:  106:  { using __type = byte; };
+        -:  107:#endif
+        -:  108:  template<typename _IntegerType>
+        -:  109:    struct __byte_operand<const _IntegerType>
+        -:  110:    : __byte_operand<_IntegerType> { };
+        -:  111:  template<typename _IntegerType>
+        -:  112:    struct __byte_operand<volatile _IntegerType>
+        -:  113:    : __byte_operand<_IntegerType> { };
+        -:  114:  template<typename _IntegerType>
+        -:  115:    struct __byte_operand<const volatile _IntegerType>
+        -:  116:    : __byte_operand<_IntegerType> { };
+        -:  117:
+        -:  118:  template<typename _IntegerType>
+        -:  119:    using __byte_op_t = typename __byte_operand<_IntegerType>::__type;
+        -:  120:
+        -:  121:  template<typename _IntegerType>
+        -:  122:    [[__gnu__::__always_inline__]]
+        -:  123:    constexpr __byte_op_t<_IntegerType>
+        -:  124:    operator<<(byte __b, _IntegerType __shift) noexcept
+        -:  125:    { return (byte)(unsigned char)((unsigned)__b << __shift); }
+        -:  126:
+        -:  127:  template<typename _IntegerType>
+        -:  128:    [[__gnu__::__always_inline__]]
+        -:  129:    constexpr __byte_op_t<_IntegerType>
+        -:  130:    operator>>(byte __b, _IntegerType __shift) noexcept
+        -:  131:    { return (byte)(unsigned char)((unsigned)__b >> __shift); }
+        -:  132:
+        -:  133:  [[__gnu__::__always_inline__]]
+        -:  134:  constexpr byte
+        -:  135:  operator|(byte __l, byte __r) noexcept
+        -:  136:  { return (byte)(unsigned char)((unsigned)__l | (unsigned)__r); }
+        -:  137:
+        -:  138:  [[__gnu__::__always_inline__]]
+        -:  139:  constexpr byte
+        -:  140:  operator&(byte __l, byte __r) noexcept
+        -:  141:  { return (byte)(unsigned char)((unsigned)__l & (unsigned)__r); }
+        -:  142:
+        -:  143:  [[__gnu__::__always_inline__]]
+        -:  144:  constexpr byte
+        -:  145:  operator^(byte __l, byte __r) noexcept
+        -:  146:  { return (byte)(unsigned char)((unsigned)__l ^ (unsigned)__r); }
+        -:  147:
+        -:  148:  [[__gnu__::__always_inline__]]
+        -:  149:  constexpr byte
+        -:  150:  operator~(byte __b) noexcept
+        -:  151:  { return (byte)(unsigned char)~(unsigned)__b; }
+        -:  152:
+        -:  153:  template<typename _IntegerType>
+        -:  154:    [[__gnu__::__always_inline__]]
+        -:  155:    constexpr __byte_op_t<_IntegerType>&
+        -:  156:    operator<<=(byte& __b, _IntegerType __shift) noexcept
+        -:  157:    { return __b = __b << __shift; }
+        -:  158:
+        -:  159:  template<typename _IntegerType>
+        -:  160:    [[__gnu__::__always_inline__]]
+        -:  161:    constexpr __byte_op_t<_IntegerType>&
+        -:  162:    operator>>=(byte& __b, _IntegerType __shift) noexcept
+        -:  163:    { return __b = __b >> __shift; }
+        -:  164:
+        -:  165:  [[__gnu__::__always_inline__]]
+        -:  166:  constexpr byte&
+        -:  167:  operator|=(byte& __l, byte __r) noexcept
+        -:  168:  { return __l = __l | __r; }
+        -:  169:
+        -:  170:  [[__gnu__::__always_inline__]]
+        -:  171:  constexpr byte&
+        -:  172:  operator&=(byte& __l, byte __r) noexcept
+        -:  173:  { return __l = __l & __r; }
+        -:  174:
+        -:  175:  [[__gnu__::__always_inline__]]
+        -:  176:  constexpr byte&
+        -:  177:  operator^=(byte& __l, byte __r) noexcept
+        -:  178:  { return __l = __l ^ __r; }
+        -:  179:
+        -:  180:  template<typename _IntegerType>
+        -:  181:    [[nodiscard,__gnu__::__always_inline__]]
+        -:  182:    constexpr _IntegerType
+        -:  183:    to_integer(__byte_op_t<_IntegerType> __b) noexcept
+    #####:  184:    { return _IntegerType(__b); }
+    %%%%%:  184-block  0
+        -:  185:
+        -:  186:_GLIBCXX_END_NAMESPACE_VERSION
+        -:  187:} // namespace std
+        -:  188:#endif // C++17
+        -:  189:} // extern "C++"
+        -:  190:
+        -:  191:#endif // _GLIBCXX_CSTDDEF
