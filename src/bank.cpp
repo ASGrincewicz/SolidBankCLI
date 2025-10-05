@@ -1,4 +1,4 @@
-//
+// SPDX-License-Identifier: LicenseRef-Proprietary
 //  // Copyright © 2025 Aaron Steven Grincewicz
 //  // All rights reserved.
 //  // Unauthorized use, modification, or redistribution is prohibited.
@@ -15,20 +15,20 @@ bool Bank::deposit(double amount)
         return false;
     }
     balance += amount;
-    transactions.push_back({TransactionType::Deposit, amount, getCurrentTimestamp()});
+    transactionLog.addTransaction(Transaction(TransactionType::Deposit, amount, getCurrentTimestamp()));
     return true;
 }
 
 bool Bank::withdraw(double amount) {
     if (amount <= 0.0 || amount > balance) return false;
     balance -= amount;
-    transactions.push_back({TransactionType::Withdrawal, amount,getCurrentTimestamp()});
+    transactionLog.addTransaction(Transaction(TransactionType::Withdrawal, amount, getCurrentTimestamp()));
     return true;
 }
 
-const std::vector<Transaction>& Bank::getTransactions() const
+std::vector<Transaction> Bank::getTransactions()
 {
-    return transactions;
+    return transactionLog.getAllTransactions();
 }
 
 std::string Bank::getFormattedLedger() const {
@@ -39,7 +39,7 @@ std::string Bank::getFormattedLedger() const {
        << "    Timestamp\n";
     ss << "------------------------------\n";
 
-    for (const auto& tx : transactions) {
+    for (const auto& tx : transactionLog.getAllTransactions()) {
         std::string typeStr = (tx.type == TransactionType::Deposit) ? "Deposit" : "Withdrawal";
         ss << std::left << std::setw(12) << typeStr
            << std::right << std::setw(10) << std::fixed << std::setprecision(2) << tx.amount
