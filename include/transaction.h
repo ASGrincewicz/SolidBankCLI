@@ -7,14 +7,28 @@
 #include <string>
 #include "utils.h"
 
-enum class TransactionType {Deposit, Withdrawal};
+enum class TransactionType {Deposit, Withdrawal, Transfer};
+enum class AccountType {Checking, Savings};
+
+inline std::string toString(AccountType account) {
+    switch (account) {
+        case AccountType::Checking: return "Checking";
+        case AccountType::Savings: return "Savings";
+        default: return "Unknown";
+    }
+}
 
 struct Transaction{
     TransactionType type;
     double amount;
     std::string timestamp;
+    AccountType sourceAccount;
+    AccountType destinationAccount; // optional for Transfers
 
-    Transaction(TransactionType type, double amount, const std::string& timestamp) : type(type), amount(amount), timestamp(timestamp) {}
+    Transaction(TransactionType type, double amount, const std::string& timestamp,
+                         AccountType source, AccountType destination)
+    : type(type), amount(amount), timestamp(timestamp),
+      sourceAccount(source), destinationAccount(destination) {}
 
     std::string toString() const;
 

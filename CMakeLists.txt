@@ -22,6 +22,7 @@ set(CLI_SOURCES
         src/transaction.cpp
         src/utils.cpp
         src/TransactionLog.cpp
+        include/AccountUtils.h
 )
 
 # Test sources (excludes main.cpp)
