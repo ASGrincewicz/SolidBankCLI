@@ -16,13 +16,15 @@
 class Bank {
 public:
     Bank();
-    double getBalance() const;
-    bool deposit(double);
-    bool withdraw(double);
+    double getBalance(AccountType account) const;
+    bool deposit(AccountType account, double amount);
+    bool withdraw(AccountType account, double amount);
+    bool transfer(AccountType source, AccountType destination, double amount);
     std::vector<Transaction> getTransactions();
     std::string getFormattedLedger() const;
 
 private:
-    double balance;
+    double checkingBalance = 0.0;
+    double savingsBalance = 0.0;
     TransactionLog transactionLog;
 };

@@ -5,6 +5,7 @@
 //  /
 
 #include "TransactionLog.h"
+#include "AccountUtils.h"
 #include <sstream>
 #include <fstream>
 
@@ -29,17 +30,19 @@ bool TransactionLog::exportToCSV(const std::string& filename) const {
     if (!file.is_open()) return false;
 
     //write header
-    file << "Timestamp,Type,Amount\n";
+    file << "Timestamp,Type,Amount,Source,Destination\n";
 
     for (const auto& tx : log) {
         std::string typeStr;
         switch (tx.type) {
             case TransactionType::Deposit:  typeStr = "Deposit"; break;
             case TransactionType::Withdrawal: typeStr = "Withdrawal"; break;
+            case TransactionType::Transfer: typeStr = "Transfer"; break;
             default: typeStr = "Unknown"; break;
         }
 
-        file << tx.timestamp << "," << typeStr << "," << tx.amount << "\n";
+        file << tx.timestamp << "," << typeStr << "," << tx.amount << ","
+     << accountToString(tx.sourceAccount) << "," << accountToString(tx.destinationAccount) << "\n";
     }
     file.close();
     return true;
