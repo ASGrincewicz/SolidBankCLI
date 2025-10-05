@@ -7,8 +7,11 @@
 // tests/test_bank.cpp
 #include <catch2/catch_test_macros.hpp>
 #include <catch2/catch_approx.hpp>
+#include <fstream>
+#include <sstream>
 
 #include "bank.h"
+#include "Transaction.h"
 #include "TransactionLog.h"
 #include "utils.h"
 
@@ -130,4 +133,27 @@ TEST_CASE("TransactionLog stores and formats transactions", "[TransactionLog]") 
         "[2025-09-30T18:05:00] Withdrawal: $50.00\n";
 
     REQUIRE(log.toString() == expected);
+}
+
+TEST_CASE("TransactionLog exports to CSV","[TransactionLog][Export]") {
+    TransactionLog log;
+    log.addTransaction(Transaction(TransactionType::Deposit, 100.0, "2025-10-04T18:00:00"));
+    log.addTransaction(Transaction(TransactionType::Withdrawal, 50.0, "2025-10-04T18:05:00"));
+
+    std::string filename = "test_export.csv";
+    REQUIRE(log.getAllTransactions().size() == 2);
+    REQUIRE(log.exportToCSV(filename));
+
+    std::ifstream file(filename);
+    REQUIRE(file.is_open());
+
+    std::stringstream buffer;
+    buffer << file.rdbuf();
+   std::string contents = buffer.str();
+
+    std::string expected =
+        "Timestamp,Type,Amount\n"
+        "2025-10-04T18:00:00,Deposit,100\n"
+        "2025-10-04T18:05:00,Withdrawal,50\n";
+    REQUIRE(contents == expected);
 }

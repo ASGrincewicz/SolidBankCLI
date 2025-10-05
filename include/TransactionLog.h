@@ -16,4 +16,5 @@ public:
     void addTransaction(const Transaction& tx);
     std::vector<Transaction> getAllTransactions() const;
     std::string toString() const;
+    bool exportToCSV(const std::string& filename) const;
 };
